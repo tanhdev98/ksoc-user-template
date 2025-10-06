@@ -199,16 +199,14 @@
 
 .chc__tit h3 {
     font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 1.38;
+    font-size: 2.4rem;
+    margin-bottom: 2.3rem;
     text-align: center;
 }
 
 .chc__tit p {
-    margin-top: 0.5rem;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 1.38;
     text-align: center;
 }
 
@@ -265,10 +263,8 @@
 }
 
 .initial {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.8rem;
-    margin-top: 4rem;
+    width: 530px;
+    margin-top: 3rem;
 }
 
 .initial__lf {
@@ -285,34 +281,32 @@
 }
 
 .initial__block {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
 .initial__btn {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    font-size: 1.4rem;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
-    border: 1px solid #999999;
-    background: #fff;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
     transition: all 0.3s;
 }
 
 .initial__btn:hover {
-    background: #000;
+    background: #0C54B8;
     color: #fff;
 }
 
 .initial__btn.active {
-    background: #000;
+    background: #0C54B8;
     color: #fff;
 }
 
@@ -324,8 +318,7 @@
 }
 
 .initial__rt {
-    padding: 4.6rem 3.8rem;
-    border: 1px solid #ddd;
+    padding: 4rem 6rem;
     background-color: #F5F5F5;
     border-radius: 3rem;
 }
@@ -333,30 +326,32 @@
 .initial__form {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 1rem;
 }
 
 .initial__input {
     width: 100%;
-    height: 4.5rem;
+    height: 4rem;
     background-color: #fff;
-    border: 1px solid #999;
+    border: 1px solid #DDDDDD;
     border-radius: 3rem;
-    padding: 1rem 2rem;
+    padding: 1.3rem 2rem;
+    font-size: 1.1rem;
 }
 
 .initial__search {
-    height: 4.5rem;
+    height: 4rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.7rem;
     color: #fff;
     border: 0;
-    background: #000;
-    padding: 1.2rem 2.4rem;
+    background: #666666;
+    padding: 1.2rem 4rem;
     white-space: nowrap;
-    border-radius: 3rem;
+    border-radius: 2.5rem;
 }
 
 .initial__desc {
@@ -366,17 +361,17 @@
 }
 
 .chc__block {
-    margin-top: 5.5rem;
+    margin-top: 5rem;
 }
 
 .chc__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 2rem;
-    padding-bottom: 1.4rem;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 5.5rem;
+    margin-bottom: 5rem;
+}
+
+.chc__cntn .chc__block:first-child .chc__top {
+    border-bottom: none;
 }
 
 .chc__top ul {
@@ -406,13 +401,13 @@
 .chc__btbx {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
+    justify-content: flex-end;
+    gap: 1.7rem;
 }
 
 .chc__btn {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2rem;
+    height: 2rem;
     border: 0;
     background: url('../../images/icons/list-icon.png') no-repeat center / contain;
     background-color: transparent;
@@ -432,16 +427,14 @@
 
 .chc__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-radius: 3rem;
-    border: 1px solid #ddd;
+    grid-template-columns: repeat(6, 1fr);
     overflow: hidden;
 }
 
 .chc__list--img {
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 4.4rem;
-    row-gap: 5.5rem;
+    column-gap: 5rem;
+    row-gap: 8.4rem;
     border-radius: 0;
     border: 0;
     overflow: visible;
@@ -451,10 +444,26 @@
 .chc__item {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    border: 1px solid #ddd;
     background: #fff;
-    border-left: 1px solid #ddd;
     position: relative;
+}
+
+.chc__item:nth-child(6n+1) {
+    border-left: 1px solid #ddd;
+}
+
+.chc__item:not(:nth-child(6n+1)) {
+    border-left: 0;
+}
+
+
+.chc__item:nth-child(-n+6) {
+    border-top: 1px solid #ddd;
+}
+
+.chc__item:nth-child(n+7) {
+    border-top: 0;
 }
 
 .chc__link {
@@ -464,29 +473,10 @@
     background: #fff;
 }
 
-.chc__blc {
-    width: 4.4rem;
-    height: 4.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ddd;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-}
-
-.chc__blc img {
-    width: 3rem;
-}
-
-.chc__item:nth-child(n+5) {
-    border-top: 1px solid #ddd;
-}
-
-.chc__item:nth-child(4n+1) {
+/* .chc__item:nth-child(n+5) {
+    /* border-top: 1px solid #ddd; */
+/* } */
+*/ .chc__item:nth-child(4n+1) {
     border-left: 0;
 }
 
@@ -506,36 +496,38 @@
     justify-content: center;
     border: 1px solid #ddd;
     border-radius: 3rem;
-    padding: 2.5rem;
+    padding: 3.2rem;
 }
 
 .chc__item figure img {
-    height: 6rem;
+    height: 7.2rem;
+    width: 7.2rem;
     object-fit: contain;
 }
 
 .chc__item span {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.8rem;
-    padding: 1.3rem 3.3rem;
+    padding: 1.7rem 1.5rem;
+    white-space: nowrap;
 }
 
 .chc__item span::before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background: #D9D9D9;
-    margin-right: 0.8rem;
+    margin-right: 1rem;
 }
 
 .chc__list--img .chc__item span {
     display: block;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.6rem;
     text-align: center;
     padding: 0;
 }
@@ -3770,4 +3762,25 @@ a.ui-button:active,
     border-radius: 0.5rem;
     border: 0;
     white-space: nowrap;
+}
+
+.chn__bor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 2rem;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.chc__item.chc_active .chc__link figure {
+    border: 1px solid #0C54B8;
+}
+
+.chc__item.chc_active .chc__link span {
+    color: #0C54B8;
+}
+
+.chc__item.chc_active span::before {
+    background: #0C54B8;
 }

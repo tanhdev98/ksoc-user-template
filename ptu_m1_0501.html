@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -326,7 +328,7 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     <ul class="goto__list">
                         <li class="goto__item">
                             <a href="#" class="goto__link">로그인</a>
@@ -374,76 +376,60 @@
             <div class="inner">
                 <!-- 종목선택 -->
                 <article class="game">
-                    <div class="title">
-                        <h2>종목선택</h2>
-                    </div>
                     <div class="chc__tit">
                         <h3>종목선택</h3>
                         <p>
                             <b>인터넷증명서 발급</b>에 관한 궁금한 사항은 <b>해당 회원종목단체</b>를 통하여 <b>문의</b>하시기 바랍니다.
                         </p>
-                    </div>
-                    <div class="initial">
-                        <div class="initial__lf">
-                            <h4 class="initial__tit">초성종목 검색</h4>
-                            <div class="initial__block">
-                                <button type="button" class="initial__btn active">가</button>
-                                <button type="button" class="initial__btn">나</button>
-                                <button type="button" class="initial__btn">다</button>
-                                <button type="button" class="initial__btn">라</button>
-                                <button type="button" class="initial__btn">마</button>
-                                <button type="button" class="initial__btn">바</button>
-                                <button type="button" class="initial__btn">사</button>
-                                <button type="button" class="initial__btn">아</button>
-                                <button type="button" class="initial__btn">자</button>
-                                <button type="button" class="initial__btn">차</button>
-                                <button type="button" class="initial__btn">카</button>
-                                <button type="button" class="initial__btn">타</button>
-                                <button type="button" class="initial__btn">파</button>
-                                <button type="button" class="initial__btn">하</button>
-                                <p>종목초성을 클릭하세요.</p>
+                        <div class="initial">
+                            <div class="initial__rt">
+                                <form action="">
+                                    <div class="initial__form">
+                                        <input type="text" class="initial__input" placeholder="찾으시는 종목의 이름을 입력하세요">
+                                        <button type="button" class="initial__search">검색</button>
+                                    </div>
+                                </form>
                             </div>
-                        </div>
-                        <div class="initial__rt">
-                            <h4 class="initial__tit">초성종목 검색</h4>
-                            <form action="">
-                                <div class="initial__form">
-                                    <input type="text" class="initial__input">
-                                    <button type="button" class="initial__search">검색</button>
-                                </div>
-                            </form>
-                            <p class="initial__desc">종목초성을 클릭하세요.</p>
                         </div>
                     </div>
                     <div class="chc__cntn">
                         <div class="chc__block">
                             <div class="chc__top">
-                                <ul>
-                                    <li>가</li>
-                                    <li>나</li>
-                                    <li>다</li>
-                                    <li>라</li>
-                                </ul>
-                                <div class="chc__btbx">
-                                    <button type="button" class="chc__btn chcList">
-                                        <span class="blind">리스트형</span>
-                                    </button>
-                                    <button type="button" class="chc__btn chc__btn--img chcImage active">
-                                        <span class="blind">이미지형</span>
-                                    </button>
+                                <div class="chn__bor">
+                                    <div class="initial__block">
+                                        <button type="button" class="initial__btn active">ㄱ</button>
+                                        <button type="button" class="initial__btn">ㄴ</button>
+                                        <button type="button" class="initial__btn">ㄷ</button>
+                                        <button type="button" class="initial__btn">ㄹ</button>
+                                        <button type="button" class="initial__btn">ㅁ</button>
+                                        <button type="button" class="initial__btn">ㅂ</button>
+                                        <button type="button" class="initial__btn">ㅅ</button>
+                                        <button type="button" class="initial__btn">ㅇ</button>
+                                        <button type="button" class="initial__btn">ㅈ</button>
+                                        <button type="button" class="initial__btn">ㅊ</button>
+                                        <button type="button" class="initial__btn">ㅋ</button>
+                                        <button type="button" class="initial__btn">ㅌ</button>
+                                        <button type="button" class="initial__btn">ㅍ</button>
+                                        <button type="button" class="initial__btn">ㅎ</button>
+                                    </div>
+                                    <div class="chc__btbx">
+                                        <button type="button" class="chc__btn chcList">
+                                            <span class="blind">리스트형</span>
+                                        </button>
+                                        <button type="button" class="chc__btn chc__btn--img chcImage active">
+                                            <span class="blind">이미지형</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="chc__list chc__list--img">
-                                <li class="chc__item">
+                                <li class="chc__item chc_active">
                                     <a href="#" class="chc__link">
                                         <figure>
                                             <img src="images/put_m1_0101/image01.png" alt="">
                                         </figure>
-                                        <span>가라테</span>
+                                        <span class="chc_active">가라테</span>
                                     </a>
-                                    <i class="chc__blc">
-                                        <img src="images/icons/blc-icon.png" alt="">
-                                    </i>
                                 </li>
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
@@ -477,7 +463,7 @@
                                         <span>국학기공</span>
                                     </a>
                                     <i class="chc__blc">
-                                        <img src="images/icons/blc-icon.png" alt="">
+                                        <!-- <img src="images/icons/blc-icon.png" alt=""> -->
                                     </i>
                                 </li>
                                 <li class="chc__item">
@@ -544,24 +530,10 @@
                                         <span>루지</span>
                                     </a>
                                 </li>
-                                <li class="chc__item"></li>
-                                <li class="chc__item"></li>
-                                <li class="chc__item"></li>
                             </ul>
                         </div>
                         <div class="chc__block">
                             <div class="chc__top">
-                                <ul>
-                                    <li>바</li>
-                                </ul>
-                                <div class="chc__btbx">
-                                    <button type="button" class="chc__btn chcList">
-                                        <span class="blind">리스트형</span>
-                                    </button>
-                                    <button type="button" class="chc__btn chc__btn--img chcImage active">
-                                        <span class="blind">이미지형</span>
-                                    </button>
-                                </div>
                             </div>
                             <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
@@ -632,17 +604,7 @@
                         </div>
                         <div class="chc__block">
                             <div class="chc__top">
-                                <ul>
-                                    <li>사</li>
-                                </ul>
-                                <div class="chc__btbx">
-                                    <button type="button" class="chc__btn chcList">
-                                        <span class="blind">리스트형</span>
-                                    </button>
-                                    <button type="button" class="chc__btn chc__btn--img chcImage active">
-                                        <span class="blind">이미지형</span>
-                                    </button>
-                                </div>
+
                             </div>
                             <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
@@ -745,386 +707,362 @@
                         </div>
                         <div class="chc__block">
                             <div class="chc__top">
-                                <ul>
-                                    <li>아</li>
-                                    <li>자</li>
-                                    <li>차</li>
-                                </ul>
-                                <div class="chc__btbx">
-                                    <button type="button" class="chc__btn chcList">
-                                        <span class="blind">리스트형</span>
-                                    </button>
-                                    <button type="button" class="chc__btn chc__btn--img chcImage active">
-                                        <span class="blind">이미지형</span>
-                                    </button>
-                                </div>
                             </div>
-                            <ul class="chc__list chc__list--img">
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image34.png" alt="">
-                                        </figure>
-                                        <span>아이스하키</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image35.png" alt="">
-                                        </figure>
-                                        <span>야구소프트볼</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image36.png" alt="">
-                                        </figure>
-                                        <span>양궁</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image37.png" alt="">
-                                        </figure>
-                                        <span>에어로빅힙합</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image38.png" alt="">
-                                        </figure>
-                                        <span>역도</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image39.png" alt="">
-                                        </figure>
-                                        <span>요트</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image40.jpg" alt="">
-                                        </figure>
-                                        <span>우슈</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image41.png" alt="">
-                                        </figure>
-                                        <span>유도</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image42.png" alt="">
-                                        </figure>
-                                        <span>육상</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image43.png" alt="">
-                                        </figure>
-                                        <span>주짓수</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image44.png" alt="">
-                                        </figure>
-                                        <span>줄넘기</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image45.png" alt="">
-                                        </figure>
-                                        <span>조정</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image46.png" alt="">
-                                        </figure>
-                                        <span>체조</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image47.png" alt="">
-                                        </figure>
-                                        <span>체스</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image48.png" alt="">
-                                        </figure>
-                                        <span>축구</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image49.png" alt="">
-                                        </figure>
-                                        <span>철인3종</span>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
-                        <div class="chc__block">
-                            <div class="chc__top">
-                                <ul>
-                                    <li>카</li>
-                                    <li>타</li>
-                                    <li>파</li>
-                                    <li>하</li>
-                                </ul>
-                                <div class="chc__btbx">
-                                    <button type="button" class="chc__btn chcList">
-                                        <span class="blind">리스트형</span>
-                                    </button>
-                                    <button type="button" class="chc__btn chc__btn--img chcImage active">
-                                        <span class="blind">이미지형</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <ul class="chc__list chc__list--img">
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image50.png" alt="">
-                                        </figure>
-                                        <span>카누</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image51.png" alt="">
-                                        </figure>
-                                        <span>카바디</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image52.png" alt="">
-                                        </figure>
-                                        <span>컬링</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image53.png" alt="">
-                                        </figure>
-                                        <span>킥복싱</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image54.png" alt="">
-                                        </figure>
-                                        <span>탁구</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image55.png" alt="">
-                                        </figure>
-                                        <span>태권도</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image56.png" alt="">
-                                        </figure>
-                                        <span>택견</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image57.png" alt="">
-                                        </figure>
-                                        <span>테니스</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image58.png" alt="">
-                                        </figure>
-                                        <span>펜싱</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image59.png" alt="">
-                                        </figure>
-                                        <span>하키</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image60.png" alt="">
-                                        </figure>
-                                        <span>합기도</span>
-                                    </a>
-                                </li>
-                                <li class="chc__item">
-                                    <a href="#" class="chc__link">
-                                        <figure>
-                                            <img src="images/put_m1_0101/image61.png" alt="">
-                                        </figure>
-                                        <span>핸드볼</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <!-- // 종목선택 -->
-            </div>
-        </section>
-        <!-- // contents -->
-
-        <!-- 선택팝업 -->
-        <div class="game__pop">
-            <div class="game__tit">
-                <span><b>대한궁도협회</b> 경기인 선택</span>
-                <button type="button" class="game__close">
-                    <img src="images/icons/close-icon.png" alt="">
-                </button>
-            </div>
-            <ul class="game__list">
-                <li class="game__item">
-                    <a href="#" class="game__link">
-                        <img src="images/icons/player-icon.png" alt="">
-                        <span>선수</span>
-                    </a>
-                </li>
-                <li class="game__item">
-                    <a href="#" class="game__link">
-                        <img src="images/icons/director-icon.png" alt="">
-                        <span>지도자</span>
-                    </a>
-                </li>
-                <li class="game__item">
-                    <a href="#" class="game__link">
-                        <img src="images/icons/judgment-icon.png" alt="">
-                        <span>지도자</span>
-                    </a>
-                </li>
-                <li class="game__item">
-                    <a href="#" class="game__link">
-                        <img src="images/icons/manager-icon.png" alt="">
-                        <span>선수관리<br>담당자</span>
-                    </a>
-                </li>
-            </ul>
-            <p class="game__desc">신청 유형을 선택하세요.</p>
-        </div>
-        <!-- 선택팝업 -->
-
-        <!-- footer -->
-        <footer id="footer" class="footer">
-            <div class="inner">
-                <div class="footer__top">
-                    <h3 class="footer__logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </h3>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">개인정보 처리방침</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">이용약관</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">저작권 정책</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">체육정보 종합포털 소개</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__md">
-                    <address class="footer__adr">
-                        <span>체육정보 종합포털</span>
-                        <span>대표이사 이주현</span>
-                    </address>
-                    <address class="footer__adr">
-                        <span>[05540] 서울특별시 송파구 올림픽로 424 올림픽회관</span>
-                        <span>대표전화: 02-2144-8114</span>
-                    </address>
-                </div>
-                <div class="footer__bm">
-                    <p class="footer__copy">© Copyright©2016 Korean Sport & Olympic Committee. All rights reserved.</p>
-                    <div class="sns">
-                        <ul class="sns__list">
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/instagram-icon.png" alt="인스타그램">
+                        <ul class="chc__list chc__list--img">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image34.png" alt="">
+                                    </figure>
+                                    <span>아이스하키</span>
                                 </a>
                             </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/youtube-icon.png" alt="유튜브">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image35.png" alt="">
+                                    </figure>
+                                    <span>야구소프트볼</span>
                                 </a>
                             </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/facebook-icon.png" alt="페이스북">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image36.png" alt="">
+                                    </figure>
+                                    <span>양궁</span>
                                 </a>
                             </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/blog-icon.png" alt="네이버블로그">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image37.png" alt="">
+                                    </figure>
+                                    <span>에어로빅힙합</span>
                                 </a>
                             </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/apple-icon.png" alt="앱스토어">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image38.png" alt="">
+                                    </figure>
+                                    <span>역도</span>
                                 </a>
                             </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/play-icon.png" alt="구글플레이">
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image39.png" alt="">
+                                    </figure>
+                                    <span>요트</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image40.jpg" alt="">
+                                    </figure>
+                                    <span>우슈</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image41.png" alt="">
+                                    </figure>
+                                    <span>유도</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image42.png" alt="">
+                                    </figure>
+                                    <span>육상</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image43.png" alt="">
+                                    </figure>
+                                    <span>주짓수</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image44.png" alt="">
+                                    </figure>
+                                    <span>줄넘기</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image45.png" alt="">
+                                    </figure>
+                                    <span>조정</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image46.png" alt="">
+                                    </figure>
+                                    <span>체조</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image47.png" alt="">
+                                    </figure>
+                                    <span>체스</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image48.png" alt="">
+                                    </figure>
+                                    <span>축구</span>
+                                </a>
+                            </li>
+                            <li class="chc__item">
+                                <a href="#" class="chc__link">
+                                    <figure>
+                                        <img src="images/put_m1_0101/image49.png" alt="">
+                                    </figure>
+                                    <span>철인3종</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
+                    <div class="chc__block">
+                        <div class="chc__top">
+                        </div>
+                    </div>
+                    <ul class="chc__list chc__list--img">
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image50.png" alt="">
+                                </figure>
+                                <span>카누</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image51.png" alt="">
+                                </figure>
+                                <span>카바디</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image52.png" alt="">
+                                </figure>
+                                <span>컬링</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image53.png" alt="">
+                                </figure>
+                                <span>킥복싱</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image54.png" alt="">
+                                </figure>
+                                <span>탁구</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image55.png" alt="">
+                                </figure>
+                                <span>태권도</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image56.png" alt="">
+                                </figure>
+                                <span>택견</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image57.png" alt="">
+                                </figure>
+                                <span>테니스</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image58.png" alt="">
+                                </figure>
+                                <span>펜싱</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image59.png" alt="">
+                                </figure>
+                                <span>하키</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image60.png" alt="">
+                                </figure>
+                                <span>합기도</span>
+                            </a>
+                        </li>
+                        <li class="chc__item">
+                            <a href="#" class="chc__link">
+                                <figure>
+                                    <img src="images/put_m1_0101/image61.png" alt="">
+                                </figure>
+                                <span>핸드볼</span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+    </div>
+    </article>
+    <!-- // 종목선택 -->
+    </div>
+    </section>
+    <!-- // contents -->
+
+    <!-- 선택팝업 -->
+    <div class="game__pop">
+        <div class="game__tit">
+            <span><b>대한궁도협회</b> 경기인 선택</span>
+            <button type="button" class="game__close">
+                <img src="images/icons/close-icon.png" alt="">
+            </button>
+        </div>
+        <ul class="game__list">
+            <li class="game__item">
+                <a href="#" class="game__link">
+                    <img src="images/icons/player-icon.png" alt="">
+                    <span>선수</span>
+                </a>
+            </li>
+            <li class="game__item">
+                <a href="#" class="game__link">
+                    <img src="images/icons/director-icon.png" alt="">
+                    <span>지도자</span>
+                </a>
+            </li>
+            <li class="game__item">
+                <a href="#" class="game__link">
+                    <img src="images/icons/judgment-icon.png" alt="">
+                    <span>지도자</span>
+                </a>
+            </li>
+            <li class="game__item">
+                <a href="#" class="game__link">
+                    <img src="images/icons/manager-icon.png" alt="">
+                    <span>선수관리<br>담당자</span>
+                </a>
+            </li>
+        </ul>
+        <p class="game__desc">신청 유형을 선택하세요.</p>
+    </div>
+    <!-- 선택팝업 -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="inner">
+            <div class="footer__top">
+                <h3 class="footer__logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">개인정보 처리방침</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">이용약관</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">저작권 정책</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">체육정보 종합포털 소개</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__md">
+                <address class="footer__adr">
+                    <span>체육정보 종합포털</span>
+                    <span>대표이사 이주현</span>
+                </address>
+                <address class="footer__adr">
+                    <span>[05540] 서울특별시 송파구 올림픽로 424 올림픽회관</span>
+                    <span>대표전화: 02-2144-8114</span>
+                </address>
+            </div>
+            <div class="footer__bm">
+                <p class="footer__copy">© Copyright©2016 Korean Sport & Olympic Committee. All rights reserved.</p>
+                <div class="sns">
+                    <ul class="sns__list">
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/instagram-icon.png" alt="인스타그램">
+                            </a>
+                        </li>
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/youtube-icon.png" alt="유튜브">
+                            </a>
+                        </li>
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/facebook-icon.png" alt="페이스북">
+                            </a>
+                        </li>
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/blog-icon.png" alt="네이버블로그">
+                            </a>
+                        </li>
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/apple-icon.png" alt="앱스토어">
+                            </a>
+                        </li>
+                        <li class="sns__item">
+                            <a href="#" class="sns__link">
+                                <img src="images/icons/play-icon.png" alt="구글플레이">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <!-- // footer -->
+        </div>
+    </footer>
+    <!-- // footer -->
     </div>
 </body>
+
 </html>
