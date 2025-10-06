@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -326,7 +328,7 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     <ul class="goto__list">
                         <li class="goto__item">
                             <a href="#" class="goto__link">로그인</a>
@@ -376,13 +378,18 @@
                     <h2>개인정보 수집 및 이용 동의</h2>
                 </div>
                 <article class="indv__article">
-                    <h3 class="indv__tit">개인정보 수집 및 이용</h3>
                     <div class="indv__block">
+                        <h3 class="indv__tit">개인정보 수집 및 이용</h3>
                         <div class="indv__scroll">
-                            <h4 class="mb20">회원종목단체에서는 지도자 등록을 위하여 아래와 같이 개인정보를 수집·이용 및 제공하고자 합니다.</h4>
+                            <h4 class="mb10">회원종목단체에서는 지도자 등록을 위하여 아래와 같이 개인정보를 수집·이용 및 제공하고자 합니다.</h4>
                             <h4>■정보주체의 동의를 받지 않고 처리하는 개인정보 항목에 대한 고지</h4>
                             <p>※ 회원종목단체에서는 다음의 개인정보 항목을 정보주체의 동의없이 처리하고 있습니다.</p>
                             <table class="indv__table">
+                                <colgroup>
+                                    <col style="width: 240px;">
+                                    <col>
+                                    <col style="width: 240px;">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th>법적근거</th>
@@ -394,48 +401,33 @@
                                     <tr>
                                         <td>개인정보 보호법 제 15조 제1항 제3호, 대한체육회 경기인등 록규정 제7, 8조, 17조</td>
                                         <td>
-                                            <b>① 지도자 등록업무처리 및 활동관리</b> : 등록관리, 대회출전, 소속관리, 신청승인처리, 증명서발급, 등록현황, 상벌사항, 수상내역, 징계정보, 연수 및 교육사항, 자격정보, 경기실적 및 경기영상 관리<br>
-                                            <b>② 지도자 관리</b> : 실명확인, 개인식별, 부정활동 방지, 이중등록 관리, 기록보존 및 관리업무<br>
-                                            <b>③ 체육단체 행정업무에 이용</b> : 국가대표 및 후보선수 관리, 전국(동계/소년)체육대회 등 종합대회 및 종목별 경기운영 등 결과관리, 체육단체 회장선거인단 운영<br>
-                                            <b>④ 지도자 지원 및 관련 서비스 제공에의 활용</b> : 은퇴선수 지원, 학교체육 지원, 국가 대표선수 양성 등의 지원 사업에 따른 활용 및 제공, 선수 활동 파악, 등록현황 및 통계, 설문조사
+                                            <ul>
+                                                <li><b>지도자 등록업무처리 및 활동관리:</b> 등록관리, 대회출전, 소속관리, 신청승인처리, 증명서발급, 등록현황,
+                                                    상벌사항, 수상내역, 징계정보, 연수 및 교육사항, 자격정보, 경기실적 및 경기영상 관리</li>
+                                                <li><b>지도자 관리:</b> 실명확인, 개인식별, 부정활동 방지, 이중등록 관리, 기록보존 및 관리업무</li>
+                                                <li><b>체육단체 행정업무에 이용:</b> 가대표 및 후보선수 관리, 전국(동계/소년)체육대회 등 종합대회 및 종목별
+                                                    경기운영 등 결과관리, 체육단체 회장선거인단 운영</li>
+                                                <li><b>지도자 지원 및 관련 서비스 제공에의 활용:</b> 은퇴선수 지원, 학교체육 지원, 국가 대표선수 양성 등의 지원
+                                                    사업에 따른 활용 및 제공, 선수 활동 파악, 등록현황 및 통계, 설문조사</li>
+                                            </ul>
                                         </td>
                                         <td>이름, 사진, 생년월일, 성별, 주소, 이메일, 휴대폰번호, 등록연도, 종목, 종별, 소속팀, 소속시도</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="indv__bm">
-                        <p>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</p>
-                        <div class="indv__radio">
-                            <input type="radio" name="agreeYn" id="agreeY" class="radiobox">
-                            <label for="agreeY" class="indv__label indv__label--pr20">예</label>
-                            <input type="radio" name="agreeYn" id="agreeN" class="radiobox">
-                            <label for="agreeN" class="indv__label">아니요</label>
-                        </div>
+
+                        <h3 class="indv__tit">개인정보 제3자 제공</h3>
+                        <h4 class="mb20">■개인정보 제공에 대한 안내(필수)</h4>
+                        <p>※ 회원종목단체에서는 등록된 지도자의 개인정보를 아래와 같이 제공하고자 합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.</p>
                     </div>
                 </article>
-                <article class="indv__article indv__article--mt90">
-                    <h3 class="indv__tit">개인정보 제3자 제공</h3>
-                    <div class="indv__block">
-                        <div class="indv__scroll">
-                            <h4 class="mb20">■개인정보 제공에 대한 안내(필수)</h4>
-                            <p>※ 회원종목단체에서는 등록된 지도자의 개인정보를 아래와 같이 제공하고자 합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.</p>
-                        </div>
-                    </div>
-                    <div class="indv__bm">
-                        <p>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</p>
-                        <div class="indv__radio">
-                            <input type="radio" name="privacyYn" id="privacyY" class="radiobox">
-                            <label for="privacyY" class="indv__label indv__label--pr20">예</label>
-                            <input type="radio" name="privacyYn" id="privacyN" class="radiobox">
-                            <label for="privacyN" class="indv__label">아니요</label>
-                        </div>
-                    </div>
-                </article>
+                <div class="indv__bm">
+                    <p>위와 같이 개인정보를 수집·이용하는데 동의하십니까?</p>
+                </div>
                 <div class="indv__btbx">
-                    <button type="button" class="indv__btn">취소</button>
-                    <button type="button" class="indv__btn indv__btn--blue">확인</button>
+                    <button type="button" class="indv__btn indv__btn--130">아니요</button>
+                    <button type="button" class="indv__btn indv__btn--blue indv__btn--130">예</button>
                 </div>
             </div>
         </section>
@@ -518,4 +510,5 @@
         <!-- // footer -->
     </div>
 </body>
+
 </html>
