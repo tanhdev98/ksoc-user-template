@@ -3451,26 +3451,55 @@ a.ui-button:active,
 
 .indv__prv {
     border: 1px solid #ddd;
-    border-radius: 3rem;
-    padding: 3rem;
+    border-radius: 5rem;
+    padding: 5rem 7rem ;
     font-weight: 400;
     font-size: 1.5rem;
     color: #666;
+    background-color: #fff;
 }
 
 .indv__prv h4 {
     font-weight: 600;
     color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 2rem !important
 }
 
 .indv__prv .mb20 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .indv__prv p {
     width: 100%;
     max-width: 95rem;
     text-align: left;
+    overflow-wrap: break-word;
+}
+
+.indv__prv__info p::marker,
+.indv__prv__info p {
+    word-break: break-word; 
+}
+
+.indv__prv__info p.has-number{
+    padding-left: 2rem;
+    text-indent: -2rem; 
+}
+
+.indv__prv__info ul {
+    padding-left: 4rem; 
+    list-style-type: disc; 
+    margin-bottom: 1rem; 
+}
+
+.indv__prv__info ul li.sub-item {
+    margin-bottom: 0.5rem; 
+}
+
+.indv__prv__info p.sub-item {
+    padding-left: 2.2rem; 
+    text-indent: 0;      
 }
 
 .indv__prv p b {
@@ -3526,11 +3555,25 @@ a.ui-button:active,
     font-size: 1.5rem;
     color: #666;
 }
+.indv__prv__info {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 2rem;
+}
 
 .brk__table {
     width: 100%;
     border-top: 1px solid #333;
     margin-top: 2rem;
+}
+
+.custom-list {
+  list-style-type: decimal;
+  padding-left: 2rem;       
+  margin: 0;
+}
+
+.custom-list li {
+  margin-bottom: 0.5rem;   
 }
 
 .brk__table th {
