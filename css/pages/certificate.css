@@ -2,7 +2,7 @@
     font-size: 15px;
     line-height: 1.38;
     padding-top: 5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 }
 
 .certificate--pt110 {
@@ -298,6 +298,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    line-height: 0;
 }
 
 .initial__btn:hover {
@@ -352,6 +353,7 @@
     padding: 1.2rem 4rem;
     white-space: nowrap;
     border-radius: 2.5rem;
+    line-height: 0;
 }
 
 .initial__desc {
@@ -361,11 +363,17 @@
 }
 
 .chc__block {
+    padding-bottom: 5rem;
     margin-top: 5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.chc__block:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 .chc__top {
-    gap: 2rem;
     border-bottom: 1px solid #ddd;
     margin-bottom: 5rem;
 }
@@ -434,7 +442,7 @@
 .chc__list--img {
     grid-template-columns: repeat(6, 1fr);
     column-gap: 5rem;
-    row-gap: 8.4rem;
+    row-gap: 5rem;
     border-radius: 0;
     border: 0;
     overflow: visible;
@@ -469,7 +477,7 @@
 .chc__link {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1.5rem;
     background: #fff;
 }
 
@@ -495,8 +503,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #ddd;
-    border-radius: 3rem;
-    padding: 3.2rem;
+    border-radius: 2rem;
 }
 
 .chc__item figure img {
@@ -509,9 +516,11 @@
     display: inline-flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1.8rem;
-    padding: 1.7rem 1.5rem;
+    font-size: 1.5rem;
+    /* height: 5rem; */
     white-space: nowrap;
+    line-height: 0;
+    padding: 0 1.5rem;
 }
 
 .chc__item span::before {
@@ -525,11 +534,12 @@
 }
 
 .chc__list--img .chc__item span {
-    display: block;
-    font-weight: 600;
-    font-size: 1.6rem;
+    display: flex;
     text-align: center;
     padding: 0;
+    height: 1.9rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .chc__list--img .chc__item span::before {
@@ -3067,6 +3077,7 @@ a.ui-button:active,
     padding-top: 5rem;
     padding-bottom: 10rem;
     position: relative;
+    overflow: hidden;
 }
 
 .indv::before {
@@ -3080,6 +3091,10 @@ a.ui-button:active,
     height: 1574px;
 }
 
+.indv__title {
+    margin-bottom: 2rem;
+}
+
 .indv__tit {
     font-size: 2.1rem;
     margin-top: 3rem;
@@ -3090,6 +3105,13 @@ a.ui-button:active,
 .indv__tit--border {
     padding-bottom: 2.2rem;
     border-bottom: 1px solid #999;
+}
+
+.indv__tit--no-border {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.6rem;
 }
 
 .indv__article--mt90 {
@@ -3238,9 +3260,9 @@ a.ui-button:active,
 .checkbox {
     appearance: none;
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
     border: 2px solid #999;
     background: #fff;
     margin: 0;
@@ -3255,9 +3277,9 @@ a.ui-button:active,
 .checkbox::before {
     content: '';
     display: block;
-    width: 7px;
-    height: 4px;
-    border: 3px solid #999;
+    width: 10px;
+    height: 5px;
+    border: 4px solid #999;
     border-top: 0;
     border-right: 0;
     position: absolute;
@@ -3269,7 +3291,7 @@ a.ui-button:active,
 
 .checkbox:checked {
     border: 0;
-    background: #007AFF;
+    background: #0C54B8;
 }
 
 .checkbox:checked::before {
@@ -3317,6 +3339,8 @@ a.ui-button:active,
     font-size: 1.7rem;
     background: #666;
     color: #fff;
+    line-height: 0;
+    cursor: pointer;
 }
 
 .indv__btn--blue {
@@ -3331,10 +3355,30 @@ a.ui-button:active,
     width: 10rem;
 }
 
+.indv__btn--large {
+    gap: 1rem;
+    width: 63rem;
+    font-size: 1.6rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+}
+
+.indv__btn--large>img {
+    width: 30px;
+    height: 30px;
+}
+
 .indv__desc {
     font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.indv__desc--center {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
 }
 
 .indv__list {
@@ -3342,7 +3386,19 @@ a.ui-button:active,
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding-bottom: 3rem;
-    border-bottom: 1px solid #999;
+}
+
+.indv__cntn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indv__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 63rem;
 }
 
 .indv__item {
@@ -3361,6 +3417,7 @@ a.ui-button:active,
     border: 1px solid #ddd;
     font-weight: 500;
     font-size: 1.5rem;
+    background: #fff;
 }
 
 .indv__link figure {
@@ -3381,11 +3438,80 @@ a.ui-button:active,
     width: 8rem;
 }
 
+.indv__form .indv__link {
+    height: auto;
+    padding: 5rem;
+    padding-top: 2.7rem;
+}
+
+.indv__form .indv__link figure {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 4.5rem;
+}
+
+.indv__form .indv__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.indv__form .indv__form-group .indv__form-group-flex {
+    display: flex;
+    gap: 1.5rem;
+    height: 5rem;
+    align-items: center;
+}
+
+.indv__form .indv__form-group .indv__form-group-flex .indv__input {
+    flex: 1;
+}
+
+.indv__form .indv__form-group .indv__input {
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 3.5rem;
+    height: 5rem;
+    padding: 0 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.indv__form .indv__form-group .indv__btn {
+    border-radius: 3.5rem;
+    padding: 1.5rem 2.7rem;
+}
+
+.indv__form .indv__link figure span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.indv__link form {
+    width: 100%;
+}
+
+.indv__link figure img.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
 .indv__cap {
     font-weight: 400;
     font-size: 1.3rem;
     color: #666;
     padding: 1rem;
+}
+
+.indv__form .indv__cap {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
 }
 
 .indv__type {
@@ -3429,6 +3555,7 @@ a.ui-button:active,
     padding: 3rem;
     border-radius: 3rem;
     border: 2px solid #ddd;
+    background: #fff;
     font-weight: 500;
     font-size: 1.5rem;
     color: #666;
@@ -3452,7 +3579,7 @@ a.ui-button:active,
 .indv__prv {
     border: 1px solid #ddd;
     border-radius: 5rem;
-    padding: 5rem 7rem ;
+    padding: 5rem 7rem;
     font-weight: 400;
     font-size: 1.5rem;
     color: #666;
@@ -3479,27 +3606,27 @@ a.ui-button:active,
 
 .indv__prv__info p::marker,
 .indv__prv__info p {
-    word-break: break-word; 
+    word-break: break-word;
 }
 
-.indv__prv__info p.has-number{
+.indv__prv__info p.has-number {
     padding-left: 2rem;
-    text-indent: -2rem; 
+    text-indent: -2rem;
 }
 
 .indv__prv__info ul {
-    padding-left: 4rem; 
-    list-style-type: disc; 
-    margin-bottom: 1rem; 
+    padding-left: 4rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
 }
 
 .indv__prv__info ul li.sub-item {
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .indv__prv__info p.sub-item {
-    padding-left: 2.2rem; 
-    text-indent: 0;      
+    padding-left: 2.2rem;
+    text-indent: 0;
 }
 
 .indv__prv p b {
@@ -3555,6 +3682,7 @@ a.ui-button:active,
     font-size: 1.5rem;
     color: #666;
 }
+
 .indv__prv__info {
     border-bottom: 1px solid #DDDDDD;
     margin-bottom: 2rem;
@@ -3567,13 +3695,13 @@ a.ui-button:active,
 }
 
 .custom-list {
-  list-style-type: decimal;
-  padding-left: 2rem;       
-  margin: 0;
+    list-style-type: decimal;
+    padding-left: 2rem;
+    margin: 0;
 }
 
 .custom-list li {
-  margin-bottom: 0.5rem;   
+    margin-bottom: 0.5rem;
 }
 
 .brk__table th {
@@ -3818,6 +3946,10 @@ a.ui-button:active,
 
 .chc__item.chc_active .chc__link figure {
     border: 1px solid #0C54B8;
+}
+
+.chc__item.chc_active {
+    border-color: #0C54B8;
 }
 
 .chc__item.chc_active .chc__link span {
