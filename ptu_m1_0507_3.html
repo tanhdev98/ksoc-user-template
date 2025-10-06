@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신청서작성</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header class="ply-hdr">
+        <div class="inner">
+            <div class="ply-hdr__lf">
+                <h1 class="ply-hdr__logo">
+                    <img src="images/ptu_m1_0501/image01.png" alt="">
+                    <span>(사)대한골프협회</span>
+                </h1>
+                <div class="ply-hdr__pop">
+                    <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
+                    <div class="game__pop">
+                        <div class="game__tit">
+                            <span><b>대한골프협회</b> 경기인 선택</span>
+                        </div>
+                        <ul class="game__list">
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/player-icon.png" alt="">
+                                    <span>선수</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/director-icon.png" alt="">
+                                    <span>지도자</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/judgment-icon.png" alt="">
+                                    <span>지도자</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/manager-icon.png" alt="">
+                                    <span>선수관리<br>담당자</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="game__desc">신청 유형을 선택하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ply-hdr__rt">
+                <ul class="ply-hdr__list">
+                    <li>
+                        <a href="#">종목변경</a>
+                    </li>
+                    <li>
+                        <a href="#">스포츠지원포털</a>
+                    </li>
+                    <li>
+                        <a href="#">화면번호</a>
+                    </li>
+                </ul>
+                <div class="ply-hdr__help">
+                    <a href="#"><b>430</b></a>
+                    <a href="#">화면도움말</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- // header -->
+        <!-- gnb -->
+        <nav class="ply-nav">
+            <div class="inner">
+                <ul class="ply-nav__list">
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">선수등록개요</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link active">신청서작성</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">신청서출력</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">소속변경신청</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전문체육팀</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전화번호안내</a>
+                    </li>
+                </ul>
+                <div class="ply-nav__rt">
+                    <ul class="ply-nav__quik">
+                        <li>
+                            <a href="#">사용자메뉴얼</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="ply-nav__logout">로그아웃</button>
+                </div>
+            </div>
+        </nav>
+        <!-- // gnb -->
+
+        <!-- contents -->
+        <section class="ply">
+            <div class="inner">
+                <h3 class="ply__tit">신청서작성</h3>
+                <div class="ply-bsc">
+                    <div class="ply-bsc__lf">
+                        <div class="step">
+                            <ul class="step__list">
+                                <li class="step__item">
+                                    <div>
+                                        <em>Step 01</em>
+                                        <span>기본정보 확인</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M0 10C0 11.9778 0.58649 13.9112 1.6853 15.5557C2.78412 17.2002 4.3459 18.4819 6.17317 19.2388C8.00043 19.9957 10.0111 20.1937 11.9509 19.8079C13.8907 19.422 15.6725 18.4696 17.0711 17.0711C18.4696 15.6725 19.422 13.8907 19.8079 11.9509C20.1937 10.0111 19.9957 8.00043 19.2388 6.17317C18.4819 4.3459 17.2002 2.78412 15.5557 1.6853C13.9112 0.58649 11.9778 0 10 0C7.34872 0.00286757 4.80684 1.05736 2.9321 2.9321C1.05736 4.80684 0.00286757 7.34872 0 10ZM18.3333 10C18.3333 11.6482 17.8446 13.2593 16.9289 14.6298C16.0132 16.0002 14.7117 17.0683 13.189 17.699C11.6663 18.3297 9.99076 18.4948 8.37425 18.1732C6.75774 17.8517 5.27288 17.058 4.10744 15.8926C2.94201 14.7271 2.14833 13.2423 1.82679 11.6258C1.50525 10.0092 1.67027 8.33369 2.301 6.81097C2.93173 5.28825 3.99984 3.98677 5.37025 3.07109C6.74066 2.15541 8.35182 1.66667 10 1.66667C12.2094 1.66909 14.3276 2.54785 15.8899 4.11012C17.4522 5.6724 18.3309 7.79061 18.3333 10ZM9.7975 6.46417L10.9758 5.28583L14.5117 8.82167C14.8241 9.13421 14.9996 9.55806 14.9996 10C14.9996 10.4419 14.8241 10.8658 14.5117 11.1783L10.9758 14.7142L9.7975 13.5358L12.5 10.8333H5V9.16667H12.5L9.7975 6.46417Z" fill="#999999"/>
+                                    </svg>
+                                </li>
+                                <li class="step__item">
+                                    <div>
+                                        <em>Step 02</em>
+                                        <span>신상정보 입력</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M0 10C0 11.9778 0.58649 13.9112 1.6853 15.5557C2.78412 17.2002 4.3459 18.4819 6.17317 19.2388C8.00043 19.9957 10.0111 20.1937 11.9509 19.8079C13.8907 19.422 15.6725 18.4696 17.0711 17.0711C18.4696 15.6725 19.422 13.8907 19.8079 11.9509C20.1937 10.0111 19.9957 8.00043 19.2388 6.17317C18.4819 4.3459 17.2002 2.78412 15.5557 1.6853C13.9112 0.58649 11.9778 0 10 0C7.34872 0.00286757 4.80684 1.05736 2.9321 2.9321C1.05736 4.80684 0.00286757 7.34872 0 10ZM18.3333 10C18.3333 11.6482 17.8446 13.2593 16.9289 14.6298C16.0132 16.0002 14.7117 17.0683 13.189 17.699C11.6663 18.3297 9.99076 18.4948 8.37425 18.1732C6.75774 17.8517 5.27288 17.058 4.10744 15.8926C2.94201 14.7271 2.14833 13.2423 1.82679 11.6258C1.50525 10.0092 1.67027 8.33369 2.301 6.81097C2.93173 5.28825 3.99984 3.98677 5.37025 3.07109C6.74066 2.15541 8.35182 1.66667 10 1.66667C12.2094 1.66909 14.3276 2.54785 15.8899 4.11012C17.4522 5.6724 18.3309 7.79061 18.3333 10ZM9.7975 6.46417L10.9758 5.28583L14.5117 8.82167C14.8241 9.13421 14.9996 9.55806 14.9996 10C14.9996 10.4419 14.8241 10.8658 14.5117 11.1783L10.9758 14.7142L9.7975 13.5358L12.5 10.8333H5V9.16667H12.5L9.7975 6.46417Z" fill="#999999"/>
+                                    </svg>
+                                </li>
+                                <li class="step__item active">
+                                    <div>
+                                        <em>Step 03</em>
+                                        <span>소속팀 선택</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M0 10C0 11.9778 0.58649 13.9112 1.6853 15.5557C2.78412 17.2002 4.3459 18.4819 6.17317 19.2388C8.00043 19.9957 10.0111 20.1937 11.9509 19.8079C13.8907 19.422 15.6725 18.4696 17.0711 17.0711C18.4696 15.6725 19.422 13.8907 19.8079 11.9509C20.1937 10.0111 19.9957 8.00043 19.2388 6.17317C18.4819 4.3459 17.2002 2.78412 15.5557 1.6853C13.9112 0.58649 11.9778 0 10 0C7.34872 0.00286757 4.80684 1.05736 2.9321 2.9321C1.05736 4.80684 0.00286757 7.34872 0 10ZM18.3333 10C18.3333 11.6482 17.8446 13.2593 16.9289 14.6298C16.0132 16.0002 14.7117 17.0683 13.189 17.699C11.6663 18.3297 9.99076 18.4948 8.37425 18.1732C6.75774 17.8517 5.27288 17.058 4.10744 15.8926C2.94201 14.7271 2.14833 13.2423 1.82679 11.6258C1.50525 10.0092 1.67027 8.33369 2.301 6.81097C2.93173 5.28825 3.99984 3.98677 5.37025 3.07109C6.74066 2.15541 8.35182 1.66667 10 1.66667C12.2094 1.66909 14.3276 2.54785 15.8899 4.11012C17.4522 5.6724 18.3309 7.79061 18.3333 10ZM9.7975 6.46417L10.9758 5.28583L14.5117 8.82167C14.8241 9.13421 14.9996 9.55806 14.9996 10C14.9996 10.4419 14.8241 10.8658 14.5117 11.1783L10.9758 14.7142L9.7975 13.5358L12.5 10.8333H5V9.16667H12.5L9.7975 6.46417Z" fill="#999999"/>
+                                    </svg>
+                                </li>
+                                <li class="step__item">
+                                    <div>
+                                        <em>Step 04</em>
+                                        <span>학력정보 입력</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ply-bsc__block">
+                            <ul class="ply-reg__list">
+                                <li class="ply-reg__item3">
+                                    <div class="ply-reg__card">
+                                        <label for="" class="ply-reg__label">소속팀*</label>
+                                        <div class="ply-reg__flex ply-reg__flex--gap3">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max150">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max250">
+                                            <button type="button" class="ply-reg__btn ply-reg__btn--min130">소속팀 검색</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ply-reg__item4">
+                                    <div class="ply-reg__card">
+                                        <label for="" class="ply-reg__label">팀 입단일*</label>
+                                        <div class="date-inputbox">
+                                            <input type="text" class="date-input datepicker">
+                                        </div>
+                                    </div>
+                                    <div class="ply-reg__card ply-reg__card--max210">
+                                        <label for="" class="ply-reg__label">세부종목</label>
+                                        <select name="" id="" class="selectbox">
+                                            <option value="">개인전</option>
+                                            <option value="">단체전</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="ply-reg__item4">
+                                    <div class="ply-reg__card">
+                                        <div class="ply-reg__btwn">
+                                            <label for="" class="ply-reg__label">이적사유*</label>
+                                            <div class="ply-reg__agree">
+                                                <input type="checkbox" class="ply-reg__radio" name="agreeYn" title="동의">
+                                                <input type="checkbox" class="ply-reg__radio" name="agreeYn" title="비동의">
+                                                <span>이적동의서 있음</span>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="ply-reg__input">
+                                    </div>
+                                    <div class="ply-reg__card">
+                                        <label for="" class="ply-reg__label">이적동의서</label>
+                                        <div class="ply-reg__flex ply-reg__flex--gap3">
+                                            <button type="button" class="ply-reg__btn">이적동의서 업로드</button>
+                                            <button type="button" class="ply-reg__btn">이적동의서 양식 다운로드</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ply-reg__item4">
+                                    <div class="ply-reg__card">
+                                        <label for="" class="ply-reg__label">학제에 따른 활동사유*</label>
+                                        <input type="text" class="ply-reg__input">
+                                    </div>
+                                </li>
+                                <li class="ply-reg__item2">
+                                    <div class="ply-reg__card">
+                                        <label for="" class="ply-reg__label">소속팀과 금전계약(근로/연봉계약 등) 체결 여부*</label>
+                                        <div class="ply-reg__flex">
+                                            <input type="radio" name="signYn" id="signY" class="radiobox">
+                                            <label for="signY" class="ply-reg__radio-label mr25">체결</label>
+                                            <input type="radio" name="signYn" id="signN" class="radiobox">
+                                            <label for="signN" class="ply-reg__radio-label">미체결</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ply-bsc__bm">
+                            <button type="button" class="ply__btn ply__btn--prev">이전단계</button>
+                            <button type="button" class="ply__btn">다음단계</button>
+                        </div>
+                    </div>
+                    <div class="ply-bsc__rt">
+                        <div class="pstn">
+                            <div class="pstn__block">
+                                <h4 class="pstn__tit">현재위치</h4>
+                                <ul class="pstn__list">
+                                    <li>기본정보 확인</li>
+                                    <li>신상정보 입력</li>
+                                    <li class="active">소속팀 선택</li>
+                                    <li>학력정보 입력</li>
+                                </ul>
+                                <div class="pstn__btbx">
+                                    <button type="button" class="pstn__btn">신청취소</button>
+                                    <button type="button" class="pstn__btn pstn__btn--blue">임시저장</button>
+                                </div>
+                                <div class="pstn__col">
+                                    <div class="pstn__tell">
+                                        <figure>
+                                            <img src="images/ptu_m1_0501/image06.png" alt="">
+                                        </figure>
+                                        <dl>
+                                            <dt>(사)대한골프협회</dt>
+                                            <dd>031-540-5700</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="pstn__tell">
+                                        <figure>
+                                            <img src="images/ptu_m1_0501/image07.png" alt="">
+                                        </figure>
+                                        <dl>
+                                            <dt>시스템장애처리</dt>
+                                            <dd>02-2144-8141</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pstn__bm">
+                                <button type="button" class="pstn__top-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z" fill="#666666"/>
+                                    </svg>
+                                    <span>TOP</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+
+        <!-- footer -->
+        <footer class="ply-ftr">
+            <div class="inner">
+                <h2 class="ply-ftr__tit">(사)대한골프협회</h2>
+                <div class="ply-ftr__adr">
+                    <dl>
+                        <dt>연락처</dt>
+                        <dd>031-540-5700 (안내2번)</dd>
+                        <dd>031-540-5731</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(10881) 경기도 파주시 회동길 174(문발동)</dd>
+                    </dl>
+                    <dl>
+                        <dt>사업자등록번호</dt>
+                        <dd>141-82-01607</dd>
+                    </dl>
+                </div>
+                <a href="#" class="ply-ftr__link">개인정보처리방침</a>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+</body>
+</html>

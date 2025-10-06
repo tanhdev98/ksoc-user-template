@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<title> :: LIST</title>
+	<style>
+		/* layout */
+		#wrap{position:relative;height:100%;box-sizing:border-box}
+		#header{position:fixed;top:0;left:0;right:0;height:70px;background:#3789db;z-index:30}
+		#header h1{padding-left:20px;font-size:20px;color:#fff;line-height:70px}
+		
+		/* lnb */
+		#lnb{position:fixed;top:70px;bottom:0;left:0;width:200px;border-right:1px solid #ccc}
+		#lnb li.on a{background:#f0f7fe;color:#3789db}
+		#lnb a{display:block;padding:0 20px;border-bottom:1px solid #ccc;color:#333;font-size:14px;font-weight:bold;line-height:40px}
+		#lnb a:hover{background:#eee}
+
+		/* Container */
+		#container{width:100%;height:100%;padding:70px 0 0 0;box-sizing:border-box}
+		.section{display:none}
+		.section.on{display:block}
+
+		/* Table */
+		.table-box table{width:100%;table-layout:fixed}
+		.table-box table th{border:1px solid #ddd;color:#333;font-size:14px;line-height:40px;}
+		.table-box table td{padding:0 10px;line-height:40px;border:1px solid #ddd; font-size: 13px;font-weight: 400;}
+        .table-box table td.center {text-align: center; vertical-align: middle;}
+		.table-box table td a{color:#3789db}
+		.table-box table td strong {font-weight: 600;}
+
+		/* State */
+		.progress{color:#eb0164}
+		.complate{color:#3789db}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>체육정보 종합포털 퍼블리싱 진행사항</h1>
+		</div>
+		<div id="container">
+			<div id="contents">
+				<div class="section on">
+					<div class="table-box">
+						<table>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:40%">
+								<col>
+                                <col style="width:10%">
+							</colgroup>
+							<thead>
+								<th>ID</th>
+								<th>화면경로</th>
+								<th>URL</th>
+								<th>비고</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="center">ptu_m0_0001</td>
+									<td><strong>메인</strong></td>
+									<td><a href="ptu_m0_0001.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0001.html</a></td>
+									<td class="complate">완료</td>
+								</tr>
+								<tr>
+                                    <td rowspan="4" class="center">ptu_m0_0101</td>
+                                    <td>메인 &gt; <strong>로그인</strong></td>
+                                    <td><a href="ptu_m0_0101.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0101.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>메인 &gt; <strong>로그인(에러)</strong></td>
+                                    <td><a href="ptu_m0_0101_error.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0101_error.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>메인 &gt; <strong>로그인(비활성화)</strong></td>
+                                    <td><a href="ptu_m0_0101_disabled.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0101_disabled.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>메인 &gt; <strong>로그인(팝업)</strong></td>
+                                    <td><a href="ptu_m0_0101_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0101_pop.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m0_0102</td>
+                                    <td>메인 &gt; 로그인 &gt; <strong>아이디 찾기</strong></td>
+                                    <td><a href="ptu_m0_0102.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0102.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m0_0103</td>
+                                    <td>메인 &gt; 로그인 &gt; <strong>비밀번호 찾기</strong></td>
+                                    <td><a href="ptu_m0_0103.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0103.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td rowspan="3" class="center">ptu_m0_0104</td>
+                                    <td>메인 &gt; 로그인 &gt; <strong>비밀번호 변경</strong></td>
+                                    <td><a href="ptu_m0_0104.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0104.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>메인 &gt; 로그인 &gt; <strong>비밀번호 변경(에러)</strong></td>
+                                    <td><a href="ptu_m0_0104_error.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0104_error.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>메인 &gt; 로그인 &gt; <strong>비밀번호 변경(팝업)</strong></td>
+                                    <td><a href="ptu_m0_0104_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m0_0104_pop.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0101</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서 발급안내</strong></td>
+                                    <td><a href="ptu_m1_0101.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0101.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center" rowspan="3">ptu_m1_0102</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서 발급</strong></td>
+                                    <td><a href="ptu_m1_0102.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서 발급(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0102_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_pop.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서 발급(<em style="color: red">추가페이지</em>)</strong></td>
+                                    <td><a href="ptu_m1_0102_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_2.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0103</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>발급신청</strong></td>
+                                    <td><a href="ptu_m1_0103.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0103.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center" rowspan="3">ptu_m1_0104</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>정정요청</strong></td>
+                                    <td><a href="ptu_m1_0104.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0104.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>정정요청(<em style="color: red">추가페이지</em>)</strong></td>
+                                    <td><a href="ptu_m1_0104_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0104_2.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>정정요청(<em style="color: red">추가페이지</em>)</strong></td>
+                                    <td><a href="ptu_m1_0104_3.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0104_3.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0105</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>원본 검증요청</strong></td>
+                                    <td><a href="ptu_m1_0105.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0105.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0106</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 증명서 발급 &gt; <strong>등록 이력조회</strong></td>
+                                    <td><a href="ptu_m1_0106.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0106.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0107</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 교육수료증 발급 &gt; <strong>교육수료증 발급내역</strong></td>
+                                    <td><a href="ptu_m1_0107.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0107.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center" rowspan="2">ptu_m1_0108</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 교육수료증 발급 &gt; <strong>교육수료증 신청</strong></td>
+                                    <td><a href="ptu_m1_0108.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0108.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 교육수료증 발급 &gt; <strong>교육수료증 신청 결과</strong></td>
+                                    <td><a href="ptu_m1_0108_result.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0108_result.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0109</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 교육수료증 발급 &gt; <strong>원본검증</strong></td>
+                                    <td><a href="ptu_m1_0109.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0109.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0110</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; 교육수료증 발급 &gt; <strong>원본검증 목록</strong></td>
+                                    <td><a href="ptu_m1_0110.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0110.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0501</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>종목선택</strong></td>
+                                    <td><a href="ptu_m1_0501.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0501.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0502</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>개인정보 수집 및 이용 동의</strong></td>
+                                    <td><a href="ptu_m1_0502.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0502.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0503</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>법정대리인 인증</strong></td>
+                                    <td><a href="ptu_m1_0503.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0503.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center">ptu_m1_0504</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>개인정보처리방침</strong></td>
+                                    <td><a href="ptu_m1_0504.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0504.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td class="center" rowspan="2">ptu_m1_0505</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>협회홈페이지_지도자</strong></td>
+                                    <td><a href="ptu_m1_0505.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0505.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+								<tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>협회홈페이지_선수</strong></td>
+                                    <td><a href="ptu_m1_0505_player.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0505_player.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="4">ptu_m1_0506</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>선수등록개요</strong></td>
+                                    <td><a href="ptu_m1_0506.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0506.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>선수등록개요(선수용 팝업)</strong></td>
+                                    <td><a href="ptu_m1_0506_pop_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0506_pop_1.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>선수등록개요(신청서작성 팝업)</strong></td>
+                                    <td><a href="ptu_m1_0506_pop_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0506_pop_2.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>선수등록개요(신청기간 외 팝업)</strong></td>
+                                    <td><a href="ptu_m1_0506_pop_3.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0506_pop_3.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="13">ptu_m1_0507</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step1 (<em style="color: red;">탭버튼 적용</em>)</strong></td>
+                                    <td><a href="ptu_m1_0507.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성(경기인의 교육 의무 팝업)</strong></td>
+                                    <td><a href="ptu_m1_0507_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_pop.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step2</strong></td>
+                                    <td><a href="ptu_m1_0507_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_2.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step3</strong></td>
+                                    <td><a href="ptu_m1_0507_3.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_3.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step3(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0507_3_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_3_pop.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step4</strong></td>
+                                    <td><a href="ptu_m1_0507_4.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_4.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서작성 step4(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0507_4_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_4_pop.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 step1 (<em style="color: red;">탭버튼 적용</em>)</strong></td>
+                                    <td><a href="ptu_m1_0507_5.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_5.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 step2</strong></td>
+                                    <td><a href="ptu_m1_0507_6.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_6.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 step3</strong></td>
+                                    <td><a href="ptu_m1_0507_7.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_7.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 step4</strong></td>
+                                    <td><a href="ptu_m1_0507_8.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_8.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 결제안내</strong></td>
+                                    <td><a href="ptu_m1_0507_9.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_9.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>신청서출력 페이지</strong></td>
+                                    <td><a href="ptu_m1_0507_10.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0507_10.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="3">ptu_m1_0508</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>소속변경신청 목록</strong></td>
+                                    <td><a href="ptu_m1_0508.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0508.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>소속변경신청 작성</strong></td>
+                                    <td><a href="ptu_m1_0508_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0508_1.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>소속변경신청 작성(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0508_1_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0508_1_pop.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0509</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>활동재개신청 목록</strong></td>
+                                    <td><a href="ptu_m1_0509.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0509.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>활동재개신청 작성</strong></td>
+                                    <td><a href="ptu_m1_0509_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0509_1.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="3">ptu_m1_0510</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>전문체육팀 목록</strong></td>
+                                    <td><a href="ptu_m1_0510.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0510.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>전문체육팀 입력</strong></td>
+                                    <td><a href="ptu_m1_0510_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0510_1.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>전문체육팀 입력(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0510_1_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0510_1_pop.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0511</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>전화번호 안내</strong></td>
+                                    <td><a href="ptu_m1_0511.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0511.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0514</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>공지사항</strong></td>
+                                    <td><a href="ptu_m1_0514.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0514.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>공지사항 상세세</strong></td>
+                                    <td><a href="ptu_m1_0514_detail.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0514_detail.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0516</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록 &gt; <strong>자주묻는질문</strong></td>
+                                    <td><a href="ptu_m1_0516.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0516.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0730</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학안내</strong></td>
+                                    <td><a href="ptu_m1_0730.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0730.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학신청 예약조회</strong></td>
+                                    <td><a href="ptu_m1_0730_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0730_2.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="3">ptu_m1_0731</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌견학신청 신청자 유형 선택</strong></td>
+                                    <td><a href="ptu_m1_0731.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0731.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌견학신청 날짜, 시간 선택 (<em style="color:red;">수정</em>)</strong></td>
+                                    <td><a href="ptu_m1_0731_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0731_2.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌견학신청 신청서작성</strong></td>
+                                    <td><a href="ptu_m1_0731_3.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0731_3.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0733</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학후기</strong></td>
+                                    <td><a href="ptu_m1_0733.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0733.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학후기 상세</strong></td>
+                                    <td><a href="ptu_m1_0733_detail.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0733_detail.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0734</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학후기 사진갤러리</strong></td>
+                                    <td><a href="ptu_m1_0734.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0734.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 선수촌견학 &gt; <strong>선수촌 견학후기 사진갤러리 상세</strong></td>
+                                    <td><a href="ptu_m1_0734_detail.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0734_detail.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0704</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>프로그램소개</strong></td>
+                                    <td><a href="ptu_m1_0704.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0704.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0705</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 목록</strong></td>
+                                    <td><a href="ptu_m1_0705.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0705.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0706</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 상세</strong></td>
+                                    <td><a href="ptu_m1_0706.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0706.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0707</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 입력 (<em style="color:red;">수정</em>)</strong></td>
+                                    <td><a href="ptu_m1_0707.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0707.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0708</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 수정</strong></td>
+                                    <td><a href="ptu_m1_0708.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0708.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0709</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 명단작성</strong></td>
+                                    <td><a href="ptu_m1_0709.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0709.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0710</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 명단추가</strong></td>
+                                    <td><a href="ptu_m1_0710.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0710.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0711</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습회신청 명단수정</strong></td>
+                                    <td><a href="ptu_m1_0711.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0711.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0712</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 목록</strong></td>
+                                    <td><a href="ptu_m1_0712.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0712.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0713</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 상세</strong></td>
+                                    <td><a href="ptu_m1_0713.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0713.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0714</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 수정</strong></td>
+                                    <td><a href="ptu_m1_0714.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0714.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0715</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 명단</strong></td>
+                                    <td><a href="ptu_m1_0715.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0715.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0716</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 명단추가</strong></td>
+                                    <td><a href="ptu_m1_0716.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0716.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0717</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>내가 신청한 강습회 명단수정</strong></td>
+                                    <td><a href="ptu_m1_0717.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0717.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0718</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습일지 목록</strong></td>
+                                    <td><a href="ptu_m1_0718.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0718.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0719</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습일지 조회</strong></td>
+                                    <td><a href="ptu_m1_0719.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0719.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0720</td>
+                                    <td>스포츠원클릭 &gt; 신청·참여 서비스 &gt; 행복나눔교실 &gt; <strong>강습일지 작성</strong></td>
+                                    <td><a href="ptu_m1_0720.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0720.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">header_isn</td>
+                                    <td><strong>증명서발급 헤더</strong></td>
+                                    <td><a href="header_isn.html" title="새창열림" target="_blank">http://designware.co.kr/sports/header_isn.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center">footer_isn</td>
+                                    <td><strong>증명서발급 푸터</strong></td>
+                                    <td><a href="footer_isn.html" title="새창열림" target="_blank">http://designware.co.kr/sports/footer_isn.html</a></td>
+                                    <td class="complate">완료</td> 
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="3">ptu_m1_0102</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서발급 내역 조회</strong></td>
+                                    <td><a href="ptu_m1_0102_result_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_result_1.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서발급 내역 조회</strong></td>
+                                    <td><a href="ptu_m1_0102_result_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_result_2.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서발급 내역 조회</strong></td>
+                                    <td><a href="ptu_m1_0102_result_3.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_result_3.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">ptu_m1_0102</td>
+                                    <td>스포츠원클릭 &gt; 증명서 발급 &gt; <strong>증명서발급 다운로드 센터</strong></td>
+                                    <td><a href="ptu_m1_0102_down.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0102_down.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="3">ptu_m1_0517</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록(지도자) &gt; <strong>신청서작성 소속팀</strong></td>
+                                    <td><a href="ptu_m1_0517.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0517.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록(지도자) &gt; <strong>신청서작성 소속팀(기존 소속팀 팝업)</strong></td>
+                                    <td><a href="ptu_m1_0517_pop_1.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0517_pop_1.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록(지도자) &gt; <strong>신청서작성 소속팀(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0517_pop_2.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0517_pop_2.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="center" rowspan="2">ptu_m1_0518</td>
+                                    <td>스포츠원클릭 &gt; 경기인 등록(지도자) &gt; <strong>신청서작성 자격사항입력</strong></td>
+                                    <td><a href="ptu_m1_0518.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0518.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>스포츠원클릭 &gt; 경기인 등록(지도자) &gt; <strong>신청서작성 자격사항입력(팝업)</strong></td>
+                                    <td><a href="ptu_m1_0518_pop.html" title="새창열림" target="_blank">http://designware.co.kr/sports/ptu_m1_0518_pop.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

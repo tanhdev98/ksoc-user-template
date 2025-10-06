@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소속변경신청</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header class="ply-hdr">
+        <div class="inner">
+            <div class="ply-hdr__lf">
+                <h1 class="ply-hdr__logo">
+                    <img src="images/ptu_m1_0501/image01.png" alt="">
+                    <span>(사)대한골프협회</span>
+                </h1>
+                <div class="ply-hdr__pop">
+                    <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
+                    <div class="game__pop">
+                        <div class="game__tit">
+                            <span><b>대한골프협회</b> 경기인 선택</span>
+                        </div>
+                        <ul class="game__list">
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/player-icon.png" alt="">
+                                    <span>선수</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/director-icon.png" alt="">
+                                    <span>지도자</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/judgment-icon.png" alt="">
+                                    <span>지도자</span>
+                                </a>
+                            </li>
+                            <li class="game__item">
+                                <a href="#" class="game__link">
+                                    <img src="images/icons/manager-icon.png" alt="">
+                                    <span>선수관리<br>담당자</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="game__desc">신청 유형을 선택하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ply-hdr__rt">
+                <ul class="ply-hdr__list">
+                    <li>
+                        <a href="#">종목변경</a>
+                    </li>
+                    <li>
+                        <a href="#">스포츠지원포털</a>
+                    </li>
+                    <li>
+                        <a href="#">화면번호</a>
+                    </li>
+                </ul>
+                <div class="ply-hdr__help">
+                    <a href="#"><b>430</b></a>
+                    <a href="#">화면도움말</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- // header -->
+        <!-- gnb -->
+        <nav class="ply-nav">
+            <div class="inner">
+                <ul class="ply-nav__list">
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">선수등록개요</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">신청서작성</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">신청서출력</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link active">소속변경신청</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전문체육팀</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전화번호안내</a>
+                    </li>
+                </ul>
+                <div class="ply-nav__rt">
+                    <ul class="ply-nav__quik">
+                        <li>
+                            <a href="#">사용자메뉴얼</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="ply-nav__logout">로그아웃</button>
+                </div>
+            </div>
+        </nav>
+        <!-- // gnb -->
+
+        <!-- contents -->
+        <section class="ply">
+            <div class="inner">
+                <h3 class="ply__tit ply__tit--pd0 ply__tit--mb30">소속변경신청</h3>
+                <div class="ply-bsc">
+                    <div class="ply-bsc__lf">
+                        <div class="mmb">
+                            <h3 class="mmb__tit">활동재개신청</h3>
+                            <div class="mmb__lsit">
+                                <div class="mmb__item">
+                                    <dl>
+                                        <dt>등록연도</dt>
+                                        <dd>2022</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>이름</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>개인번호</dt>
+                                        <dd>013456789</dd>
+                                    </dl>
+                                </div>
+                                <div class="mmb__item">
+                                    <dl>
+                                        <dt>승인상태</dt>
+                                        <dd>회원종목단체 승인대기</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>신청일</dt>
+                                        <dd>2022.02.17 16:55:16</dd>
+                                    </dl>
+                                </div>
+                                <div class="mmb__item">
+                                    <dl>
+                                        <dt>소속팀</dt>
+                                        <dd>성남 분당정(종별 : 실업(일반) / 시도 : 서울</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ply-bsc__bm ply-bsc__bm--pr20">
+                            <button type="button" class="ply__btn ply__btn--blk min100">수정</button>
+                            <button type="button" class="ply__btn ply__btn--blk min100">삭제</button>
+                            <button type="button" class="ply__btn ply__btn--blk min100">출력</button>
+                        </div>
+                    </div>
+                    <div class="ply-bsc__rt">
+                        <div class="pstn">
+                            <div class="pstn__block">
+                                <div class="pstn__print pstn__print--pd24">
+                                    활동재개 신청은 활동 종료 상태에서만 가능하며, 이미 신청한 건이 처리중일 경우 활동재개 신청을 할 수 없습니다.<br><br>
+                                    징계로 인해 활동종료 처리된 경우 징계기간 만료 후 신청 할 수 있습니다.
+                                </div>
+                                <div class="pstn__btbx">
+                                    <button type="button" class="pstn__btn pstn__btn--blue">활동재개 신청</button>
+                                </div>
+                                <div class="pstn__col">
+                                    <div class="pstn__tell">
+                                        <figure>
+                                            <img src="images/ptu_m1_0501/image06.png" alt="">
+                                        </figure>
+                                        <dl>
+                                            <dt>(사)대한골프협회</dt>
+                                            <dd>031-540-5700</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="pstn__tell">
+                                        <figure>
+                                            <img src="images/ptu_m1_0501/image07.png" alt="">
+                                        </figure>
+                                        <dl>
+                                            <dt>시스템장애처리</dt>
+                                            <dd>02-2144-8141</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pstn__bm">
+                                <button type="button" class="pstn__top-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z" fill="#666666"></path>
+                                    </svg>
+                                    <span>TOP</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+
+        <!-- footer -->
+        <footer class="ply-ftr">
+            <div class="inner">
+                <h2 class="ply-ftr__tit">(사)대한골프협회</h2>
+                <div class="ply-ftr__adr">
+                    <dl>
+                        <dt>연락처</dt>
+                        <dd>031-540-5700 (안내2번)</dd>
+                        <dd>031-540-5731</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(10881) 경기도 파주시 회동길 174(문발동)</dd>
+                    </dl>
+                    <dl>
+                        <dt>사업자등록번호</dt>
+                        <dd>141-82-01607</dd>
+                    </dl>
+                </div>
+                <a href="#" class="ply-ftr__link">개인정보처리방침</a>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+</body>
+</html>

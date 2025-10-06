@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증명서발급 내역 조회</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header class="ply-hdr">
+            <div class="inner">
+                <div class="ply-hdr__lf">
+                    <h1 class="ply-hdr__logo">
+                        <img src="images/ptu_m1_0501/image01.png" alt="">
+                        <span>(사)대한골프협회 인터넷 증명서발급</span>
+                    </h1>
+                </div>
+                <div class="ply-hdr__rt">
+                    <ul class="ply-hdr__list">
+                        <li>
+                            <a href="#">종목변경</a>
+                        </li>
+                        <li>
+                            <a href="#">스포츠지원포털</a>
+                        </li>
+                        <li>
+                            <a href="#">화면번호</a>
+                        </li>
+                    </ul>
+                    <div class="ply-hdr__help">
+                        <a href="#"><b>430</b></a>
+                        <a href="#">화면도움말</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <!-- gnb -->
+        <nav class="ply-nav ply-nav--blue">
+            <div class="inner">
+                <ul class="ply-nav__list">
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">증명서 발급</a>
+                        <div class="ply-nav__sub">
+                            <div class="ply-nav__inner">
+                                <ul>
+                                    <li>
+                                        <a href="#">증명서발급 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">증명서발급 신청</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">증명서발급 내역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">정정요청</a>
+                        <div class="ply-nav__sub">
+                            <div class="ply-nav__inner">
+                                <ul>
+                                    <li>
+                                        <a href="#">정정요청</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">정정요청 내역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">원본 검증조회</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">등록이력 조회</a>
+                    </li>
+                </ul>
+                <div class="ply-nav__rt">
+                    <ul class="ply-nav__quik">
+                        <li>
+                            <a href="#">사용자메뉴얼</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                        <li>
+                            <a href="#">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- // gnb -->
+
+        <!-- contents -->
+        <section class="certificate certificate--pt110">
+            <div class="inner">
+                <div class="title">
+                    <h2>증명서 발급</h2>
+                    <ul class="title__list">
+                        <li class="title__item">
+                            <a href="#" class="title__link">증명서 발급안내</a>
+                        </li>
+                        <li class="title__item">
+                            <a href="#" class="title__link active">증명서 발급</a>
+                        </li>
+                        <li class="title__item">
+                            <a href="#" class="title__link">교육수료증 발급</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="certificate__top">
+                    <ul class="certificate__list">
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/mouse-icon.png" alt="">
+                                <img class="hidden" src="images/icons/mouse-blue-icon.png" alt="">
+                                <span>발급신청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/comment-icon.png" alt="">
+                                <img class="hidden" src="images/icons/comment-blue-icon.png" alt="">
+                                <span>정정요청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icons/document-icon.png" alt="">
+                                <img class="hidden" src="images/icons/document-blue-icon.png" alt="">
+                                <span>원본 검증요청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">
+                                <img src="images/icons/search-blk-icon.png" alt="">
+                                <img class="hidden" src="images/icons/search-blue-icon.png" alt="">
+                                <span>등록 이력조회</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="certificate__head">
+                        <h3>증명서 발급 다운로드 센터</h3>
+                    </div>
+                </div>
+                
+                <!-- 증명서 발급 다운로드 센터 -->
+                <article class="dwn">
+                    <h4 class="dwn__tit">다운로드센터 이용안내</h4>
+                    <div class="dwn__block">
+                        <img src="images/put_m1_0102/image01.png" alt="">
+                        <p>
+                            인터넷 증명서 발급에서 제공하는 각종 서비스를 원활하게 이용하기 위한 각종 프로그램을 다운로드 할 수 있습니다.<br>
+                            반드시 증명서 출력 프로그램을 윈도우에서 설치하고 진행해주시기 바랍니다.<br>
+                            설치가 완료된 PC의 경우 잠시 증명서 출력프로그램이 실행 후 종료되며 설치 후 새로고침(F5)를 하셔도 <b>미설치</b> 또는 <b>모듈로드실패</b> 창이 보일 경우<br>
+                            설치된 프로그램을 삭제 후 하단 <b>우측 필수 DDL 설치하기 버튼</b>을 클릭하여 해당 프로그램 설치 후 재설치 하시면 정상 출력됩니다.
+                        </p>
+                    </div>
+                    <h4 class="dwn__tit">다운로드센터 이용안내</h4>
+                    <ul class="dwn__list">
+                        <li class="dwn__item">
+                            <a href="#" class="dwn__link">
+                                <span>출력 프로그램(윈도우 전용)</span>
+                                <span>[설치완료]</span>
+                                <img src="images/put_m1_0102/image02.png" alt="">
+                            </a>
+                            <span class="dwn__span">*증명서출력프로그램을 다운로드하고 설치합니다.</span>
+                        </li>
+                    </ul>
+                    <div class="dwn__bm">
+                        <ul class="dwn__desc">
+                            <li>① 민원처리에 관한 법률 시행령 제 30조 1항 1호에 따라 출력 매수 제어를 위해 플러그인을 설치가 필요합니다.</li>
+                            <li>② 수동설치 후에는 반드시 새로고침(F5)을 하거나 다시 접속하시기 바랍니다.</li>
+                        </ul>
+                        <div class="dwn__nt">
+                            <span>모듈 로드 실패 창이 보일 경우</span>
+                            <button type="button" class="dwn__ddl">필수 DDL 설치하기</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- // 증명서 발급 다운로드 센터 -->
+            </div>
+        </section>
+        <!-- // contents -->
+
+        <!-- footer -->
+        <footer class="ply-ftr ply-ftr--gray">
+            <div class="inner">
+                <div>
+                    <h2 class="ply-ftr__tit">
+                        <img src="images/put_m1_0101/image07.png" alt="">
+                        대한민국농구협회
+                    </h2>
+                    <div class="ply-ftr__adr">
+                        <dl>
+                            <dt>상호명</dt>
+                            <dd>사단법인 대한민국농구협회</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>서울특별시 송파구 올림픽로424 올림픽회관 신관 214호</dd>
+                        </dl>
+                    </div>
+                    <div class="ply-ftr__adr">
+                        <dl>
+                            <dt>연락처</dt>
+                            <dd>02-420-4221~4</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>박서영</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자등록번호</dt>
+                            <dd>215-82-09195</dd>
+                        </dl>
+                    </div>
+                    <div class="ply-ftr__flex">
+                        <a href="#" class="ply-ftr__link" >개인정보처리방침</a>
+                        <a href="#" class="ply-ftr__rmt" >원격지원</a>
+                    </div>
+                </div>
+                <div class="ply-ftr__rt">
+                    <figure>
+                        <img src="images/ptu_m1_0501/image06.png" alt="">
+                    </figure>
+                    <dl>
+                        <dt>시스템장애처리</dt>
+                        <dd>02-2144-8141</dd>
+                    </dl>
+                </div>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+</body>
+</html>
