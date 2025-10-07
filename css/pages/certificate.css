@@ -3307,7 +3307,7 @@ a.ui-button:active,
     font-size: 1.5rem;
     color: #333;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .indv__radio {
@@ -3363,6 +3363,10 @@ a.ui-button:active,
     border-radius: 3.5rem;
 }
 
+.indv__btn--large--ipin {
+    margin-bottom: 2rem;
+}
+
 .indv__btn--large>img {
     width: 30px;
     height: 30px;
@@ -3404,6 +3408,7 @@ a.ui-button:active,
 .indv__item {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .indv__link {
@@ -3450,7 +3455,7 @@ a.ui-button:active,
     background: transparent;
     padding: 0;
     gap: 10px;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .indv__form .indv__form-group {
@@ -3512,6 +3517,8 @@ a.ui-button:active,
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.5rem;
+    padding: 0;
+    margin-bottom: 4rem;
 }
 
 .indv__type {
