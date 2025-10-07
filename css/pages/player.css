@@ -3362,10 +3362,6 @@
     color: #fff;
 }
 
-.ply-smr__list li:first-child a {
-    flex-direction: row-reverse;
-}
-
 .ply-smr__list li:first-child img {
     transform: rotate(180deg);
 }
