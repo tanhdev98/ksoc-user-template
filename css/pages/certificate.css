@@ -3467,6 +3467,10 @@ a.ui-button:active,
 }
 
 .indv__prv .mb20 {
+    margin-bottom: 2rem;
+}
+
+.indv__prv .mb30 {
     margin-bottom: 3rem;
 }
 
@@ -3827,3 +3831,39 @@ a.ui-button:active,
 .chc__item.chc_active span::before {
     background: #0C54B8;
 }
+
+.indv__prv__info .indv__table2 tbody td {
+    font-size: 13px;
+
+}
+
+.indv__prv__info {
+  counter-reset: circleNum;
+}
+
+.has-circle-number {
+  position: relative;
+  padding-left: 2.4rem;
+  counter-increment: circleNum;
+}
+
+.has-circle-number::before {
+  content: counter(circleNum);
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #111;
+  color: #111;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  transform: translateY(-50%);
+  line-height: 0;
+}
+
