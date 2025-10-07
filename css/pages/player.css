@@ -333,12 +333,15 @@
 }
 
 .ply__tit {
-    padding: 0 2rem;
     font-weight: 600;
     font-size: 2.4rem;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
     text-align: center;
+}
+
+.ply__tit.on {
+    margin-bottom: 4rem;
 }
 
 .ply__tit--pd0 {
@@ -350,17 +353,21 @@
 }
 
 .ply__desc {
-    padding: 0 2rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #666;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.ply__flex {
+    display: flex;
+    gap: 2rem;
 }
 
 .ply__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.2rem;
+    gap: 2rem;
 }
 
 .ply__grid--mt20 {
@@ -368,11 +375,9 @@
 }
 
 .ply__bg {
-    width: 100%;
+    width: 45%;
     height: 100%;
     object-fit: cover;
-    border-radius: 3rem;
-    border: 1px solid #ddd;
 }
 
 .ply__block {
@@ -434,7 +439,7 @@
     padding: 0.5rem 0;
     font-weight: 600;
     font-size: 2.4rem;
-    color: #fff;
+    margin-top: 2rem;
 }
 
 .ply__hst {
@@ -446,7 +451,136 @@
 
 .ply__info {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.ply__info .ply__content {
+    width: 100%;
+    border: 1px solid #0C54B8;
+    padding: 4rem 5rem;
+    border-radius: 0 3rem 3rem 0;
+    position: relative;
+}
+
+.ply__info .ply__content::after {
+    content: '';
+    width: 23rem;
+    height: 23rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ply__info .ply__content.leader::after {
+    background: url('../../images/ptu_m1_0505/leader.png') no-repeat center / contain;
+}
+
+.ply__info .ply__content.bike::after {
+    background: url('../../images/ptu_m1_0505/bike.png') no-repeat center / contain;
+}
+
+.ply__info .ply__content.flag::after {
+    background: url('../../images/ptu_m1_0505/flag.png') no-repeat center / contain;
+}
+
+.ply__info .ply__content.vector::after {
+    background: url('../../images/ptu_m1_0505/vector.png') no-repeat center / contain;
+}
+
+.ply__info .ply__content .ply__desc {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #000;
+    padding-bottom: 1.7rem;
+    text-align: start;
+    border-bottom: 1px dashed #111;
+    margin-bottom: 1.7rem;
+}
+
+.ply__info .ply__content .ply__status {
+    display: flex;
+    align-items: center;
+    background: #111;
+    border-radius: 1.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    height: 4.5rem;
+    padding: 2.4rem;
+    width: max-content;
+    line-height: 0;
+}
+
+.ply__info .ply__content .ply__task--element {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 5rem;
+    position: relative;
+}
+
+.ply__info .ply__content .ply__task--element::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    margin: auto;
+}
+
+.ply__info .ply__content .ply__task--element .ply__task--status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 7.5px;
+    border: 0.5px solid #ddd;
+    color: #ddd;
+    height: 1.5rem;
+    width: 4rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.ply__info .ply__content .ply__task--element .ply__task--text {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.ply__info .ply__content .ply__task--element.accept .ply__task--status {
+    color: #fff;
+    background: #0C54B8;
+    border: 0.5px solid #0C54B8;
+}
+
+.ply__info .ply__content .ply__task--element.accept .ply__task--text {
+    color: #0C54B8;
+}
+
+.ply__info .ply__content .ply__task--element.accept::before {
+    background: #0C54B8;
+}
+
+.ply__info .ply__content .ply__task--element.reject .ply__task--status {
+    color: #fff;
+    background: #666;
+    border: 0.5px solid #666;
+}
+
+.ply__info .ply__content .ply__task--element.reject .ply__task--text {
+    color: #666;
+}
+
+.ply__info .ply__content .ply__task--element.reject::before {
+    background: #666;
 }
 
 .ply__info-txt {
@@ -483,9 +617,10 @@
 }
 
 .ply__side {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    width: 37.6%;
 }
 
 .ply__print {
@@ -499,16 +634,16 @@
 
 .ply__print a {
     width: 100%;
-    height: 14rem;
+    height: 11.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    background: #003189;
-    border-radius: 3rem;
+    gap: .6rem;
+    background: #0C54B8;
+    border-radius: 2.5rem;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #fff;
     transition: all 0.3s;
 }
@@ -518,8 +653,8 @@
 }
 
 .ply__print a img {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
 }
 
@@ -531,19 +666,28 @@
     background: #133E92;
 }
 
+.ply__print a.black {
+    background: #111;
+}
+
+.ply__print a.gray {
+    background: #666;
+}
+
 .ply__tell {
-    height: 17.5rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
-    border-radius: 3rem;
+    border-radius: 2.5rem;
     background: #f5f5f5;
+    border: 1px solid #ddd;
 }
 
 .ply__tell figure {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,7 +704,6 @@
 .ply__tell dl {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     color: #333;
     font-weight: 600;
     font-size: 2rem;
@@ -568,20 +711,21 @@
 
 .ply__tell dl dt {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .ply__link {
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .4rem;
     border: 1px solid #ddd;
-    border-radius: 3rem;
+    border-radius: 2.5rem;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #333;
     transition: all 0.3s;
 }
@@ -591,8 +735,8 @@
 }
 
 .ply__link img {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     object-fit: contain;
 }
 
@@ -757,9 +901,11 @@
 }
 
 .ply-smr dl dt {
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+}
+
+.ply-smr dl+dl {
+    margin-top: 5.6rem;
 }
 
 .ply-smr dl+dl {
@@ -865,6 +1011,7 @@
 
 .ply-pop__scroll h4 {
     font-weight: 600;
+    color: #111111;
 }
 
 .ply-pop__scroll .mb20 {
@@ -891,6 +1038,9 @@
 .ply-pop__scroll p.num-sub-item {
     padding-left: 4rem !important;
     text-indent: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
 }
 
 .ply-pop__scroll {
@@ -977,6 +1127,7 @@
     font-weight: 400;
     font-size: 1.7rem;
     color: #000000;
+    text-align: center;
 }
 
 .ply-pop__top {
@@ -3112,8 +3263,8 @@
 }
 
 .ply-smr>dl dd {
-    margin: 0;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    color: #666666;
 }
 
 .ply-smr__list {
@@ -3132,8 +3283,10 @@
 }
 
 .ply-smr > dl dt {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2rem; 
+    color: #111111;
+    font-size: 1.8rem;
 }
 
 .ply-smr__list li {
