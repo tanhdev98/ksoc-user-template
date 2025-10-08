@@ -1298,18 +1298,18 @@
     -moz-appearance: none;
     appearance: none;
     width: auto;
-    min-width: 18rem;
+    min-width: 11rem;
     height: 4rem;
-    border-radius: 3rem;
-    border: 1px solid #ddd;
-    padding: 0.5rem 2.3rem;
-    padding-right: 4.5rem;
-    background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 22px) 50% / 20px auto;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    padding: 1.2rem 1.7rem;
+    padding-right: 7rem;
+    background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 22px) 50% / 15px auto;
     background-color: #fff;
     position: relative;
     font-weight: 400;
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.3rem;
+    color: #333333;
 }
 
 .selectbox option {
@@ -2847,6 +2847,7 @@ a.ui-button:active,
     background-position: center;
     background-size: contain;
     transition: all 0.3s;
+    color: #666666;
 }
 
 .paging-ui ul li.current a {
@@ -2863,28 +2864,28 @@ a.ui-button:active,
 }
 
 .paging-ui ul li a.first-move {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.4rem;
     background-image: url('../../images/icons/first-icon.png');
 }
 
 .paging-ui ul li a.prev-move {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.4rem;
     background-image: url('../../images/icons/prev-icon.png');
-    margin-right: 3rem;
+    margin-right: 2.4em;
 }
 
 .paging-ui ul li a.next-move {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.4rem;
     background-image: url('../../images/icons/next-icon.png');
-    margin-left: 3rem;
+    margin-left: 2.4rem;
 }
 
 .paging-ui ul li a.last-move {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.4rem;
     background-image: url('../../images/icons/last-icon.png');
 }
 

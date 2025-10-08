@@ -348,6 +348,7 @@
     margin-bottom: 2rem;
     margin-top: 3rem;
     text-align: center;
+    color: #111111;
 }
 
 .ply__tit.on {
@@ -3002,31 +3003,85 @@
     background: #fff;
 }
 
+.annc-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #666666;
+    margin-bottom: 2rem;
+}
+
+.annc-title a {
+    color: #0C54B8;
+    text-decoration: underline;
+}
+
+.inner-header_num {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.in-header_search {
+    display: flex;
+    justify-content: center;
+    width: 53rem;
+    border: 0;
+    padding: 4rem 6rem;
+    gap: 1rem;
+    border: 1px solid #DDDDDD;
+    background-color: #F5F5F5;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
 .annc__search {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.annc__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 2rem;
+    max-width: 480px;
+}
+
+.annc__btn,
+.annc__btn_num {
+    padding: 1rem 2.5rem;
+    border: 1px solid #ccc;
+    color: #666666;
+    border-radius: 2.5rem;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    white-space: nowrap;
+    flex: 0 0 auto;
+}
+
+
+.annc__btn.active {
+    background-color: #666666;
+    color: #fff;
+    border-color: #333;
 }
 
 .annc__total {
     font-weight: 400;
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: #111111;
+    margin-bottom: 2rem;
 }
 
 .annc__total b {
-    font-weight: 600;
+    font-weight: 500;
     color: #111;
-}
-
-.annc__rt {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 3px;
+    font-size: 1.8rem;
 }
 
 .annc__select .custom-select-trigger {
@@ -3043,13 +3098,13 @@
 
 .annc__input {
     width: 100%;
-    max-width: 23rem;
+    max-width: 30rem;
     height: 4rem;
-    border: 1px solid #999;
-    border-radius: 0.5rem;
-    padding: 0.9rem 2rem;
-    font-weight: 500;
-    font-size: 1.5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 2.5rem;
+    padding: 1.3rem 2rem;
+    font-weight: 300;
+    font-size: 1.1rem;
     color: #333;
 }
 
@@ -3060,30 +3115,38 @@
 
 .annc__search-btn {
     display: inline-block;
-    min-width: 8rem;
+    min-width: 10rem;
     height: 4rem;
-    border-radius: 0.5rem;
+    border-radius: 2.5rem;
     border: 0;
-    background: #666;
-    font-weight: 400;
-    font-size: 1.5rem;
+    background: #666666;
+    font-weight: 500;
+    font-size: 1.7rem;
     color: #fff;
 }
 
 .annc__table {
     width: 100%;
-    border-top: 1px solid #333;
+    border-collapse: separate;
+    border: 1px solid #DDDDDD;
+    border-radius: 5rem;
+    padding: 5rem;
+}
+
+.annc__table.up {
+    padding: 5rem 7rem 5rem;
 }
 
 .annc__table th {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 138%;
-    padding: 1.45rem;
+    padding: 1.5rem 3rem;
     text-align: center;
     vertical-align: middle;
     background: #F5F5F5;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
 .annc__table td {
@@ -3102,43 +3165,49 @@
 
 .annc__table td b {
     font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .annc__link {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 138%;
     transition: all 0.3s;
 }
 
-.annc__link:hover {
+.annc__table tbody tr:first-child td {
+    color: #0C54B8;
+}
+
+.annc__table tbody tr:first-child .annc__link:first-child {
     color: #0C54B8;
 }
 
 .annc__file-icon {
     display: inline-block;
     width: 2.4rem;
+    height: 2.4rem;
+    background-color: #1111;
 }
 
 .annc__tit {
-    padding: 2rem 1rem;
+    padding: 0 3rem 2rem 0;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: #111;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .annc__list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 1rem 2rem;
-    border-bottom: 1px solid #ddd;
+    gap: 2rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .annc__top {
-    display: flex;
+    display: inline-grid;
     align-items: center;
     gap: 2rem;
 }
@@ -3147,12 +3216,16 @@
     display: grid;
     grid-template-columns: 6rem 1fr;
     font-weight: 400;
-    font-size: 1.5rem;
-    color: #666;
+    font-size: 1.7rem;
+    gap: 2rem;
+    color: #666666;
+    margin-left: 2rem;
 }
 
 .annc__item dt {
     font-weight: 600;
+    font-size: 1.7rem;
+    color: #111111;
 }
 
 .annc__item dt.pd4 {
@@ -3164,13 +3237,13 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    font-size: 1.5rem;
-    color: #666;
+    font-size: 1.7rem;
+    color: #666666;
     padding: 0.45rem 0;
 }
 
 .annc__item dd a img {
-    width: 2rem;
+    width: 1.7rem;
 }
 
 .annc__cntn {
@@ -3178,7 +3251,7 @@
     border-bottom: 1px solid #ddd;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #333;
+    color: #666666;
 }
 
 .annc__bm {
@@ -3187,6 +3260,7 @@
     justify-content: flex-end;
     gap: 3px;
     margin-top: 3rem;
+    margin-right: 5rem;
 }
 
 .annc__btn {
@@ -3195,16 +3269,52 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4rem;
-    background: #333;
+    border-radius: 3.5rem;
+    background: #666666;
     border: 0;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #fff;
 }
 
 .qz__list {
-    border-top: 1px solid #333;
+    /* border-top: 1px solid #333; */
+}
+
+.qz {
+    width: 70rem;
+    margin: 0 auto;
+}
+
+.qz__list>li+li {
+    margin-top: 2rem;
+}
+
+.qz__num {
+    display: none;
+}
+
+.qz__dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 0 0 0 5rem  ;
+}
+
+.qz__item:first-child .qz__block {
+    border-top: 0;
+    display: block;
+}
+
+.qz__item_list {
+    padding: 2 2rem 2rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 2rem;
 }
 
 .qz__toggle {
@@ -3213,10 +3323,10 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
-    padding: 1rem 4rem 1rem 1rem;
-    border-bottom: 1px solid #ddd;
+    padding: 2rem 4rem 2rem 0;
+    border-radius: 2rem;
 }
 
 .qz__num {
@@ -3227,7 +3337,6 @@
 
 .qz__tag {
     padding: 0 1rem;
-    border: 1px solid #ddd;
     line-height: 3rem;
     white-space: nowrap;
     border-radius: 2rem;
@@ -3239,6 +3348,7 @@
 
 .qz__item img {
     width: 3rem;
+    transform: rotate(180deg);
 }
 
 .qz__item img.rotate-180 {
@@ -3248,16 +3358,18 @@
 
 .qz__block {
     display: none;
-    padding: 3rem 7rem 5rem;
-    background: #F9F9F9;
+    padding: 0 3rem;
 }
 
 .qz__cntn {
-    padding-bottom: 3rem;
+    border-top: 1px solid #DDDDDD;
+    display: block;
+    padding-left: 3rem;
     font-weight: 400;
-    font-size: 1.5rem;
-    color: #333;
+    color: #333333;
+    font-size: 1.4rem;
     white-space: pre-line;
+    width: 100%;
 }
 
 .qz__file {
