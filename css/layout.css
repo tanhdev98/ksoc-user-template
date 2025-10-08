@@ -567,6 +567,8 @@ legend {
     font-size: var(--font-size-normal);
     line-height: var(--line-height-normal);
     font-weight: 600;
+    font-size: 1.7rem;
+    color: #171719;
 }
 
 .nav__item:hover .nav__link {
