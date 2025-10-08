@@ -3218,10 +3218,15 @@
 
 .annc__search {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    padding: 5rem 5rem 2rem;
+}
+
+.annc__rt {
+    display: flex;
+    gap: .5rem;
 }
 
 .annc__buttons {
@@ -3255,14 +3260,11 @@
 .annc__total {
     font-weight: 400;
     font-size: 1.8rem;
-    color: #111111;
-    margin-bottom: 2rem;
+    color: #111;
 }
 
 .annc__total b {
     font-weight: 500;
-    color: #111;
-    font-size: 1.8rem;
 }
 
 .annc__select .custom-select-trigger {
@@ -3279,30 +3281,27 @@
 
 .annc__input {
     width: 100%;
-    max-width: 30rem;
     height: 4rem;
     border: 1px solid #DDDDDD;
-    border-radius: 2.5rem;
-    padding: 1.3rem 2rem;
-    font-weight: 300;
-    font-size: 1.1rem;
+    border-radius: .5rem;
+    padding: 1.2rem 1.7rem;
+    font-weight: 400;
+    font-size: 1.3rem;
     color: #333;
 }
 
-.annc__input::placeholder {
-    font-weight: 400;
-    color: #999;
+.annc__input--max160 {
+    max-width: 16rem;
 }
 
 .annc__search-btn {
-    display: inline-block;
-    min-width: 10rem;
+    width: 5rem;
     height: 4rem;
-    border-radius: 2.5rem;
+    border-radius: .5rem;
     border: 0;
-    background: #666666;
-    font-weight: 500;
-    font-size: 1.7rem;
+    background: #666;
+    font-weight: 400;
+    font-size: 1.3rem;
     color: #fff;
 }
 
@@ -3319,10 +3318,9 @@
 }
 
 .annc__table th {
+    height: 5rem;
     font-weight: 600;
     font-size: 1.7rem;
-    line-height: 138%;
-    padding: 1.5rem 3rem;
     text-align: center;
     vertical-align: middle;
     background: #F5F5F5;
@@ -3331,10 +3329,10 @@
 }
 
 .annc__table td {
+    height: 5rem;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 138%;
-    padding: 1.2rem;
+    padding: 0 2rem;
     text-align: center;
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
@@ -3366,9 +3364,10 @@
 
 .annc__file-icon {
     display: inline-block;
-    width: 2.4rem;
+    width: auto;
     height: 2.4rem;
-    background-color: #1111;
+    object-fit: contain;
+    margin-top: 5px;
 }
 
 .annc__tit {
