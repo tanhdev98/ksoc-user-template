@@ -781,8 +781,12 @@ legend {
     position: relative;
 }
 
+.brdc__item:first-child {
+    border-left: 0;
+}
+
 .brdc__item:nth-child(2) {
-    border-left: 0.5px solid #ddd;
+    border-left: 0;
 }
 
 .brdc__item:last-child {
@@ -821,6 +825,8 @@ legend {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 .brdc__home img {

@@ -10,7 +10,7 @@
 }
 
 .ply-hdr .inner {
-    max-width: 148rem;
+    max-width: 110rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -26,9 +26,9 @@
 .ply-hdr__logo {
     display: flex;
     align-items: center;
-    gap: 3px;
-    font-weight: 500;
-    font-size: 2rem;
+    gap: 1px;
+    font-weight: 600;
+    font-size: 1.7rem;
 }
 
 .ply-hdr__logo img {
@@ -98,8 +98,8 @@
     content: '';
     display: block;
     width: 1px;
-    height: 9px;
-    background: #999;
+    height: 6px;
+    background: #666;
     position: absolute;
     top: 50%;
     left: -16px;
@@ -108,22 +108,23 @@
 
 .ply-hdr__list a {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #666;
 }
 
 .ply-hdr__help {
-    height: 3rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 0.4rem 1rem;
-    background: #333;
+    padding: 0.5rem 1.2rem;
+    background: #000;
     border-radius: 2rem;
 }
 
 .ply-hdr__help a {
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     color: #fff;
     position: relative;
 }
@@ -146,9 +147,9 @@
 
 .ply-nav {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     border-bottom: 1px solid #ddd;
-    background: #fff;
+    background: #F5F5F5;
     position: fixed;
     top: 6.8rem;
     left: 0;
@@ -160,7 +161,7 @@
 }
 
 .ply-nav .inner {
-    max-width: 148rem;
+    max-width: 110rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -171,11 +172,15 @@
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 3.5rem;
 }
 
 .ply-nav__item {
     height: 100%;
+}
+
+.ply-nav__item:nth-child(2) {
+    margin-left: -1rem;
 }
 
 .ply-nav__link {
@@ -187,6 +192,7 @@
     font-size: 1.5rem;
     position: relative;
     transition: all 0.3s;
+    white-space: nowrap;
 }
 
 .ply-nav--blue .ply-nav__link {
@@ -245,7 +251,7 @@
 
 .ply-nav__inner {
     width: 100%;
-    max-width: 148rem;
+    max-width: 110rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -274,13 +280,13 @@
 .ply-nav__rt {
     display: flex;
     align-items: center;
-    gap: 1.8rem;
+    gap: 1rem;
 }
 
 .ply-nav__quik {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .ply-nav__quik li {
@@ -291,18 +297,20 @@
     content: '';
     display: block;
     width: 1px;
-    height: 8px;
-    background: #999;
+    height: 6px;
+    background: #666;
     position: absolute;
     top: 50%;
-    left: -16px;
+    left: -10px;
     transform: translateY(-50%);
 }
 
 .ply-nav__quik li a {
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
     color: #666;
+    white-space: nowrap;
+    line-height: 0;
 }
 
 .ply-nav--blue .ply-nav__quik li a {
@@ -310,17 +318,19 @@
 }
 
 .ply-nav__logout {
-    height: 3rem;
-    display: inlien-flex;
+    height: 2.5rem;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.6rem 1rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1;
-    border: 1px solid #999;
+    border: 1px solid #ddd;
     border-radius: 2rem;
     background: #fff;
+    color: #666;
+    white-space: nowrap;
 }
 
 .ply {
@@ -329,7 +339,7 @@
 }
 
 .ply .inner {
-    max-width: 148rem;
+    max-width: 110rem;
 }
 
 .ply__tit {
@@ -631,7 +641,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 37.6%;
+    width: 59.6%;
 }
 
 .ply__print {
@@ -763,7 +773,7 @@
 }
 
 .ply-ftr .inner {
-    max-width: 148rem;
+    max-width: 110rem;
 }
 
 .ply-ftr--gray .inner {
@@ -1318,8 +1328,9 @@
 
 .ply-bsc {
     display: grid;
-    grid-template-columns: 1fr 34.5rem;
+    grid-template-columns: 1fr 26rem;
     gap: 2rem;
+    margin-top: 5rem;
 }
 
 .step {
@@ -1393,17 +1404,36 @@
 }
 
 .ply-bsc__block {
-    padding: 3rem 0;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #ddd;
+    padding: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+}
+
+.ply-bsc__block>h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.ply-bsc__block>h4::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .ply-bsc__item {
-    display: none;
+    margin-top: 2rem;
 }
 
 .ply-bsc__item:first-child {
-    display: block;
+    margin-top: 0;
 }
 
 .ply-bsc__table {
@@ -1430,6 +1460,7 @@
     align-items: center;
     gap: 3px;
     margin-top: 1rem;
+    margin-left: -1rem;
 }
 
 .ply-bsc__btn {
@@ -1448,15 +1479,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 3.5rem;
-    border: 1px solid #999;
-    border-radius: 1rem;
-    padding: 0.7rem 2rem;
+    padding: 0 2rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 1.2rem;
     background: #fff;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1;
-    color: #333;
+    font-size: 1.2rem;
+    line-height: 0;
+    background: #666;
+    color: #fff;
     transition: all 0.3s;
     margin-left: 1rem;
     white-space: nowrap;
@@ -1543,7 +1574,6 @@
 
 .pstn__block {
     border-radius: 2rem;
-    background: #F5F5F5;
 }
 
 .pstn__tit {
@@ -1622,20 +1652,19 @@
     background: #0C54B8;
 }
 
-.pstn__col {
-    padding: 3rem;
-    padding-left: 5.6rem;
-}
-
 .pstn__tell {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.6rem;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 2.5rem;
+    padding: 2.6rem 2rem;
 }
 
 .pstn__tell figure {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1657,12 +1686,11 @@
 
 .pstn__tell dl dt {
     font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .pstn__tell+.pstn__tell {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .pstn__bm {
@@ -1692,35 +1720,55 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 0 2rem 3rem;
+    padding: 1.5rem 2rem 2.5rem;
     border-bottom: 1px solid #ddd;
 }
 
 .ply-reg__up figure {
     width: 13rem;
-    height: 15.5rem;
-    border-radius: 2rem;
+    height: 13rem;
+    border-radius: 1.5rem;
     background: #f5f5f5;
+    border: 1px solid #ddd;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    font-size: 1.4rem;
+    font-weight: 600;
+    gap: .5rem;
+    cursor: pointer;
 }
 
-.ply-reg__up figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.ply-reg__up figure .ply-reg__icon-bg {
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ply-reg__up figure .ply-reg__icon-bg img {
+    width: 1.9rem;
+    height: 1.9rem;
+    object-fit: contain;
 }
 
 .ply-reg__rt {
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #666;
 }
 
 .ply-reg__rt strong {
     display: block;
     font-weight: 600;
+    font-size: 1.5rem;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 
 .ply-reg__fileinput {
@@ -1743,7 +1791,6 @@
 
 .ply-reg__list {
     padding-top: 2rem;
-    padding-right: 6.5rem;
     padding-bottom: 4rem;
 }
 
@@ -1770,9 +1817,8 @@
 
 .ply-reg__label {
     padding: 1rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #666;
+    font-size: 1.3rem;
+    color: #333;
     white-space: nowrap;
 }
 
@@ -1793,7 +1839,7 @@
 
 .ply-reg__input {
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background: #fff;
@@ -2900,7 +2946,8 @@
 .ply-table {
     position: relative;
     margin-top: 8rem;
-    border-radius: 0 5rem 5rem 5rem;;
+    border-radius: 0 5rem 5rem 5rem;
+    ;
     border: 1px solid #ddd;
     padding: 7.5rem 7rem;
     overflow: visible;
