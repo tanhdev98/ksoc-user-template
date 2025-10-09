@@ -1689,6 +1689,74 @@
     border-bottom: 1px dashed #999;
 }
 
+.ply-bsc__block>h3 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+}
+
+.ply-bsc__block .ply-bsc__desc {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.ply-bsc__card {
+    background: #F5F5F5;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+}
+
+.ply-bsc__card.ply-bsc__card--mt22 {
+    margin-top: 2.2rem;
+}
+
+.ply-bsc__card:last-child {
+    margin-bottom: 0;
+}
+
+.ply-bsc__card .edc__flex {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.ply-bsc__card .edc__flex:last-child {
+    margin-bottom: 0;
+}
+
+.ply-bsc__card .edc__flex dl:first-child dt {
+    padding: 0;
+}
+
+.ply-bsc__card .edc__flex dl dt {
+    padding: 0;
+}
+
+.ply-bsc__card .edc__flex dl dd {
+    padding: 0;
+}
+
+.ply-bsc__card .edc__flex .checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.ply-bsc__card .edc__flex .checkbox::before {
+    width: 6px;
+    height: 2px;
+    border: 2px solid #999;
+    border-top: 0;
+    border-right: 0;
+}
+
+.ply-bsc__card .edc__flex .checkbox:checked::before {
+    border-color: #fff;
+}
 
 .ply-bsc__item {
     margin-top: 2rem;
@@ -1767,6 +1835,10 @@
     justify-content: space-between;
     padding: 5rem 5rem 0;
     position: relative;
+}
+
+.ply-bsc__bm--end {
+    justify-content: flex-end;
 }
 
 .ply-bsc__bm-group {
@@ -2077,6 +2149,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -2104,6 +2177,7 @@
 .ply-reg__card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     justify-content: space-between;
 }
 
@@ -2152,6 +2226,11 @@
 
 .ply-reg__card--row .ply-reg__label.min150 {
     min-width: 15rem;
+}
+
+.ply-reg__input-group {
+    display: flex;
+    gap: 6px;
 }
 
 .ply-reg__input-group {
@@ -2546,7 +2625,6 @@
     display: flex;
     font-weight: 400;
     font-size: 1.5rem;
-    color: #333;
     position: relative;
 }
 
