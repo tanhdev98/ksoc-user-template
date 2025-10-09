@@ -1709,6 +1709,29 @@
     border-radius: 2rem;
     margin-bottom: 1rem;
     padding: 3rem;
+    border: 1px solid #ddd;
+}
+
+.ply-bsc__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.ply-bsc__title>h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.ply-bsc__title .ply-bsc__btn {
+    background: #0C54B8;
+    color: #fff;
+    border: 0;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .ply-bsc__card.ply-bsc__card--mt22 {
@@ -1741,6 +1764,11 @@
     padding: 0;
 }
 
+.ply-bsc__card .edc__flex dl:not(:first-child) {
+    margin-left: 3rem;
+    padding-left: 3rem;
+}
+
 .ply-bsc__card .edc__flex .checkbox {
     width: 1.5rem;
     height: 1.5rem;
@@ -1756,6 +1784,12 @@
 
 .ply-bsc__card .edc__flex .checkbox:checked::before {
     border-color: #fff;
+}
+
+.ply-bsc__card .edc__btn {
+    position: relative;
+    justify-content: end;
+    top: 0;
 }
 
 .ply-bsc__item {
@@ -2687,6 +2721,7 @@
     object-fit: contain;
 }
 
+.edc__btn .edc__btn-print,
 .edc__btn .edc__btn-delete {
     border: 1px solid #ddd;
     background: #fff;
@@ -2695,6 +2730,11 @@
 .edc__btn .edc__btn-delete img {
     width: 20px;
     height: 20px;
+}
+
+.edc__btn .edc__btn-print img {
+    width: 15px;
+    height: 15px;
 }
 
 .edc__btn .edc__btn-edit {
