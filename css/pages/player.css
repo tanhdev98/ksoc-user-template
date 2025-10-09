@@ -3187,14 +3187,17 @@
 .annc-title {
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 500;
-    color: #666666;
+    font-weight: 400;
+    color: #666;
     margin-bottom: 2rem;
+    line-height: 1;
 }
 
 .annc-title a {
     color: #0C54B8;
     text-decoration: underline;
+    width: max-content;
+    margin: auto;
 }
 
 .inner-header_num {
@@ -3210,7 +3213,6 @@
     border: 0;
     padding: 4rem 6rem;
     gap: 1rem;
-    border: 1px solid #DDDDDD;
     background-color: #F5F5F5;
     border-radius: 3rem;
     margin: 0 auto;
@@ -3222,6 +3224,11 @@
     justify-content: space-between;
     width: 100%;
     padding: 5rem 5rem 2rem;
+}
+
+.annc__search-center {
+    justify-content: center;
+    padding: 5rem;
 }
 
 .annc__rt {
@@ -3237,9 +3244,11 @@
     max-width: 480px;
 }
 
-.annc__btn,
-.annc__btn_num {
-    padding: 1rem 2.5rem;
+.annc__buttons .annc__btn {
+    min-width: 10rem;
+    height: 4rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
     border: 1px solid #ccc;
     color: #666666;
     border-radius: 2.5rem;
@@ -3247,14 +3256,12 @@
     cursor: pointer;
     font-size: 1.7rem;
     white-space: nowrap;
-    flex: 0 0 auto;
+    line-height: 0;
 }
-
 
 .annc__btn.active {
     background-color: #666666;
     color: #fff;
-    border-color: #333;
 }
 
 .annc__total {
@@ -3279,6 +3286,7 @@
     min-width: 16.5rem;
 }
 
+
 .annc__input {
     width: 100%;
     height: 4rem;
@@ -3294,6 +3302,13 @@
     max-width: 16rem;
 }
 
+.in-header_search .annc__input {
+    border-radius: 2.5rem;
+    font-size: 1.1rem;
+    max-width: 29rem;
+    padding: 1.2rem 2rem;
+}
+
 .annc__search-btn {
     width: 5rem;
     height: 4rem;
@@ -3303,6 +3318,14 @@
     font-weight: 400;
     font-size: 1.3rem;
     color: #fff;
+}
+
+.in-header_search .annc__search-btn {
+    width: 11rem;
+    border-radius: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 0;
 }
 
 .annc__table {
@@ -3480,13 +3503,10 @@
     background-color: #D9D9D9;
     border-radius: 50%;
     margin-right: 1rem;
-    flex-shrink: 0;
     cursor: pointer;
-    margin: 0 0 0 5rem;
 }
 
-.qz__item:first-child .qz__block {
-    border-top: 0;
+.qz__item.active .qz__block {
     display: block;
 }
 
@@ -3494,6 +3514,10 @@
     padding: 2 2rem 2rem;
     border: 1px solid #DDDDDD;
     border-radius: 2rem;
+}
+
+.qz__item.active .qz__item_list {
+    border: 1px solid #333;
 }
 
 .qz__toggle {
@@ -3504,7 +3528,7 @@
     font-weight: 400;
     font-size: 2rem;
     color: #333;
-    padding: 2rem 4rem 2rem 0;
+    padding: 2rem 5rem;
     border-radius: 2rem;
 }
 
@@ -3526,8 +3550,14 @@
 }
 
 .qz__item img {
-    width: 3rem;
+    width: 1.5rem;
+    height: auto;
+    object-fit: contain;
     transform: rotate(180deg);
+}
+
+.qz__item.active img {
+    transform: rotate(0);
 }
 
 .qz__item img.rotate-180 {
@@ -3537,18 +3567,16 @@
 
 .qz__block {
     display: none;
-    padding: 0 3rem;
+    padding: 0 5rem;
 }
 
 .qz__cntn {
-    border-top: 1px solid #DDDDDD;
     display: block;
-    padding-left: 3rem;
     font-weight: 400;
     color: #333333;
     font-size: 1.4rem;
-    white-space: pre-line;
-    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 2.3rem 2.7rem;
 }
 
 .qz__file {
