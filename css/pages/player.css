@@ -1710,6 +1710,7 @@
     margin-bottom: 1rem;
     padding: 3rem;
     border: 1px solid #ddd;
+    position: relative;
 }
 
 .ply-bsc__title {
@@ -1786,10 +1787,46 @@
     border-color: #fff;
 }
 
-.ply-bsc__card .edc__btn {
+.edc__btn.edc__btn--relative {
     position: relative;
     justify-content: end;
     top: 0;
+}
+
+.edc__btn--group {
+    padding: 2rem 3rem 0;
+}
+
+.edc__status {
+    width: 10rem;
+    height: 3rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.edc__status.progress {
+    color: #ddd;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.edc__status.accept {
+    color: #fff;
+    background: #0C54B8;
+}
+
+.edc__status.reject {
+    color: #ddd;
+    background: #666;
 }
 
 .ply-bsc__item {
