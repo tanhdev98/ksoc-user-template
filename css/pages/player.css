@@ -3925,6 +3925,9 @@
 .mmb__block--pd50 {
   padding-bottom: 5rem;
 }
+.mmb__block--p0 {
+    padding-bottom: 0;
+}
 
 .class--address2 {
     padding-top: 2rem;
