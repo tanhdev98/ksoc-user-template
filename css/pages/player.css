@@ -950,16 +950,12 @@
 .ply-smr__list a {
     height: 5.6rem;
     padding: 1.5rem 3rem;
-    border: 1px solid #999;
+    border: none;
     border-radius: 3rem;
     white-space: nowrap;
     font-weight: 600;
     font-size: 1.7rem;
     transition: all 0.3s;
-}
-
-.ply-smr__list a:hover {
-    border-color: #333;
 }
 
 .ply-smr__list a img {
@@ -1391,6 +1387,11 @@
     font-size: 1.7rem;
     color: #000000;
     text-align: center;
+    margin-bottom: 4rem;
+}
+
+.ply-pop__desc.on {
+    margin-bottom: 3rem;
 }
 
 .ply-pop__top {
@@ -1755,6 +1756,10 @@
     font-weight: 600;
 }
 
+.ply-bsc__title .ply-bsc__btn:hover {
+    opacity: 0.7;
+}
+
 .ply-bsc__card.ply-bsc__card--mt22 {
     margin-top: 2.2rem;
 }
@@ -1949,6 +1954,10 @@
     flex-direction: column;
 }
 
+.ply-bsc__bm .ply__btn.ply__btn--sbmt:hover {
+    opacity: 0.7;
+}
+
 .ply__btn {
     height: 5rem;
     min-width: 13rem;
@@ -1971,15 +1980,6 @@
     width: 1.5rem;
     height: 1.5rem;
     object-fit: contain;
-}
-
-.ply__btn:hover {
-    opacity: 0.7;
-}
-
-.ply__btn--prev {
-    color: #666;
-    border-color: #999;
 }
 
 .ply__btn--blk {
@@ -3918,6 +3918,10 @@
     color: #333;
 }
 
+.annc__rt .annc__search-btn:hover {
+    opacity: 70%;
+}
+
 .annc__input--max160 {
     max-width: 16rem;
 }
@@ -3946,6 +3950,10 @@
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 0;
+}
+
+.in-header_search .annc__search-btn:hover {
+    opacity: 70%;
 }
 
 .annc__table {
@@ -4101,6 +4109,14 @@
     font-weight: 600;
     font-size: 1.7rem;
     color: #fff;
+}
+
+.annc__bm .annc__btn:hover {
+    opacity: 0.7;
+}
+
+.annc__bm .annc__btn:has(img) {
+    min-width: 13rem;
 }
 
 .qz {
@@ -4346,6 +4362,10 @@
     gap: 8px;
     background-color: #0C54B8;
     color: #fff;
+}
+
+.ply-smr__list li a:hover {
+    opacity: 70%;
 }
 
 .ply-smr__list li:first-child img {
