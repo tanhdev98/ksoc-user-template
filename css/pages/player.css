@@ -1104,20 +1104,27 @@
 }
 
 .ply-bsc__form {
-    padding-top: 2rem;
+    padding: 2rem 2rem 0;
+
 }
 
 .ply-bsc__form label {
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
     color: #111111;
 }
 
 .ply-bsc__form input {
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
+    height: 4rem;
 }
 
-.ply-bsc__block .ply-bsc__form:first-of-type input {
+.ply-bsc__block .ply-bsc__form input:read-only {
     background-color: #F5F5F5;
+    color: #ccc;
+}
+
+.ply-bsc__block .ply-bsc__form input:read-only:focus {
+    border-color: #ddd;
 }
 
 .ply-pop__scroll_num {
@@ -1140,14 +1147,15 @@
 .ply-bsc__block_info {
     display: flex;
     margin-top: 2rem;
-    gap: 0.8rem
+    gap: 0.8rem;
+    padding: 0 2rem;
 }
 
 .ply-bsc__aside {
     width: 100%;
     background-color: #0C54B8;
     color: #FFFFFF;
-    padding: 4rem 5rem 10rem 5rem;
+    padding: 5rem;
     border: 1px solid #ddd;
     border-radius: 3rem;
 }
@@ -1177,44 +1185,19 @@
 
 .ply-bsc__aside .pay-info__box>ul {
     padding-bottom: 2rem;
-}
-
-.ply-bsc__aside .pay-info__box>ul::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     border-bottom: 1px dashed #FFFFFF;
-}
-
-.pay-info {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
 }
 
 .pay-info .label {
     font-weight: 400;
 }
 
-.pay-info {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-    position: relative;
-    margin-bottom: 2rem;
-}
-
 .pay-info li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .6rem 0;
+    padding: .6rem 2rem;
     position: relative;
-    padding-left: 2rem;
 }
 
 .pay-info li:first-child {
@@ -1223,19 +1206,10 @@
     margin-top: 2rem;
 }
 
+.pay-info li:nth-child(2) .value,
 .pay-info li:nth-child(2) .label {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
-}
-
-.pay-info li:nth-child(2) .value {
-    font-size: 16px;
-    font-weight: 600;
-    padding-right: 20px;
-}
-
-.pay-summary {
-    margin-top: 2rem;
 }
 
 .pay-summary p {
@@ -1250,19 +1224,23 @@
 
 .pay-method {
     background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
     color: #333333;
     margin-top: 3rem;
     font-weight: 600;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
-    padding: 1.6rem 2rem;
+    padding: 0 2rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }
 
 .pay-method__list {
     display: flex;
     gap: .5rem;
     justify-content: flex-end;
+    height: 4rem;
 }
 
 .pay-method__icon {
@@ -1271,11 +1249,12 @@
     padding: 1rem;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    width: 4rem;
 }
 
 .pay-method__icon img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.9rem;
     object-fit: contain;
 }
 
@@ -1285,31 +1264,41 @@
     padding: 1rem 3rem;
     color: #0C54B8;
     background-color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 0;
 }
 
 .pstn__tell.on {
-    max-height: 290px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 3rem 2.5rem;
+    padding: 3rem;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 .pstn__tell.on h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+    color: #000;
+    line-height: 1;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
-    text-align: center;
-    border-bottom: 1px solid #DDDDDD;
 }
 
 .pstn__tell.on p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 1.5rem;
     font-size: 1.1rem;
     color: #666666;
+    border-top: 1px solid #ddd;
+    line-height: 1.2;
+}
+
+.pstn__tell.on p b {
+    font-weight: 600;
 }
 
 .pay-summary {
@@ -1318,8 +1307,7 @@
     align-items: center;
     font-size: 1.3rem;
     font-weight: 500;
-    padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding: 1rem 2rem 0;
 }
 
 .ply-bsc__block_info img {
@@ -1329,10 +1317,9 @@
 }
 
 .ply-bsc__block_info p {
-    font-size: 400;
+    font-weight: 400;
     font-size: 1.3rem;
-    color: #666666;
-    object-fit: contain;
+    color: #666;
 }
 
 .ply-pop__btbx:first-of-type .ply-pop__btn {
@@ -2298,16 +2285,11 @@
 .ply-pop__label {
     display: block;
     font-size: 1.3rem;
+    font-weight: 400;
     color: #333;
 }
 
 .ply-pop__label[aria-required="true"]::before,
-.ply-reg__label[aria-required="true"]::before {
-    content: '*';
-    color: #FF0000;
-}
-
-.ply-ply-reg__label_required[aria-required="true"]::before,
 .ply-reg__label[aria-required="true"]::before {
     content: '*';
     color: #FF0000;
