@@ -1306,9 +1306,9 @@
     height: 4rem;
     border-radius: 0.5rem;
     border: 1px solid #ddd;
-    padding: 0.5rem 2.3rem;
-    padding-right: 4.5rem;
-    background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 23px) 50% / 12px auto;
+    padding: 0.5rem 1.7rem;
+    padding-right: 3.5rem;
+    background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
     background-color: #fff;
     position: relative;
     font-weight: 400;
