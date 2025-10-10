@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,71 +11,72 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
         <header class="ply-hdr">
-        <div class="inner">
-            <div class="ply-hdr__lf">
-                <h1 class="ply-hdr__logo">
-                    <img src="images/ptu_m1_0501/image01.png" alt="">
-                    <span>(사)대한골프협회</span>
-                </h1>
-                <div class="ply-hdr__pop">
-                    <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
-                    <div class="game__pop">
-                        <div class="game__tit">
-                            <span><b>대한골프협회</b> 경기인 선택</span>
+            <div class="inner">
+                <div class="ply-hdr__lf">
+                    <h1 class="ply-hdr__logo">
+                        <img src="images/ptu_m1_0501/image01.png" alt="">
+                        <span>(사)대한골프협회</span>
+                    </h1>
+                    <div class="ply-hdr__pop">
+                        <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
+                        <div class="game__pop">
+                            <div class="game__tit">
+                                <span><b>대한골프협회</b> 경기인 선택</span>
+                            </div>
+                            <ul class="game__list">
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/player-icon.png" alt="">
+                                        <span>선수</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/director-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/judgment-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/manager-icon.png" alt="">
+                                        <span>선수관리<br>담당자</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="game__desc">신청 유형을 선택하세요.</p>
                         </div>
-                        <ul class="game__list">
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/player-icon.png" alt="">
-                                    <span>선수</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/director-icon.png" alt="">
-                                    <span>지도자</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/judgment-icon.png" alt="">
-                                    <span>지도자</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/manager-icon.png" alt="">
-                                    <span>선수관리<br>담당자</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="game__desc">신청 유형을 선택하세요.</p>
+                    </div>
+                </div>
+                <div class="ply-hdr__rt">
+                    <ul class="ply-hdr__list">
+                        <li>
+                            <a href="#">종목변경</a>
+                        </li>
+                        <li>
+                            <a href="#">스포츠지원포털</a>
+                        </li>
+                        <li>
+                            <a href="#">화면번호</a>
+                        </li>
+                    </ul>
+                    <div class="ply-hdr__help">
+                        <a href="#"><b>430</b></a>
+                        <a href="#">화면도움말</a>
                     </div>
                 </div>
             </div>
-            <div class="ply-hdr__rt">
-                <ul class="ply-hdr__list">
-                    <li>
-                        <a href="#">종목변경</a>
-                    </li>
-                    <li>
-                        <a href="#">스포츠지원포털</a>
-                    </li>
-                    <li>
-                        <a href="#">화면번호</a>
-                    </li>
-                </ul>
-                <div class="ply-hdr__help">
-                    <a href="#"><b>430</b></a>
-                    <a href="#">화면도움말</a>
-                </div>
-            </div>
-        </div>
-    </header>
+        </header>
         <!-- // header -->
         <!-- gnb -->
         <nav class="ply-nav">
@@ -131,7 +133,8 @@
                             <div class="mmb__block">
                                 <div class="ply-reg__card">
                                     <label for="" class="ply-reg__label">신청종목</label>
-                                    <input type="text" class="ply-reg__input ply-reg__input--max310" value="골프" readonly>
+                                    <input type="text" class="ply-reg__input ply-reg__input--max310" value="골프"
+                                        readonly>
                                 </div>
                                 <dl class="mmb__dl">
                                     <dt>현재등록정보</dt>
@@ -185,8 +188,10 @@
                                             <div class="ply-reg__btwn">
                                                 <label for="" class="ply-reg__label">이적사유*</label>
                                                 <div class="ply-reg__agree">
-                                                    <input type="checkbox" class="ply-reg__radio" name="agreeYn" title="동의">
-                                                    <input type="checkbox" class="ply-reg__radio" name="agreeYn" title="비동의">
+                                                    <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                        title="동의">
+                                                    <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                        title="비동의">
                                                     <span>이적동의서 있음</span>
                                                 </div>
                                             </div>
@@ -209,11 +214,14 @@
                                         <div class="ply-reg__adr">
                                             <label for="" class="ply-reg__label">작성자 자택주소 *</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap3">
-                                                <input type="text" class="ply-reg__input ply-reg__input--max150" placeholder="우편번호">
+                                                <input type="text" class="ply-reg__input ply-reg__input--max150"
+                                                    placeholder="우편번호">
                                                 <button type="button" class="ply-reg__btn">우편번호 검색</button>
                                             </div>
-                                            <input type="text" class="ply-reg__input ply-reg__input--max660" placeholder="상세주소 1">
-                                            <input type="text" class="ply-reg__input ply-reg__input--max660" placeholder="상세주소 2">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max660"
+                                                placeholder="상세주소 1">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max660"
+                                                placeholder="상세주소 2">
                                         </div>
                                     </li>
                                 </ul>
@@ -224,7 +232,7 @@
                         <div class="pstn">
                             <div class="pstn__block">
                                 <div class="pstn__print pstn__print--pd24">
-                                    소속변경(이적)신청은 최초 등록 신청 후 승인이 완료된 이후 가능하며,  이미 신청한 건이 처리중일 경우 이적신청을 할 수 없습니다.<br><br>
+                                    소속변경(이적)신청은 최초 등록 신청 후 승인이 완료된 이후 가능하며, 이미 신청한 건이 처리중일 경우 이적신청을 할 수 없습니다.<br><br>
                                     신청 후 승인은 각 회원종목 단체의 절차에 따라 진행됩니다.
                                 </div>
                                 <div class="pstn__btbx">
@@ -254,8 +262,11 @@
                             </div>
                             <div class="pstn__bm">
                                 <button type="button" class="pstn__top-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                        <path d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z" fill="#666666"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                        fill="none">
+                                        <path
+                                            d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z"
+                                            fill="#666666"></path>
                                     </svg>
                                     <span>TOP</span>
                                 </button>
@@ -295,16 +306,16 @@
 
     <!-- popup -->
     <div class="popup on">
-        <section class="ply-pop ply-pop--max1220">
+        <section class="ply-pop ply-pop--max760">
             <button type="button" class="popup__close popup__close--top45">
                 <span class="blind">팝업닫기</span>
             </button>
             <h3 class="ply-pop__tit2">
                 <span>소속팀 선택</span>
             </h3>
-            <div class="ply-srh">
-                <div class="ply-srh__top">
-                    <div class="ply-reg__card max245">
+            <div class="ply-srh ply-srh--pd20">
+                <div class="ply-srh__top ply-srh__top--gap5 ply-reg__mr3">
+                    <div class="ply-reg__card max130">
                         <select name="" id="" class="selectbox">
                             <option value="">전문체육</option>
                             <option value="">전문체육</option>
@@ -312,7 +323,7 @@
                             <option value="">전문체육</option>
                         </select>
                     </div>
-                    <div class="ply-reg__card max245">
+                    <div class="ply-reg__card max130">
                         <select name="" id="" class="selectbox">
                             <option value="">시도</option>
                             <option value="">서울</option>
@@ -320,7 +331,7 @@
                             <option value="">인천</option>
                         </select>
                     </div>
-                    <div class="ply-reg__card max245">
+                    <div class="ply-reg__card max130">
                         <select name="" id="" class="selectbox">
                             <option value="">실업(일반)</option>
                             <option value="">실업(일반)</option>
@@ -330,216 +341,190 @@
                     </div>
                     <div class="ply-reg__flex ply-reg__flex--gap3">
                         <input type="text" class="ply-reg__input">
-                        <button type="button" class="ply-src__btn">검색</button>
+                        <button type="button" class="ply-src__btn btn--primary">검색</button>
                     </div>
                 </div>
-                <div class="ply-srh__scroll">
-                    <table class="ply-srh__table">
+                <div class="ply-srh__scroll max-height26">
+                    <table class="ply-srh__table ply-srh__table_num">
+                        <colgroup>
+                            <col style="width: 4rem;">
+                            <col style="width: 10rem;">
+                            <col style="width: auto;">
+                            <col style="width: 8rem;">
+                            <col style="width: 10rem;">
+                            <col style="width: 10rem;">
+                        </colgroup>
                         <thead>
                             <tr>
                                 <th>No</th>
                                 <th>팀코드</th>
-                                <th>팀명</th>
+                                <th class="">팀명</th>
                                 <th>시도</th>
                                 <th>팀성별</th>
                                 <th>종별</th>
-                                <th>선택</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>7</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
                             </tr>
                             <tr>
                                 <td>8</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>9</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>10</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>11</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>12</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>13</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>14</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>15</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>16</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td>17</td>
                                 <td>BB00402</td>
-                                <td class="text-left">국민은행여자농구단</td>
+                                <td class="text-left ">국민은행여자농구단</td>
                                 <td>서울</td>
                                 <td>여자팀</td>
                                 <td>실업(일반)</td>
-                                <td class="wd120">
-                                    <button type="button" class="ply-src__tbtn">선택</button>
-                                </td>
+
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <button type="button" class="ply-src__btn ply-srh__btn_primiky">닫기</button>
             </div>
         </section>
     </div>
     <!-- // popup -->
 </body>
+
 </html>

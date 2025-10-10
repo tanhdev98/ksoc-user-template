@@ -1016,8 +1016,15 @@
     color: #333;
     padding-bottom: 1rem;
     padding-right: 4rem;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #000000;
     margin-bottom: 3rem;
+}
+
+.ply-pop__tit2 span {
+    padding-bottom: 2rem;
+    color: #000000;
+    font-size: 2.1rem;
+    padding-left: 2rem;
 }
 
 .ply-pop__scroll {
@@ -1506,6 +1513,19 @@
     width: 100%;
 }
 
+.ply-srh__top--gap5 {
+    gap: 5px;
+}
+
+.ply-pop--max760 {
+    width: 100%;
+    max-width: 76rem;
+}
+
+.ply-reg__mr3 {
+    margin-bottom: 3rem;
+}
+
 .ply-src__btn {
     min-width: 10.8rem;
     height: 5rem;
@@ -1520,13 +1540,19 @@
     color: #fff;
 }
 
-.ply-srh__table {
-    width: 100%;
+.ply-src__btn.btn--primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    min-width: auto;
+    text-wrap: nowrap;
 }
 
-.ply-srh__table thead {
-    position: sticky;
-    top: 0;
+.ply-srh__table {
+    width: 100%;
 }
 
 .ply-srh__table th {
@@ -1562,6 +1588,31 @@
 
 .ply-srh__table td.wd120 {
     width: 12rem;
+}
+
+.ply-srh__table_num th {
+    color: #000000;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    max-height: 4rem;
+}
+
+.ply-srh__table_num td {
+    color: #000000;
+    font-size: 1.2rem;
+    max-height: 4rem;
+}
+
+.max-w200 {
+    max-width: 20rem;
+}
+
+.max-w100 {
+    max-width: 10rem;
+}
+
+.max-w80 {
+    max-width: 8rem;
 }
 
 .ply-src__tbtn {
@@ -2473,10 +2524,54 @@
     max-width: 24.5rem;
 }
 
+.ply-reg__card.max130 {
+    max-width: 13rem;
+}
+
 .ply-srh__scroll {
     height: 57.8vh;
     max-height: 54rem;
     overflow-y: auto;
+}
+
+.ply-srh__scroll.max-height26 {
+    max-height: 26rem;
+}
+
+.ply-srh--pd20 {
+    padding-left: 2rem;
+}
+
+.ply-srh__btn_primiky {
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 3.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.ply-srh__btn_primiky:hover {
+    opacity: 0.7;
+}
+
+.ply-srh__table_num {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ply-srh__table_num th,
+.ply-srh__table_num td {
+    border-bottom: 1px solid #ddd;
+}
+
+.ply-srh__table_num thead tr th {
+    border-bottom: 1px solid #333333;
+}
+
+.ply-srh__table_num tbody tr:first-child td {
+    border: 1px solid #333333;
 }
 
 .ply-reg__card .selectbox:disabled+.custom-select-wrapper .custom-select-trigger {
