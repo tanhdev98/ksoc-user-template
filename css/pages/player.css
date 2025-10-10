@@ -1739,15 +1739,15 @@
     position: relative;
 }
 
-.ply-bsc__block>p {
-    line-height: 1.6;
+.ply-bsc__text {
+    padding: 3rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    font-size: 1.3rem;
-    color: #111111;
-    padding-left: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    color: #333;
+}
 
+.ply-bsc__text.ply-bsc__text-bt1 {
+    border-top: 1px solid #ddd;
 }
 
 .ply-bsc__block>h4::after {
