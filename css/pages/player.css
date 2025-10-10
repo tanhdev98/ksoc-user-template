@@ -1044,8 +1044,14 @@
     margin-bottom: 3rem;
 }
 
+.ply-pop__scroll.mb50,
 .ply-pop__scroll .mb50 {
     margin-bottom: 5rem;
+}
+
+.ply-pop__scroll.mt50,
+.ply-pop__scroll .mt50 {
+    margin-top: 5rem;
 }
 
 .ply-pop__scroll p.num-has-number.num-sub-item {
@@ -1331,8 +1337,16 @@
     background-color: #666666;
 }
 
+.ply-pop__btn.ply-pop__btn-black {
+    background-color: #666;
+}
+
 .ply-pop__btbx:last-of-type .ply-pop__btn {
     background-color: #0C54B8;
+}
+
+.ply-pop__btn:hover {
+    opacity: .7;
 }
 
 .ply-pop_group {
@@ -1579,7 +1593,7 @@
 }
 
 .ply-bsc.on {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .step {
