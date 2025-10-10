@@ -381,6 +381,12 @@
     text-align: center;
 }
 
+.ply__desc.on {
+    width: 80%;
+    margin: 0 auto;
+    color: #666666;
+}
+
 .ply__flex {
     display: flex;
     gap: 2rem;
@@ -2178,7 +2184,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-content: space-between;
+}
+
+.ply-reg__card.on {
+    max-width: 20rem;
 }
 
 .ply-reg__card--row {
@@ -2197,6 +2206,10 @@
     white-space: nowrap;
 }
 
+.ply-reg__label.on {
+    padding: 0;
+}
+
 .ply-pop__label {
     display: block;
     font-size: 1.3rem;
@@ -2204,6 +2217,12 @@
 }
 
 .ply-pop__label[aria-required="true"]::before,
+.ply-reg__label[aria-required="true"]::before {
+    content: '*';
+    color: #FF0000;
+}
+
+.ply-ply-reg__label_required[aria-required="true"]::before,
 .ply-reg__label[aria-required="true"]::before {
     content: '*';
     color: #FF0000;
@@ -2248,6 +2267,10 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
+}
+
+.ply-reg__input--max200 {
+    max-width: 20rem;
 }
 
 .ply-reg__input--max120 {
@@ -2301,6 +2324,16 @@
     text-align: right;
 }
 
+.ply-reg__input--pl0 {
+    padding-left: 2rem;
+}
+
+.text--zipcode {
+    color: #CCCCCC;
+    font-weight: 400;
+    font-size: 1.3;
+}
+
 .ply-reg__flex {
     display: flex;
     align-items: center;
@@ -2311,6 +2344,10 @@
 
 .ply-reg__flex--gap3 {
     gap: 3px;
+}
+
+.ply-reg__flex--gap5 {
+    gap: 5px;
 }
 
 .ply-reg__flex--gap10 {
@@ -2336,6 +2373,15 @@
     color: #666;
     background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 20px) 50% / 15px auto;
     background-color: #fff;
+}
+
+.ply-reg__card.on .date-inputbox img {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 17rem;
+    transform: translateY(-50%);
 }
 
 .ply-reg__card.max245 {
@@ -2434,8 +2480,16 @@
     margin-bottom: 1rem;
 }
 
+.ply-reg__label--pd0 {
+    padding-bottom: 1rem !important;
+}
+
 .ply-reg__item2 .ply-reg__label {
     padding-bottom: 0.5rem;
+}
+
+.ply-reg__item2 .ply-reg__label.on {
+    padding-bottom: 0rem;
 }
 
 .ply-reg__adr {
@@ -2515,6 +2569,10 @@
     color: #fff;
 }
 
+.ply-reg__btn--small {
+    padding-left: 2rem;
+}
+
 .ply-reg__item3 {
     margin-bottom: 1rem;
 }
@@ -2529,8 +2587,8 @@
 .ply-reg__item5 {
     max-width: 78rem;
     display: grid;
-    grid-template-columns: 28rem 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 20rem 1fr 1fr;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -2541,6 +2599,12 @@
     border-radius: 0.5rem;
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+.ply-reg__card .date-input.on {
+    padding: 0;
+    height: 4rem;
+    max-width: 42rem;
 }
 
 .ply-reg__radio-label {
@@ -2615,6 +2679,93 @@
 
 .ply-bsc__block h4+.edc-group {
     margin-top: -1rem;
+}
+
+.transfer-line {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.transfer-item {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.transfer-checkbox-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.transfer-checkmark {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.transfer-label {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.transfer-checkbox {
+    width: 2rem;
+    height: 2rem;
+    accent-color: #0C54B8;
+}
+
+.transfer-line .transfer-buttons .transfer-btn {
+    cursor: pointer;
+}
+
+.transfer-checkbox:not(:checked)~.transfer-buttons .transfer-btn {
+    background-color: #DDDDDD;
+    cursor: not-allowed;
+}
+
+.transfer-text {
+    font-size: 1.5rem;
+    color: #111111;
+    font-weight: 500
+}
+
+.transfer-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.transfer-btn {
+    font-weight: 400;
+    padding: 1.2rem;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    background-color: #666666;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.transfer-buttons .transfer-btn {
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1.2rem 2rem;
+}
+
+.transfer-buttons .transfer-btn img {
+    height: 1.1rem;
+    width: 1rem;
+    overflow: fit-content;
 }
 
 .edc__flex {
@@ -3344,6 +3495,22 @@
     margin-bottom: 1.2rem;
 }
 
+.mmb__tit--mb20 {
+    margin-bottom: 2rem;
+}
+
+.mmb__tit--text {
+    font-size: 2.1rem;
+}
+
+.ply-reg__adrs {
+    display: block;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
 .mmb__lsit {
     min-height: 19rem;
     display: flex;
@@ -3398,8 +3565,16 @@
     padding: 1rem 2rem 6rem;
 }
 
+.mmb__block--pb30 {
+    padding-bottom: 3rem;
+}
+
 .mmb__block--pb0 {
     padding-bottom: 0;
+}
+
+.class--address {
+    padding: 3rem 2rem 0;
 }
 
 .mmb__dl {
@@ -3410,14 +3585,16 @@
 }
 
 .mmb__dl dt {
+    color: #000000;
     font-weight: 600;
     padding: 1rem;
 }
 
 .mmb__dl dd {
     display: flex;
-    padding: 0.5rem;
+    padding-left: 1rem;
     gap: 0.5rem;
+    line-height: 3rem;
 }
 
 .mmb__dl dd::before {
