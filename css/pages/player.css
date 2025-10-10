@@ -1139,6 +1139,10 @@
     padding-left: 2rem;
 }
 
+.ply-pop__btbx.mt50 {
+    margin-top: 5rem;
+}
+
 .ply-pop__btbx input {
     padding-left: 2rem;
     border-radius: 0.5rem;
@@ -1391,10 +1395,11 @@
 .ply-pop__box {
     border: 1px solid #ddd;
     border-radius: 3.5rem;
-    padding: 3rem 3rem;
+    padding: 3rem;
     font-weight: 400;
     font-size: 1.5rem;
     counter-reset: item;
+    color: #666;
 }
 
 .ply-pop__box p {
@@ -1411,12 +1416,14 @@
     justify-content: center;
     width: 10px;
     height: 10px;
-    border: 1.5px solid #111;
-    color: #111;
+    border: 1.5px solid #666;
+    color: #666;
     background: #fff;
     border-radius: 50%;
     text-align: center;
     line-height: 0;
+    position: relative;
+    top: -2px;
 }
 
 .ply-pop__txt {
