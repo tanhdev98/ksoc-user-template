@@ -1535,14 +1535,19 @@
 }
 
 .ply-src__btn.btn--primary {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 5rem;
     height: 4rem;
     font-size: 1.3rem;
     padding: 1.2rem;
     min-width: auto;
     text-wrap: nowrap;
+}
+
+.ply-src__btn.btn--primary:hover {
+    opacity: .7;
 }
 
 .ply-srh__table {
@@ -2393,6 +2398,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
+    flex: 1;
 }
 
 .ply-reg__input--max200 {
