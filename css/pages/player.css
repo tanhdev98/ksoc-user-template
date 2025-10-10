@@ -387,6 +387,29 @@
     color: #666666;
 }
 
+.pyramid-text {
+    text-align: center;
+    margin: auto;
+    color: #666666;
+}
+
+.pyramid-text span {
+    display: block;
+    margin: 0 auto;
+}
+
+.pyramid-text .line1 {
+    width: 67rem;
+}
+
+.pyramid-text .line2 {
+    width: 50rem;
+}
+
+.pyramid-text .line3 {
+    width: 38rem;
+}
+
 .ply__flex {
     display: flex;
     gap: 2rem;
@@ -2285,7 +2308,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    gap: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -2475,6 +2497,58 @@
     gap: 5px;
 }
 
+.ply-reg__input--hanmun {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #CCCCCC;
+}
+
+.ply-reg__row {
+  display: flex;
+  height: auto;
+  gap: 2rem; 
+}
+
+.ply-reg__row .ply-reg__card {
+  flex: 1;
+}
+
+.ply-reg__card.ply-reg__card--end{
+    justify-content: end;
+}
+
+.ply-reg__agree {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.ply-reg__agree.ply-reg__agree-h40{
+    height: 4rem;
+    padding-top: 0;
+}
+
+.ply-reg__agree .ply-reg__radio {
+  width: 18px;
+  height: 18px;
+  accent-color: #0C54B8; 
+  cursor: pointer;
+}
+
+.ply-reg__agree .ply-reg__radio:checked {
+  accent-color: #0C54B8;
+}
+
+.ply-reg__checkbox {
+    align-items: center;
+    /* position: relative; */
+}
+
+.mmb__block--pd50 {
+    padding-bottom: 5rem;
+}
+
 .ply-reg__flex--gap10 {
     gap: 1rem;
 }
@@ -2653,6 +2727,37 @@
     padding-bottom: 1rem !important;
 }
 
+.ply-reg__label--pf1 {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.radiobox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.radiobox:checked {
+  border-color: #0C54B8;
+}
+
+.ply-reg__radio-label {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #333333;
+  cursor: pointer;
+}
+
 .ply-reg__item2 .ply-reg__label {
     padding-bottom: 0.5rem;
 }
@@ -2785,6 +2890,11 @@
     margin-right: 2.5rem;
 }
 
+.ply-reg__radio-label {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .ply-reg__desc {
     font-size: 1.5rem;
     font-weight: 400;
@@ -2853,7 +2963,7 @@
 .transfer-line {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -2884,9 +2994,33 @@
 }
 
 .transfer-checkbox {
-    width: 2rem;
-    height: 2rem;
-    accent-color: #0C54B8;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #0C54B8;
+  border-radius: .5rem;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.transfer-checkbox:checked {
+  background-color: #0C54B8;
+  border-color: #0C54B8;
+}
+
+.transfer-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .transfer-line .transfer-buttons .transfer-btn {
@@ -3746,6 +3880,22 @@
 
 .mmb__block--pb0 {
     padding-bottom: 0;
+}
+
+.mmb__block--pd50 {
+  padding-bottom: 5rem;
+}
+
+.class--address2 {
+    padding-top: 2rem;
+}
+
+.ply-reg__input--max100 {
+    max-width: 10rem;
+}
+
+.ply-reg__input--max200 {
+    max-width: 20rem;
 }
 
 .class--address {
