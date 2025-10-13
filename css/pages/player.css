@@ -505,6 +505,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 0;
 }
 
 .ply__info .ply__content.leader::after {
@@ -554,6 +555,7 @@
     justify-content: space-between;
     padding: 0 4rem 0 5rem;
     position: relative;
+    z-index: 1;
 }
 
 .ply__info .ply__content .ply__task--element::before {
@@ -576,6 +578,7 @@
     flex-wrap: nowrap;
     border-radius: 7.5px;
     border: 0.5px solid #ddd;
+    background: #fff;
     color: #636262;
     height: 2rem;
     width: 5rem;
