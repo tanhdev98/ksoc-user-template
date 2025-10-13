@@ -485,13 +485,6 @@
     background: #fff;
 }
 
-/* .chc__item:nth-child(n+5) {
-    /* border-top: 1px solid #ddd; */
-/* } */
-*/ .chc__item:nth-child(4n+1) {
-    border-left: 0;
-}
-
 .chc__list--img .chc__item {
     border: 0;
 }
@@ -3366,7 +3359,7 @@ a.ui-button:active,
 }
 
 .indv__btbx--center .indv__btn_rounded {
-    border-radius: 3.5rem !important; 
+    border-radius: 3.5rem !important;
 }
 
 .indv__btbx--center {
