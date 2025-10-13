@@ -1020,17 +1020,14 @@
     font-weight: 600;
     font-size: 2.2rem;
     color: #333;
-    padding-bottom: 1rem;
-    padding-right: 4rem;
+    padding: 0 2rem 3rem;
     border-bottom: 1px solid #000000;
     margin-bottom: 3rem;
 }
 
 .ply-pop__tit2 span {
-    padding-bottom: 2rem;
     color: #000000;
     font-size: 2.1rem;
-    padding-left: 2rem;
 }
 
 .ply-pop__scroll {
@@ -1461,7 +1458,6 @@
     background: #333;
     border-radius: 3rem;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 .ply-pop__help a {
@@ -1479,11 +1475,11 @@
     content: '';
     display: block;
     width: 1px;
-    height: 11px;
+    height: 6px;
     background: #fff;
     position: absolute;
     top: 50%;
-    left: -15px;
+    left: -8px;
     transform: translateY(-50%);
 }
 
@@ -1501,32 +1497,34 @@
 .ply-pop__help--row {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1.7rem;
 }
 
 .ply-pop__help--row span {
-    padding-top: 2rem;
     font-size: 1.2rem;
 }
 
 .ply-pop__tit2 .ply-pop__right {
-    padding: 0.9rem 1.3rem !important;
+    padding: 0 1.3rem;
     height: 2.5rem;
+    background: #111;
 }
 
 .ply-pop__right a {
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
-.ply-pop__tit2--right2 {
-    padding-right: 2rem;
+.ply-srh {
+    padding: 0 2rem;
 }
 
 .ply-srh__top {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    height: 4rem;
 }
 
 .ply-srh__top .ply-reg__card {
@@ -1534,8 +1532,17 @@
     max-width: 33rem;
 }
 
+.ply-srh__top .ply-reg__card.ply-reg__card--max200 {
+    max-width: 20rem;
+}
+
+.ply-srh__top .ply-reg__card.ply-reg__card--max220 {
+    max-width: 22rem;
+}
+
 .ply-srh__top .ply-reg__flex {
     width: 100%;
+    height: 100%;
 }
 
 .ply-srh__top--gap5 {
@@ -1582,11 +1589,15 @@
 }
 
 .ply-src__btn--right {
-    min-width: 4rem;
+    min-width: 5rem;
     height: 4rem;
     padding: 1.2rem;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.ply-src__btn--right:hover {
+    opacity: .7;
 }
 
 .ply-srh__table {
@@ -1594,7 +1605,7 @@
 }
 
 .ply-srh__table th {
-    padding: 1.45rem;
+    height: 4rem;
     text-align: center;
     vertical-align: middle;
     font-weight: 600;
@@ -1606,7 +1617,7 @@
 }
 
 .ply-srh__table td {
-    padding: 1.35rem;
+    height: 4rem;
     text-align: center;
     vertical-align: middle;
     font-weight: 400;
@@ -2444,6 +2455,7 @@
 .ply-reg__input {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     max-height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
@@ -2473,6 +2485,10 @@
 
 .ply-reg__input--max150 {
     max-width: 15rem;
+}
+
+.ply-reg__input--max160 {
+    max-width: 16rem;
 }
 
 .ply-reg__input--max170 {
