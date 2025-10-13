@@ -1037,17 +1037,14 @@
     font-weight: 600;
     font-size: 2.2rem;
     color: #333;
-    padding-bottom: 1rem;
-    padding-right: 4rem;
+    padding: 0 2rem 3rem;
     border-bottom: 1px solid #000000;
     margin-bottom: 3rem;
 }
 
 .ply-pop__tit2 span {
-    padding-bottom: 2rem;
     color: #000000;
     font-size: 2.1rem;
-    padding-left: 2rem;
 }
 
 .ply-pop__scroll {
@@ -1478,7 +1475,6 @@
     background: #333;
     border-radius: 3rem;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 .ply-pop__help a {
@@ -1496,11 +1492,11 @@
     content: '';
     display: block;
     width: 1px;
-    height: 11px;
+    height: 6px;
     background: #fff;
     position: absolute;
     top: 50%;
-    left: -15px;
+    left: -8px;
     transform: translateY(-50%);
 }
 
@@ -1518,32 +1514,34 @@
 .ply-pop__help--row {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1.7rem;
 }
 
 .ply-pop__help--row span {
-    padding-top: 2rem;
     font-size: 1.2rem;
 }
 
 .ply-pop__tit2 .ply-pop__right {
-    padding: 0.9rem 1.3rem !important;
+    padding: 0 1.3rem;
     height: 2.5rem;
+    background: #111;
 }
 
 .ply-pop__right a {
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
-.ply-pop__tit2--right2 {
-    padding-right: 2rem;
+.ply-srh {
+    padding: 0 2rem;
 }
 
 .ply-srh__top {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    height: 4rem;
 }
 
 .ply-srh__top .ply-reg__card {
@@ -1551,8 +1549,17 @@
     max-width: 33rem;
 }
 
+.ply-srh__top .ply-reg__card.ply-reg__card--max200 {
+    max-width: 20rem;
+}
+
+.ply-srh__top .ply-reg__card.ply-reg__card--max220 {
+    max-width: 22rem;
+}
+
 .ply-srh__top .ply-reg__flex {
     width: 100%;
+    height: 100%;
 }
 
 .ply-srh__top--gap5 {
@@ -1599,11 +1606,15 @@
 }
 
 .ply-src__btn--right {
-    min-width: 4rem;
+    min-width: 5rem;
     height: 4rem;
     padding: 1.2rem;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.ply-src__btn--right:hover {
+    opacity: .7;
 }
 
 .ply-srh__table {
@@ -1611,7 +1622,7 @@
 }
 
 .ply-srh__table th {
-    padding: 1.45rem;
+    height: 4rem;
     text-align: center;
     vertical-align: middle;
     font-weight: 600;
@@ -1623,7 +1634,7 @@
 }
 
 .ply-srh__table td {
-    padding: 1.35rem;
+    height: 4rem;
     text-align: center;
     vertical-align: middle;
     font-weight: 400;
@@ -1660,9 +1671,9 @@
 
 .ply-srh__table td:last-child,
 .ply-srh__table th:last-child {
-    white-space: nowrap;       
-    overflow: hidden;          
-    text-overflow: ellipsis;   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .max-w200 {
@@ -2454,6 +2465,7 @@
 .ply-reg__input {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     max-height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
@@ -2483,6 +2495,10 @@
 
 .ply-reg__input--max150 {
     max-width: 15rem;
+}
+
+.ply-reg__input--max160 {
+    max-width: 16rem;
 }
 
 .ply-reg__input--max170 {
@@ -2555,46 +2571,46 @@
 }
 
 .ply-reg__input--hanmun {
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #CCCCCC;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #CCCCCC;
 }
 
 .ply-reg__row {
-  display: flex;
-  height: auto;
-  gap: 2rem; 
+    display: flex;
+    height: auto;
+    gap: 2rem;
 }
 
 .ply-reg__row .ply-reg__card {
-  flex: 1;
+    flex: 1;
 }
 
-.ply-reg__card.ply-reg__card--end{
+.ply-reg__card.ply-reg__card--end {
     justify-content: end;
 }
 
 .ply-reg__agree {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    white-space: nowrap;
 }
 
-.ply-reg__agree.ply-reg__agree-h40{
+.ply-reg__agree.ply-reg__agree-h40 {
     height: 4rem;
     padding-top: 0;
 }
 
 .ply-reg__agree .ply-reg__radio {
-  width: 18px;
-  height: 18px;
-  accent-color: #0C54B8; 
-  cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #0C54B8;
+    cursor: pointer;
 }
 
 .ply-reg__agree .ply-reg__radio:checked {
-  accent-color: #0C54B8;
+    accent-color: #0C54B8;
 }
 
 .ply-reg__checkbox {
@@ -2830,27 +2846,27 @@
 }
 
 .radiobox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .radiobox:checked {
-  border-color: #0C54B8;
+    border-color: #0C54B8;
 }
 
 .ply-reg__radio-label {
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #333333;
-  cursor: pointer;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #333333;
+    cursor: pointer;
 }
 
 .ply-reg__item2 .ply-reg__label {
@@ -2996,7 +3012,7 @@
     color: #333333;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
-    
+
 }
 
 .ply-reg__check-list ul {
@@ -3110,33 +3126,33 @@
 }
 
 .transfer-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #0C54B8;
-  border-radius: .5rem;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #0C54B8;
+    border-radius: .5rem;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
 }
 
 .transfer-checkbox:checked {
-  background-color: #0C54B8;
-  border-color: #0C54B8;
+    background-color: #0C54B8;
+    border-color: #0C54B8;
 }
 
 .transfer-checkbox:checked::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 6px;
-  width: 5px;
-  height: 9px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .transfer-line .transfer-buttons .transfer-btn {
@@ -4000,8 +4016,9 @@
 }
 
 .mmb__block--pd50 {
-  padding-bottom: 5rem;
+    padding-bottom: 5rem;
 }
+
 .mmb__block--p0 {
     padding-bottom: 0;
 }
