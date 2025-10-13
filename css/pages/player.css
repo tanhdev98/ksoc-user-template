@@ -3163,6 +3163,12 @@
 .transfer-line--gap15 {
     gap: 1.5rem;
 }
+.transfer-line__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
 
 .checkbox:not(:checked)~.transfer-buttons .transfer-btn {
     background-color: #DDDDDD;
@@ -3952,6 +3958,14 @@
 
 .mmb__tit--text {
     font-size: 2.1rem;
+}   
+
+.ply-bsc__block .mmb__tit--mb30 {
+    margin-bottom: 3rem;
+}
+
+.ply-reg__item--mb0 {
+    margin-bottom: 0;
 }
 
 .ply-reg__adrs {
@@ -4024,8 +4038,12 @@
     padding-bottom: 0;
 }
 
-.mmb__block--pd50 {
+.mmb__block--pb50 {
     padding-bottom: 5rem;
+}
+
+.mmb__block--pt20 {
+    padding-top: 2rem;
 }
 
 .ply-reg__list--pd20 {
