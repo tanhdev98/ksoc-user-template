@@ -543,6 +543,16 @@
     display: none;
 }
 
+.chc__list--img .chc__item .game__tit span {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.chc__list--img .chc__item .game__item span {
+    line-height: 1;
+    height: auto;
+}
+
 .prcd {
     display: none;
     padding-top: 4.5rem;
