@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,71 +11,72 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
         <header class="ply-hdr">
-        <div class="inner">
-            <div class="ply-hdr__lf">
-                <h1 class="ply-hdr__logo">
-                    <img src="images/ptu_m1_0501/image01.png" alt="">
-                    <span>(사)대한골프협회</span>
-                </h1>
-                <div class="ply-hdr__pop">
-                    <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
-                    <div class="game__pop">
-                        <div class="game__tit">
-                            <span><b>대한골프협회</b> 경기인 선택</span>
+            <div class="inner">
+                <div class="ply-hdr__lf">
+                    <h1 class="ply-hdr__logo">
+                        <img src="images/ptu_m1_0501/image01.png" alt="">
+                        <span>(사)대한골프협회</span>
+                    </h1>
+                    <div class="ply-hdr__pop">
+                        <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
+                        <div class="game__pop">
+                            <div class="game__tit">
+                                <span><b>대한골프협회</b> 경기인 선택</span>
+                            </div>
+                            <ul class="game__list">
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/player-icon.png" alt="">
+                                        <span>선수</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/director-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/judgment-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/manager-icon.png" alt="">
+                                        <span>선수관리<br>담당자</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="game__desc">신청 유형을 선택하세요.</p>
                         </div>
-                        <ul class="game__list">
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/player-icon.png" alt="">
-                                    <span>선수</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/director-icon.png" alt="">
-                                    <span>지도자</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/judgment-icon.png" alt="">
-                                    <span>지도자</span>
-                                </a>
-                            </li>
-                            <li class="game__item">
-                                <a href="#" class="game__link">
-                                    <img src="images/icons/manager-icon.png" alt="">
-                                    <span>선수관리<br>담당자</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="game__desc">신청 유형을 선택하세요.</p>
+                    </div>
+                </div>
+                <div class="ply-hdr__rt">
+                    <ul class="ply-hdr__list">
+                        <li>
+                            <a href="#">종목변경</a>
+                        </li>
+                        <li>
+                            <a href="#">스포츠지원포털</a>
+                        </li>
+                        <li>
+                            <a href="#">화면번호</a>
+                        </li>
+                    </ul>
+                    <div class="ply-hdr__help">
+                        <a href="#"><b>430</b></a>
+                        <a href="#">화면도움말</a>
                     </div>
                 </div>
             </div>
-            <div class="ply-hdr__rt">
-                <ul class="ply-hdr__list">
-                    <li>
-                        <a href="#">종목변경</a>
-                    </li>
-                    <li>
-                        <a href="#">스포츠지원포털</a>
-                    </li>
-                    <li>
-                        <a href="#">화면번호</a>
-                    </li>
-                </ul>
-                <div class="ply-hdr__help">
-                    <a href="#"><b>430</b></a>
-                    <a href="#">화면도움말</a>
-                </div>
-            </div>
-        </div>
-    </header>
+        </header>
         <!-- // header -->
         <!-- gnb -->
         <nav class="ply-nav">
@@ -145,7 +147,7 @@
                                                 <option value="">선택</option>
                                                 <option value="">단체전</option>
                                                 <option value="">개인전</option>
-                                            </select>              
+                                            </select>
                                         </div>
                                     </li>
                                     <li class="ply-reg__item">
@@ -162,12 +164,14 @@
                                             <label for="" class="ply-reg__label">학교코드 *</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap3">
                                                 <input type="text" class="ply-reg__input">
-                                                <button type="button" class="ply-reg__btn ply-reg__btn--min80">검색</button>
+                                                <button type="button"
+                                                    class="ply-reg__btn ply-reg__btn--min80">검색</button>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="ply-reg__desc">
-                                        ※ 비 학교(체육관팀,클럽,동호회,시도지부,협회 등)면서 초중고대의 종별일 경우, 학교 여부를 [비학교]로 선택<br>학교코드가 조회 내역에 없을 경우, 종목단체에 문의해주세요.
+                                        ※ 비 학교(체육관팀,클럽,동호회,시도지부,협회 등)면서 초중고대의 종별일 경우, 학교 여부를 [비학교]로 선택<br>학교코드가 조회 내역에
+                                        없을 경우, 종목단체에 문의해주세요.
                                     </li>
                                     <li class="ply-reg__item">
                                         <div class="ply-reg__card">
@@ -219,91 +223,126 @@
                                                 <ul>
                                                     <li>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="ageGroup" value="12under" id="age-12">
+                                                            <input type="checkbox" class="checkbox" name="ageGroup"
+                                                                value="12under" id="age-12">
                                                             <label for="age-12">12세 이하부(초등부)</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_12under" value="male" id="gender-12-m" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_12under" value="male" id="gender-12-m"
+                                                                disabled>
                                                             <label for="gender-12-m">남자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_12under" value="female" id="gender-12-f" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_12under" value="female" id="gender-12-f"
+                                                                disabled>
                                                             <label for="gender-12-f">여자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_12under" value="mixed" id="gender-12-mix" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_12under" value="mixed" id="gender-12-mix"
+                                                                disabled>
                                                             <label for="gender-12-mix">혼성</label>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="ageGroup" value="15under" id="age-15">
+                                                            <input type="checkbox" class="checkbox" name="ageGroup"
+                                                                value="15under" id="age-15">
                                                             <label for="age-15">15세 이하부(중학부)</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_15under" value="male" id="gender-15-m" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_15under" value="male" id="gender-15-m"
+                                                                disabled>
                                                             <label for="gender-15-m">남자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_15under" value="female" id="gender-15-f" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_15under" value="female" id="gender-15-f"
+                                                                disabled>
                                                             <label for="gender-15-f">여자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_15under" value="mixed" id="gender-15-mix" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_15under" value="mixed" id="gender-15-mix"
+                                                                disabled>
                                                             <label for="gender-15-mix">혼성</label>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="ageGroup" value="18under" id="age-18">
+                                                            <input type="checkbox" class="checkbox" name="ageGroup"
+                                                                value="18under" id="age-18">
                                                             <label for="age-18">18세 이하부(고등부)</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_18under" value="male" id="gender-18-m" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_18under" value="male" id="gender-18-m"
+                                                                disabled>
                                                             <label for="gender-18-m">남자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_18under" value="female" id="gender-18-f" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_18under" value="female" id="gender-18-f"
+                                                                disabled>
                                                             <label for="gender-18-f">여자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_18under" value="mixed" id="gender-18-mix" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_18under" value="mixed" id="gender-18-mix"
+                                                                disabled>
                                                             <label for="gender-18-mix">혼성</label>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="ageGroup" value="college" id="age-college">
+                                                            <input type="checkbox" class="checkbox" name="ageGroup"
+                                                                value="college" id="age-college">
                                                             <label for="age-college">대학부</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_college" value="male" id="gender-college-m" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_college" value="male" id="gender-college-m"
+                                                                disabled>
                                                             <label for="gender-college-m">남자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_college" value="female" id="gender-college-f" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_college" value="female"
+                                                                id="gender-college-f" disabled>
                                                             <label for="gender-college-f">여자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_college" value="mixed" id="gender-college-mix" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_college" value="mixed"
+                                                                id="gender-college-mix" disabled>
                                                             <label for="gender-college-mix">혼성</label>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="ageGroup" value="general" id="age-general">
+                                                            <input type="checkbox" class="checkbox" name="ageGroup"
+                                                                value="general" id="age-general">
                                                             <label for="age-general">일반부</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_general" value="male" id="gender-general-m" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_general" value="male" id="gender-general-m"
+                                                                disabled>
                                                             <label for="gender-general-m">남자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_general" value="female" id="gender-general-f" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_general" value="female"
+                                                                id="gender-general-f" disabled>
                                                             <label for="gender-general-f">여자</label>
                                                         </div>
                                                         <div class="ply-reg__check-block">
-                                                            <input type="checkbox" class="checkbox" name="gender_general" value="mixed" id="gender-general-mix" disabled>
+                                                            <input type="checkbox" class="checkbox"
+                                                                name="gender_general" value="mixed"
+                                                                id="gender-general-mix" disabled>
                                                             <label for="gender-general-mix">혼성</label>
                                                         </div>
                                                     </li>
@@ -321,11 +360,14 @@
                                         <div class="ply-reg__adr">
                                             <label for="" class="ply-reg__label">팀 주소 *</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap3">
-                                                <input type="text" class="ply-reg__input ply-reg__input--max150" placeholder="우편번호">
+                                                <input type="text" class="ply-reg__input ply-reg__input--max150"
+                                                    placeholder="우편번호">
                                                 <button type="button" class="ply-reg__btn">우편번호 검색</button>
                                             </div>
-                                            <input type="text" class="ply-reg__input ply-reg__input--max660" placeholder="상세주소 1">
-                                            <input type="text" class="ply-reg__input ply-reg__input--max660" placeholder="상세주소 2">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max660"
+                                                placeholder="상세주소 1">
+                                            <input type="text" class="ply-reg__input ply-reg__input--max660"
+                                                placeholder="상세주소 2">
                                         </div>
                                     </li>
                                     <li class="ply-reg__item">
@@ -368,7 +410,9 @@
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label">창단일</label>
                                             <div class="date-inputbox">
-                                                <input type="text" class="date-input datepicker hasDatepicker" id="dp1747061123782"><img class="ui-datepicker-trigger" src="images/icons/calendar-gray-icon.png" alt="..." title="...">
+                                                <input type="text" class="date-input datepicker hasDatepicker"
+                                                    id="dp1747061123782"><img class="ui-datepicker-trigger"
+                                                    src="images/icons/calendar-gray-icon.png" alt="..." title="...">
                                             </div>
                                         </div>
                                         <div class="ply-reg__card">
@@ -419,8 +463,11 @@
                             </div>
                             <div class="pstn__bm">
                                 <button type="button" class="pstn__top-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                        <path d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z" fill="#666666"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                        fill="none">
+                                        <path
+                                            d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM8 1H7V17H8H9V1H8Z"
+                                            fill="#666666"></path>
                                     </svg>
                                     <span>TOP</span>
                                 </button>
@@ -459,21 +506,23 @@
     </div>
 
     <!-- popup -->
-    <div class="popup on">
-        <section class="ply-pop ply-pop--max1220">
+    <div class="popup on ">
+        <section class="ply-pop ply-pop--max760">
             <button type="button" class="popup__close popup__close--top45">
                 <span class="blind">팝업닫기</span>
             </button>
-            <h3 class="ply-pop__tit2">
+            <h3 class="ply-pop__tit2 ply-pop__tit2--right2">
                 <span>학교팀코드 선택</span>
-                <div class="ply-pop__help">
-                    <span>화면번호</span>
-                    <a href="#"><b>27001-1</b></a>
-                    <a href="#">화면도움말</a>
+                <div class="ply-pop__help ply-pop__right">
+                    <div class="ply-pop__help--row">
+                        <span>화면번호</span>
+                        <a href="#"><b>27001-1</b></a>
+                        <a href="#">화면도움말</a>
+                    </div>
                 </div>
             </h3>
             <div class="ply-srh">
-                <div class="ply-srh__top">
+                <div class="ply-srh__top ply-srh__top--gap5">
                     <div class="ply-reg__card">
                         <select name="" id="" class="selectbox">
                             <option value="">학교구분</option>
@@ -491,12 +540,20 @@
                             <option value="">인천</option>
                         </select>
                     </div>
-                    <div class="ply-reg__flex ply-reg__flex--gap3">
+                    <div class="ply-reg__flex ply-reg__flex--gap5">
                         <input type="text" class="ply-reg__input">
-                        <button type="button" class="ply-src__btn">검색</button>
+                        <button type="button" class="ply-src__btn ply-src__btn--right">검색</button>
                     </div>
                 </div>
-                <table class="ply-srh__table">
+                <table class="ply-srh__table ply-srh__table--ellipsis">
+                    <colgroup>
+                        <col style="width: 4rem;">
+                        <col style="width: 10rem;">
+                        <col style="width: auto;">
+                        <col style="width: 6rem;">
+                        <col style="width: 8rem;">
+                        <col style="width: 16rem;">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th>No</th>
@@ -505,20 +562,32 @@
                             <th>시도</th>
                             <th>학교구분</th>
                             <th>주소</th>
-                            <th>선택</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td>NA00108</td>
-                            <td class="text-left wd430">덜위치칼리지서울영국학교</td>
+                            <td>덜위치칼리지서울영국학교</td>
                             <td>서울</td>
                             <td>초등학교</td>
                             <td>서울 서초구 반포2동 5-1</td>
-                            <td class="wd120">
-                                <button type="button" class="ply-src__tbtn">선택</button>
-                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>NA00108</td>
+                            <td>덜위치칼리지서울영국학교</td>
+                            <td>서울</td>
+                            <td>초등학교</td>
+                            <td>서울 서초구 반포2동 5-1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NA00108</td>
+                            <td>덜위치칼리지서울영국학교</td>
+                            <td>서울</td>
+                            <td>초등학교</td>
+                            <td>서울 서초구 반포2동 5-1</td>
                         </tr>
                     </tbody>
                 </table>
@@ -527,4 +596,5 @@
     </div>
     <!-- // popup -->
 </body>
+
 </html>
