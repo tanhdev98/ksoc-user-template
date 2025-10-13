@@ -393,23 +393,6 @@
     color: #666666;
 }
 
-.pyramid-text span {
-    display: block;
-    margin: 0 auto;
-}
-
-.pyramid-text .line1 {
-    width: 67rem;
-}
-
-.pyramid-text .line2 {
-    width: 50rem;
-}
-
-.pyramid-text .line3 {
-    width: 38rem;
-}
-
 .ply__flex {
     display: flex;
     gap: 2rem;
@@ -2451,6 +2434,13 @@
     min-width: 15rem;
 }
 
+.ply-reg__item4--pd20 {
+    padding-top: 1rem !important;
+}
+
+.ply-reg__item4--mrb20 {
+    margin-bottom: 2rem !important;
+}
 
 .ply-reg__input-group {
     display: flex;
@@ -2862,6 +2852,10 @@
     border-color: #0C54B8;
 }
 
+.mrr0 {
+    margin-right: 0 !important;
+}
+
 .ply-reg__radio-label {
     font-weight: 400;
     font-size: 1.3rem;
@@ -2977,6 +2971,10 @@
     margin-bottom: 1rem;
 }
 
+.ply-reg__item5--columns190 {
+    grid-template-columns: 20rem 19rem 19rem;
+}
+
 .ply-reg__card .date-input {
     width: 100%;
     max-height: 4rem;
@@ -2989,7 +2987,7 @@
 .ply-reg__card .date-input.on {
     padding: 0;
     height: 4rem;
-    max-width: 42rem;
+    max-width: 41rem;
 }
 
 .ply-reg__radio-label {
@@ -3128,8 +3126,8 @@
 .transfer-checkbox {
     appearance: none;
     -webkit-appearance: none;
-    width: 2rem;
-    height: 2rem;
+    width: 2rem !important;
+    height: 2rem !important;
     border: 1px solid #0C54B8;
     border-radius: .5rem;
     background-color: #fff;
@@ -3159,7 +3157,11 @@
     cursor: pointer;
 }
 
-.transfer-checkbox:not(:checked)~.transfer-buttons .transfer-btn {
+.transfer-line--gap15 {
+    gap: 1.5rem;
+}
+
+.checkbox:not(:checked)~.transfer-buttons .transfer-btn {
     background-color: #DDDDDD;
     cursor: not-allowed;
 }
@@ -3941,6 +3943,10 @@
     margin-bottom: 2rem;
 }
 
+.mmb__tit--border {
+    border-bottom: 1px solid #DDDDDD;
+}
+
 .mmb__tit--text {
     font-size: 2.1rem;
 }
@@ -4017,6 +4023,14 @@
 
 .mmb__block--pd50 {
     padding-bottom: 5rem;
+}
+
+.ply-reg__list--pd20 {
+    padding-left: 2rem;
+}
+
+.mmb__block--pd40 {
+    padding-bottom: 4rem;
 }
 
 .mmb__block--p0 {
