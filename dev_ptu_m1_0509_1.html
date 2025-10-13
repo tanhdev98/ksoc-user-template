@@ -127,15 +127,15 @@
             <div class="inner">
                 <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20">소속변경신청</h3>
                 <p class="ply__desc pyramid-text">
-                    <span class="line1">활동재개 신청은 활동 종료 상태에서만 가능하며, 이미 신청한 건이 처리중일 경우 활동재개 신청을 할 수 없습</span>
-                    <span class="line2">니다.징계로 인해 활동종료 처리된 경우 징계기간 만료 후 신청 할 수 있습니다.</span>
-                    <span class="line3">신청 후 승인은 각 회원 종목 단체의 절차에 따라 진행됩니다.</span>
+                    활동재개 신청은 활동 종료 상태에서만 가능하며, 이미 신청한 건이 처리중일 경우 활동재개 신청을 할 수 없습니다.</br>
+                    징계로 인해 활동종료 처리된 경우 징계기간 만료 후 신청 할 수 있습니다. </br>
+                    신청 후 승인은 각 회원 종목 단체의 절차에 따라 진행됩니다.</br>
                 </p>
                 <div class="ply-bsc">
                     <div class="ply-bsc__lf ply-bsc__block">
                         <div>
                             <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20">선수 상세정보</h3>
-                            <div class="mmb__block mmb__block--pd50">
+                            <div class="mmb__block mmb__block--pd40">
                                 <ul class="ply-reg__list">
                                     <li class="ply-reg__item">
                                         <div class="ply-reg__card">
@@ -187,8 +187,8 @@
                                         </div>
                                         <div class="ply-reg__card ply-reg__card--end">
                                             <div class="ply-reg__agree ply-reg__checkbox ply-reg__agree-h40">
-                                                <input type="checkbox" class="ply-reg__radio" name="agreeYn" title="동의"
-                                                    checked>
+                                                <input type="checkbox" class="transfer-checkbox checkbox"
+                                                    class="ply-reg__radio" name="agreeYn" title="동의" checked>
                                                 <span>승인진행안내 수신 동의</span>
                                             </div>
                                         </div>
@@ -213,9 +213,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20">소속팀 상세정보</h3>
+                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20 mmb__tit--border">소속팀 상세정보</h3>
                             <div>
-                                <ul class="ply-reg__list">
+                                <ul class="ply-reg__list ply-reg__list--pd20">
                                     <li class="ply-reg__item2">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--pd0"
@@ -228,7 +228,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item5">
+                                    <li class="ply-reg__item5 ply-reg__item5--columns190">
                                         <div class="ply-reg__card on">
                                             <label for="" class="ply-reg__label" aria-required="true">팀 입단</label>
                                             <div class="date-inputbox">
@@ -263,9 +263,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item4 transfer-item">
-                                        <div class="transfer-line">
-                                            <input type="checkbox" class="transfer-checkbox" checked>
+                                    <li class="ply-reg__item4 transfer-item ply-reg__item4--mr20">
+                                        <div class="transfer-line transfer-line--gap15">
+                                            <input type="checkbox" class="transfer-checkbox checkbox" checked>
                                             <span class="transfer-text">이적동의서 있음</span>
                                             <div class="transfer-buttons">
                                                 <button type="button" class="transfer-btn">
@@ -280,7 +280,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item4">
+                                    <li class="ply-reg__item4 ply-reg__item4--pd20 ply-reg__item4--pd20 ply-reg__item4--mrb20">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label">학제에 따른 활동사유*</label>
                                             <input type="text" class="ply-reg__input max-w200">
@@ -289,11 +289,11 @@
                                     <li class="ply-reg__item2">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pf1"
-                                                aria-required="true">소속팀과 금전계약(근로/연봉계약 등) 체결 여부*</label>
+                                                aria-required="true">소속팀과 금전계약(근로/연봉계약 등) 체결 여부</label>
                                             <div class="ply-reg__flex">
-                                                <input type="radio" name="signYn" id="signY" class="radiobox" checked>
-                                                <label for="signY" class="ply-reg__radio-label on mr25">체결</label>
-                                                <input type="radio" name="signYn" id="signN" class="radiobox">
+                                                <input type="radio" name="signYn" id="signY" class="radiobox mrr0" checked>
+                                                <label for="signY" class="ply-reg__radio-label on mr25 ">체결</label>
+                                                <input type="radio" name="signYn" id="signN" class="radiobox mrr0">
                                                 <label for="signN" class="ply-reg__radio-label on">미체결</label>
                                             </div>
                                         </div>
@@ -328,6 +328,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="indv__btbx indv__btbx--center">
+                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--110">취소</button>
+                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--blue indv__btn--110">확인</button>
                 </div>
             </div>
         </section>

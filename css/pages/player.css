@@ -393,23 +393,6 @@
     color: #666666;
 }
 
-.pyramid-text span {
-    display: block;
-    margin: 0 auto;
-}
-
-.pyramid-text .line1 {
-    width: 67rem;
-}
-
-.pyramid-text .line2 {
-    width: 50rem;
-}
-
-.pyramid-text .line3 {
-    width: 38rem;
-}
-
 .ply__flex {
     display: flex;
     gap: 2rem;
@@ -1660,9 +1643,9 @@
 
 .ply-srh__table td:last-child,
 .ply-srh__table th:last-child {
-    white-space: nowrap;       
-    overflow: hidden;          
-    text-overflow: ellipsis;   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .max-w200 {
@@ -2440,6 +2423,13 @@
     min-width: 15rem;
 }
 
+.ply-reg__item4--pd20 {
+    padding-top: 1rem !important;
+}
+
+.ply-reg__item4--mrb20 {
+    margin-bottom: 2rem !important;
+}
 
 .ply-reg__input-group {
     display: flex;
@@ -2555,46 +2545,46 @@
 }
 
 .ply-reg__input--hanmun {
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #CCCCCC;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #CCCCCC;
 }
 
 .ply-reg__row {
-  display: flex;
-  height: auto;
-  gap: 2rem; 
+    display: flex;
+    height: auto;
+    gap: 2rem;
 }
 
 .ply-reg__row .ply-reg__card {
-  flex: 1;
+    flex: 1;
 }
 
-.ply-reg__card.ply-reg__card--end{
+.ply-reg__card.ply-reg__card--end {
     justify-content: end;
 }
 
 .ply-reg__agree {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    white-space: nowrap;
 }
 
-.ply-reg__agree.ply-reg__agree-h40{
+.ply-reg__agree.ply-reg__agree-h40 {
     height: 4rem;
     padding-top: 0;
 }
 
 .ply-reg__agree .ply-reg__radio {
-  width: 18px;
-  height: 18px;
-  accent-color: #0C54B8; 
-  cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #0C54B8;
+    cursor: pointer;
 }
 
 .ply-reg__agree .ply-reg__radio:checked {
-  accent-color: #0C54B8;
+    accent-color: #0C54B8;
 }
 
 .ply-reg__checkbox {
@@ -2830,27 +2820,31 @@
 }
 
 .radiobox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .radiobox:checked {
-  border-color: #0C54B8;
+    border-color: #0C54B8;
+}
+
+.mrr0 {
+    margin-right: 0 !important;
 }
 
 .ply-reg__radio-label {
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #333333;
-  cursor: pointer;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #333333;
+    cursor: pointer;
 }
 
 .ply-reg__item2 .ply-reg__label {
@@ -2961,6 +2955,10 @@
     margin-bottom: 1rem;
 }
 
+.ply-reg__item5--columns190 {
+    grid-template-columns: 20rem 19rem 19rem;
+}
+
 .ply-reg__card .date-input {
     width: 100%;
     max-height: 4rem;
@@ -2973,7 +2971,7 @@
 .ply-reg__card .date-input.on {
     padding: 0;
     height: 4rem;
-    max-width: 42rem;
+    max-width: 41rem;
 }
 
 .ply-reg__radio-label {
@@ -2996,7 +2994,7 @@
     color: #333333;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
-    
+
 }
 
 .ply-reg__check-list ul {
@@ -3110,40 +3108,44 @@
 }
 
 .transfer-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #0C54B8;
-  border-radius: .5rem;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 2rem !important;
+    height: 2rem !important;
+    border: 1px solid #0C54B8;
+    border-radius: .5rem;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
 }
 
 .transfer-checkbox:checked {
-  background-color: #0C54B8;
-  border-color: #0C54B8;
+    background-color: #0C54B8;
+    border-color: #0C54B8;
 }
 
 .transfer-checkbox:checked::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 6px;
-  width: 5px;
-  height: 9px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .transfer-line .transfer-buttons .transfer-btn {
     cursor: pointer;
 }
 
-.transfer-checkbox:not(:checked)~.transfer-buttons .transfer-btn {
+.transfer-line--gap15 {
+    gap: 1.5rem;
+}
+
+.checkbox:not(:checked)~.transfer-buttons .transfer-btn {
     background-color: #DDDDDD;
     cursor: not-allowed;
 }
@@ -3925,6 +3927,10 @@
     margin-bottom: 2rem;
 }
 
+.mmb__tit--border {
+    border-bottom: 1px solid #DDDDDD;
+}
+
 .mmb__tit--text {
     font-size: 2.1rem;
 }
@@ -4000,8 +4006,17 @@
 }
 
 .mmb__block--pd50 {
-  padding-bottom: 5rem;
+    padding-bottom: 5rem;
 }
+
+.ply-reg__list--pd20 {
+    padding-left: 2rem;
+}
+
+.mmb__block--pd40 {
+    padding-bottom: 4rem;
+}
+
 .mmb__block--p0 {
     padding-bottom: 0;
 }
