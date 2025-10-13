@@ -2350,6 +2350,15 @@
     margin-bottom: 1rem;
 }
 
+.ply-reg__item--colum {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem; 
+    row-gap: 1rem;      
+    margin-bottom: 1rem;
+}
+
+
 .ply-reg__item-row {
     display: flex;
 }
@@ -2613,6 +2622,10 @@
 
 .ply-reg__flex--gap10 {
     gap: 1rem;
+}
+
+.ply-reg__flex--gap5 {
+    gap: 5px;
 }
 
 .ply-reg__flex .ml7 {
@@ -3167,7 +3180,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+
 }
 
 .checkbox:not(:checked)~.transfer-buttons .transfer-btn {
@@ -4056,6 +4069,10 @@
 
 .mmb__block--p0 {
     padding-bottom: 0;
+}
+
+.mmb__block--mt-30 {
+    margin-top: 3rem;
 }
 
 .class--address2 {
