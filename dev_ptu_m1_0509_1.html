@@ -132,8 +132,8 @@
                     신청 후 승인은 각 회원 종목 단체의 절차에 따라 진행됩니다.</br>
                 </p>
                 <div class="ply-bsc">
-                    <div class="ply-bsc__lf ply-bsc__block">
-                        <div>
+                    <div class="ply-bsc__lf">
+                        <div class="ply-bsc__block">
                             <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20">선수 상세정보</h3>
                             <div class="mmb__block mmb__block--pd40">
                                 <ul class="ply-reg__list">
@@ -194,7 +194,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="ply-reg__item2">
+                                    <li class="ply-reg__item2 ply-reg__item2_mr0">
                                         <div class="ply-reg__adr class--address2">
                                             <label class="ply-reg__label on" aria-required="true">작성자 자택주소</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5">
@@ -213,12 +213,14 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20 mmb__tit--border">소속팀 상세정보</h3>
+                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20 mmb__tit--pb20 mmb__tit--border ">소속팀 상세정보
+                            </h3>
                             <div>
                                 <ul class="ply-reg__list ply-reg__list--pd20">
                                     <li class="ply-reg__item2">
                                         <div class="ply-reg__card">
-                                            <label for="" class="ply-reg__label ply-reg__label--pd0"
+                                            <label for=""
+                                                class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pb10"
                                                 aria-required="true">이적할 소속팀</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5">
                                                 <input type="text" class="ply-reg__input ply-reg__input--max100">
@@ -230,7 +232,7 @@
                                     </li>
                                     <li class="ply-reg__item5 ply-reg__item5--columns190">
                                         <div class="ply-reg__card on">
-                                            <label for="" class="ply-reg__label" aria-required="true">팀 입단</label>
+                                            <label for="" class="ply-reg__label" aria-required="true">이적사유</label>
                                             <div class="date-inputbox">
                                                 <img src="images/ptu_m1_0507/image16.png" alt="">
                                                 <input type="text" class="date-input on datepicker">
@@ -280,7 +282,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item4 ply-reg__item4--pd20 ply-reg__item4--pd20 ply-reg__item4--mrb20">
+                                    <li
+                                        class="ply-reg__item4 ply-reg__item4--pd20 ply-reg__item4--pd20 ply-reg__item4--mrb20">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label">학제에 따른 활동사유*</label>
                                             <input type="text" class="ply-reg__input max-w200">
@@ -291,7 +294,8 @@
                                             <label for="" class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pf1"
                                                 aria-required="true">소속팀과 금전계약(근로/연봉계약 등) 체결 여부</label>
                                             <div class="ply-reg__flex">
-                                                <input type="radio" name="signYn" id="signY" class="radiobox mrr0" checked>
+                                                <input type="radio" name="signYn" id="signY" class="radiobox mrr0"
+                                                    checked>
                                                 <label for="signY" class="ply-reg__radio-label on mr25 ">체결</label>
                                                 <input type="radio" name="signYn" id="signN" class="radiobox mrr0">
                                                 <label for="signN" class="ply-reg__radio-label on">미체결</label>
@@ -300,6 +304,11 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                                                <div class="indv__btbx indv__btbx--center">
+                            <button type="button" class="indv__btn indv__btn_rounded indv__btn--110">취소</button>
+                            <button type="button"
+                                class="indv__btn indv__btn_rounded indv__btn--blue indv__btn--110">확인</button>
                         </div>
                     </div>
                     <div class="ply-bsc__rt">
@@ -328,10 +337,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="indv__btbx indv__btbx--center">
-                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--110">취소</button>
-                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--blue indv__btn--110">확인</button>
                 </div>
             </div>
         </section>

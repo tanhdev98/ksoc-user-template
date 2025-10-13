@@ -2871,6 +2871,10 @@
     padding-bottom: 0rem;
 }
 
+.ply-reg__item2 .ply-reg__label--pb10 {
+    padding-bottom: 1rem;
+}
+
 .ply-reg__adr {
     display: flex;
     flex-direction: column;
@@ -4051,6 +4055,14 @@
 
 .class--address {
     padding: 3rem 2rem 0;
+}
+
+.ply-reg__item2_mr0 {
+    margin-bottom: 0;
+}
+
+.mmb__tit--pb20 {
+    padding-bottom: 3rem !important;
 }
 
 .mmb__dl {
