@@ -337,7 +337,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 3rem;
     padding: 1.3rem 2rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem
 }
 
 .initial__search {
@@ -3102,6 +3102,7 @@ a.ui-button:active,
     padding-bottom: 10rem;
     position: relative;
     overflow: hidden;
+    min-height: calc(100vh - 6.8rem - 15.6rem);
 }
 
 .indv::before {

@@ -553,7 +553,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4rem 0 5rem;
+    padding: 0 2rem 0 3rem;
     position: relative;
     z-index: 1;
 }
@@ -567,7 +567,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 3rem;
+    left: 1rem;
     margin: auto;
 }
 
@@ -2356,8 +2356,8 @@
 .ply-reg__item--colum {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem; 
-    row-gap: 1rem;      
+    column-gap: 2rem;
+    row-gap: 1rem;
     margin-bottom: 1rem;
 }
 
