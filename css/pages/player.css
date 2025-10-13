@@ -2400,6 +2400,7 @@
     min-width: 15rem;
 }
 
+
 .ply-reg__input-group {
     display: flex;
     gap: 6px;
@@ -2411,12 +2412,13 @@
 }
 
 .ply-reg__input {
+    box-sizing: border-box;
     width: 100%;
-    height: 4rem;
+    max-height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background: #fff;
-    padding: 1.2rem 1.7rem;
+    padding: 0.9rem 1.7rem;
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
@@ -2887,7 +2889,7 @@
 
 .ply-reg__card .date-input {
     width: 100%;
-    height: 5rem;
+    max-height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     font-weight: 600;
@@ -2915,11 +2917,12 @@
 }
 
 .ply-reg__desc {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    color: #666;
-    padding: 1rem 2rem;
+    color: #333333;
+    padding: 1rem 1rem;
     margin-bottom: 1rem;
+    
 }
 
 .ply-reg__check-list ul {

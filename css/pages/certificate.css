@@ -2502,8 +2502,8 @@
 }
 
 .date-inputbox .ui-datepicker-trigger {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: contain;
     position: absolute;
     top: 50%;
@@ -3365,6 +3365,15 @@ a.ui-button:active,
     cursor: pointer;
 }
 
+.indv__btbx--center .indv__btn_rounded {
+    border-radius: 3.5rem !important; 
+}
+
+.indv__btbx--center {
+    margin-top: 4rem;
+    margin-left: 20rem;
+}
+
 .indv__btn--blue {
     background: #0C54B8;
 }
@@ -3383,6 +3392,10 @@ a.ui-button:active,
 
 .indv__btn--100 {
     width: 10rem;
+}
+
+.indv__btn--110 {
+    width: 11rem;
 }
 
 .indv__btn--large {
