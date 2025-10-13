@@ -127,10 +127,10 @@
             <div class="inner">
                 <h3 class="ply__tit ply__tit--pd0 ply__tit--mb30">전문체육팀</h3>
                 <div class="ply-bsc">
-                    <div class="ply-bsc__lf ply-bsc__block">
-                        <div>
-                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb20">소속팀 신청 상세정보</h3>
-                            <div class="mmb__block mmb__block--pb0">
+                    <div class="ply-bsc__lf ">
+                        <div class="ply-bsc__block">
+                            <h3 class="mmb__tit mmb__tit--text mmb__tit--mb30">소속팀 신청 상세정보</h3>
+                            <div class="mmb__block mmb__block--pb0 mmb__block--pt20">
                                 <ul class="ply-reg__list">
                                     <li class="ply-reg__item">
                                         <div class="ply-reg__card">
@@ -140,7 +140,7 @@
                                         </div>
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">소속팀명 *</label>
+                                                aria-required="true">소속팀명</label>
                                             <input type="text" class="ply-reg__input">
                                         </div>
                                         <div class="ply-reg__card">
@@ -155,7 +155,7 @@
                                     <li class="ply-reg__item">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">소속팀명 *</label>
+                                                aria-required="true">소속팀명</label>
                                             <input type="text" class="ply-reg__input">
                                         </div>
                                         <div class="ply-reg__card">
@@ -175,7 +175,7 @@
                                     <li class="ply-reg__item">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">소속 구분 *</label>
+                                                aria-required="true">소속 구분</label>
                                             <select name="" id="" class="selectbox">
                                                 <option value="">선택</option>
                                                 <option value="">학교운동부</option>
@@ -184,10 +184,10 @@
                                             </select>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item">
+                                    <li class="ply-reg__item ply-reg__item--colum">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">종별코드 *</label>
+                                                aria-required="true">종별코드</label>
                                             <select name="" id="" class="selectbox">
                                                 <option value="">선택</option>
                                                 <option value="">[11]12세 이하부</option>
@@ -218,7 +218,7 @@
                                         </div>
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">종별코드 *</label>
+                                                aria-required="true">종별코드</label>
                                             <select name="" id="" class="selectbox">
                                                 <option value="">선택</option>
                                                 <option value="">[11]12세 이하부</option>
@@ -229,7 +229,7 @@
                                         </div>
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
-                                                aria-required="true">종별코드 *</label>
+                                                aria-required="true">종별코드</label>
                                             <select name="" id="" class="selectbox">
                                                 <option value="">선택</option>
                                                 <option value="">[11]12세 이하부</option>
@@ -241,15 +241,13 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            <h3 class="mmb__tit"></h3>
-                            <div class="mmb__block mmb__block--p0">
+                            <div class="mmb__block mmb__block--p0 mmb__block--mt-30">
                                 <ul class="ply-reg__list">
 
                                     <li class="ply-reg__item2">
-                                        <div class="ply-reg__adr class--address2">
-                                            <label class="ply-reg__label on" aria-required="true">작성자 자택주소</label>
-                                            <div class="ply-reg__flex ply-reg__flex--gap10">
+                                        <div class="ply-reg__adr">
+                                            <label class="ply-reg__label on" aria-required="true">팀 주소</label>
+                                            <div class="ply-reg__flex ply-reg__flex--gap5">
                                                 <input type="text"
                                                     class="ply-reg__input text--zipcode ply-reg__input--max145"
                                                     placeholder="우편번호">
@@ -263,7 +261,7 @@
                                                 placeholder="상세주소 2">
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item">
+                                    <li class="ply-reg__item ply-reg__item-mb30">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">소속 시도</label>
@@ -322,6 +320,11 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="indv__btbx indv__btbx--center">
+                            <button type="button" class="indv__btn indv__btn_rounded indv__btn--110">취소</button>
+                            <button type="button"
+                                class="indv__btn indv__btn_rounded indv__btn--blue indv__btn--110">확인</button>
+                        </div>
                     </div>
                     <div class="ply-bsc__rt">
                         <div class="pstn">
@@ -349,10 +352,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="indv__btbx indv__btbx--center">
-                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--110">취소</button>
-                    <button type="button" class="indv__btn indv__btn_rounded indv__btn--blue indv__btn--110">확인</button>
                 </div>
             </div>
         </section>
