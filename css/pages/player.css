@@ -367,6 +367,15 @@
     margin-bottom: 5rem;
 }
 
+.ply__tit_desc {
+    max-width: 61.2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: #666666;
+}
+
 .nmbr_num {
     background-color: #FFFFFF;
     border: 1px solid #DDDDDD;
@@ -2350,11 +2359,15 @@
     margin-bottom: 1rem;
 }
 
+.ply-reg__item--max190 {
+    grid-template-columns: repeat(3, 19rem) !important;
+}
+
 .ply-reg__item--colum {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem; 
-    row-gap: 1rem;      
+    column-gap: 2rem;
+    row-gap: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -3026,7 +3039,14 @@
     color: #333333;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
+}
 
+.ply-reg__desc--mr0 {
+    margin-bottom: 0;
+}
+
+.btn-reg__weight {
+    font-weight: 400;
 }
 
 .ply-reg__check-list ul {
