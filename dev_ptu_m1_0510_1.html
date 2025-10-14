@@ -125,7 +125,7 @@
         <!-- contents -->
         <section class="ply">
             <div class="inner">
-                <h3 class="ply__tit ply__tit--pd0 ply__tit--mb30">전문체육팀</h3>
+                <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20">전문체육팀</h3>
                 <p class="ply__tit_desc">
                     신청하려는 소속팀이 없을 경우 각 소속팀의 대표자 또는 선수 개인(골프 종목 한정)이 신청서를 작성합니다.종목단체에서 팀에 대한 승인완료 이후 해당하는 소속팀으로 선수등록신청을
                     할 수 있습니다.</br> <br>
@@ -137,7 +137,7 @@
                             <h3 class="mmb__tit mmb__tit--text mmb__tit--mb30">소속팀 신청 상세정보</h3>
                             <div class="mmb__block mmb__block--pb0 mmb__block--pt20">
                                 <ul class="ply-reg__list">
-                                    <li class="ply-reg__item">
+                                    <li class="ply-reg__item ply-reg__item--maxw200">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">종목 </label>
@@ -161,15 +161,19 @@
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">학교 여부</label>
-                                            <input type="text" class="ply-reg__input">
+                                            <select name="" id="" class="selectbox">
+                                                <option value="">선택</option>
+                                                <option value="">단체전</option>
+                                                <option value="">개인전</option>
+                                            </select>
                                         </div>
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">학교코드 </label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5">
-                                                <input type="text" class="ply-reg__input">
+                                                <input type="text" class="ply-reg__input ply-reg__input--max145">
                                                 <button type="button"
-                                                    class="ply-reg__btn ply-reg__btn--min80">검색</button>
+                                                    class="ply-reg__btn ply-reg__btn--min50 ply-reg__btn--gray">검색</button>
                                             </div>
                                         </div>
                                     </li>
@@ -256,7 +260,8 @@
                                                 <input type="text"
                                                     class="ply-reg__input text--zipcode ply-reg__input--max145"
                                                     placeholder="우편번호">
-                                                <button type="button" class="ply-reg__btn btn-reg__weight">우편번호 검색</button>
+                                                <button type="button" class="ply-reg__btn btn-reg__weight">우편번호
+                                                    검색</button>
                                             </div>
                                             <input type="text"
                                                 class="ply-reg__input text--zipcode ply-reg__input--max660"
