@@ -440,11 +440,9 @@
 .chc__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    overflow: hidden;
 }
 
 .chc__list--img {
-    grid-template-columns: repeat(6, 1fr);
     column-gap: 5rem;
     row-gap: 5rem;
     border-radius: 0;
@@ -466,16 +464,23 @@
 }
 
 .chc__item:not(:nth-child(6n+1)) {
-    border-left: 0;
+    border-left: 1px solid transparent;
 }
 
+.chc__list--img .chc__item:not(:nth-child(6n+1)) {
+    border-left: 0 !important;
+}
 
 .chc__item:nth-child(-n+6) {
     border-top: 1px solid #ddd;
 }
 
 .chc__item:nth-child(n+7) {
-    border-top: 0;
+    border-top: 1px solid transparent;
+}
+
+.chc__list--img .chc__item:nth-child(n+7) {
+    border-top: 0 !important;
 }
 
 .chc__link {
@@ -539,6 +544,7 @@
     justify-content: center;
 }
 
+.game__pop span::before,
 .chc__list--img .chc__item span::before {
     display: none;
 }
@@ -548,7 +554,7 @@
     font-weight: 500;
 }
 
-.chc__list--img .chc__item .game__item span {
+.chc__item .game__item span {
     line-height: 1;
     height: auto;
 }
@@ -4004,25 +4010,36 @@ a.ui-button:active,
     border-bottom: 1px solid #DDDDDD;
 }
 
+.chc__item:hover .chc__link figure,
 .chc__item.chc_active .chc__link figure {
     border: 1px solid #0C54B8;
 }
 
+.chc__item:hover,
 .chc__item.chc_active {
     border-color: #0C54B8;
 }
 
+.chc__item:hover .chc__link span,
 .chc__item.chc_active .chc__link span {
     color: #0C54B8;
 }
 
+.chc__item:hover:not(:nth-child(6n+1)) {
+    border-left: 1px solid #0C54B8;
+}
+
+.chc__item:hover:nth-child(n+7) {
+    border-top: 1px solid #0C54B8;
+}
+
+.chc__item:hover span::before,
 .chc__item.chc_active span::before {
     background: #0C54B8;
 }
 
 .indv__prv__info .indv__table2 tbody td {
     font-size: 13px;
-
 }
 
 .indv__prv__info {

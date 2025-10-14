@@ -1641,6 +1641,7 @@
 
 .ply-srh__table td.text-left {
     text-align: left;
+    padding: 0 1.5rem;
 }
 
 .ply-srh__table td.wd430 {
@@ -2491,7 +2492,6 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
-    flex: 1;
 }
 
 .ply-reg__input--max200 {
@@ -2581,10 +2581,6 @@
 
 .ply-reg__flex--gap3 {
     gap: 3px;
-}
-
-.ply-reg__flex--gap5 {
-    gap: 5px;
 }
 
 .ply-reg__input--hanmun {
@@ -2743,19 +2739,13 @@
     border-spacing: 0;
 }
 
-.ply-srh__table_num tbody tr:first-child td {
-    border: 1px solid #333333;
-}
-
 .ply-srh__table--ellipsis td {
     font-weight: 400;
     font-size: 1.2rem;
     color: #000000;
 }
 
-
 .ply-srh__table--ellipsis tbody tr:first-child td {
-    /* border-top: 1px solid #333333; */
     border: 1px solid #333333;
 }
 
@@ -2764,12 +2754,6 @@
     font-size: 1.3rem;
     color: #000000;
     border-bottom: 0;
-}
-
-.ply-srh__table--ellipsis td {
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: #000000;
 }
 
 .ply-reg__card .selectbox:disabled+.custom-select-wrapper .custom-select-trigger {

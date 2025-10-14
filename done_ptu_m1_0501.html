@@ -397,7 +397,7 @@
                             <div class="chc__top">
                                 <div class="chn__bor">
                                     <div class="initial__block">
-                                        <button type="button" class="initial__btn active">ㄱ</button>
+                                        <button type="button" class="initial__btn">ㄱ</button>
                                         <button type="button" class="initial__btn">ㄴ</button>
                                         <button type="button" class="initial__btn">ㄷ</button>
                                         <button type="button" class="initial__btn">ㄹ</button>
@@ -423,12 +423,12 @@
                                 </div>
                             </div>
                             <ul class="chc__list chc__list--img">
-                                <li class="chc__item chc_active">
+                                <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
                                             <img src="images/put_m1_0101/image01.png" alt="">
                                         </figure>
-                                        <span class="chc_active">가라테</span>
+                                        <span>가라테</span>
                                     </a>
                                 </li>
                                 <li class="chc__item">
@@ -528,10 +528,6 @@
                                         <span>루지</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="chc__block">
-                            <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
@@ -596,10 +592,6 @@
                                         <span>봅슬레이스켈레톤</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="chc__block">
-                            <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
@@ -696,10 +688,6 @@
                                         <span>씨름</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="chc__block">
-                            <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
@@ -828,10 +816,6 @@
                                         <span>철인3종</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="chc__block">
-                            <ul class="chc__list chc__list--img">
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
@@ -1049,6 +1033,87 @@
         </footer>
         <!-- // footer -->
     </div>
+    <script>
+        $(function () {
+            const $input = $(".initial__input");
+            const $searchBtn = $(".initial__search");
+            const $items = $(".chc__item");
+            const $btns = $(".initial__btn");
+
+            const sportsByInitial = {
+                "ㄱ": ["가라테", "검도", "골프", "궁도", "국학기공", "근대5종"],
+                "ㄴ": ["농구"],
+                "ㄷ": ["당구", "댄스스포츠"],
+                "ㄹ": ["럭비", "레슬링", "롤러", "루지"],
+                "ㅁ": [],
+                "ㅂ": ["바둑", "배구", "배드민턴", "보디빌딩", "복싱", "볼링", "빙상", "봅슬레이스켈레톤"],
+                "ㅅ": ["사격", "사이클", "산악", "세팍타크로", "소프트테니스", "수상스키/웨이크보드", "수영", "수중/핀수영", "스쿼시", "스키/스노보드", "승마", "씨름"],
+                "ㅇ": ["아이스하키", "야구소프트볼", "양궁", "에어로빅힙합", "역도", "요트", "우슈", "유도", "육상"],
+                "ㅈ": ["주짓수", "줄넘기", "조정"],
+                "ㅊ": ["체조", "체스", "축구", "철인3종"],
+                "ㅋ": ["카누", "카바디", "컬링", "킥복싱"],
+                "ㅌ": ["탁구", "태권도", "택견", "테니스"],
+                "ㅍ": ["펜싱"],
+                "ㅎ": ["하키", "합기도", "핸드볼"]
+            };
+
+            function searchSports() {
+                const keyword = $.trim($input.val());
+                $items.each(function () {
+                    const name = $(this).find("span").text().trim();
+                    const matchKeyword = keyword === "" || name.includes(keyword);
+
+                    if (matchKeyword) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            $searchBtn.on("click", searchSports);
+
+            $input.on("keypress", function (e) {
+                if (e.which === 13) {
+                    e.preventDefault();
+                    searchSports();
+                }
+            });
+
+
+            $btns.on("click", function () {
+                const $this = $(this);
+                const initial = $this.text().trim();
+                const isActive = $this.hasClass("active");
+
+                if (isActive) {
+                    $btns.removeClass("active");
+                    $items.show();
+                    return;
+                }
+
+                $btns.removeClass("active");
+                $this.addClass("active");
+
+                const allowed = sportsByInitial[initial];
+
+                if (!allowed || allowed.length === 0) {
+                    $items.hide();
+                    return;
+                }
+
+                $items.each(function () {
+                    const name = $(this).find("span").text().trim();
+                    console.log(name)
+                    if (allowed.includes(name)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
