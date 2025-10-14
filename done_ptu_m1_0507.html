@@ -107,19 +107,21 @@
                                         <tbody>
                                             <tr>
                                                 <th>이름</th>
-                                                <td>이주현</td>
+                                                <td>{appVO.korNm} 님</td>
                                             </tr>
                                             <tr>
                                                 <th>생년월일</th>
-                                                <td>2000.01.01</td>
+                                                <td>${fn:substring(appVO.birthDt,0,4)}.${fn:substring(appVO.birthDt,4,6)}.${fn:substring(appVO.birthDt,6,8)}
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>성별</th>
-                                                <td>남자</td>
+                                                <td>${appVO.sexNm}</td>
                                             </tr>
                                             <tr>
                                                 <th>체육인번호</th>
-                                                <td>12345678</td>
+                                                <td>${appVO.juminNo.substring(0,6)}-${appVO.juminNo.substring(6,13)}
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>스포츠인권교육<br>(온라인)</th>
@@ -134,7 +136,7 @@
                                                 <td>
                                                     <!-- 수료완료(2022-02-13 10:24:51) -->
                                                     미수료
-                                                    (도핑방지교육 문의처 : 070-7600-9732)
+                                                    (${orgInfo.codeNm1} : ${orgInfo.idx2})
                                                     <button type="button" class="ply-bsc__ttn">온라인 도핑방지교육 받기</button>
                                                 </td>
                                             </tr>
@@ -176,13 +178,15 @@
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">이름 (영문)</label>
                                                 <div class="ply-reg__input-group">
-                                                    <input type="text" class="ply-reg__input" placeholder="성">
-                                                    <input type="text" class="ply-reg__input" placeholder="이름">
+                                                    <input type="text" class="ply-reg__input" placeholder="성"
+                                                        value="appVO.engNm1">
+                                                    <input type="text" class="ply-reg__input" placeholder="이름"
+                                                        value="appVO.engNm2">
                                                 </div>
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">이름 (한문)</label>
-                                                <input type="text" class="ply-reg__input">
+                                                <input type="text" class="ply-reg__input" value="chnNm">
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">출생지</label>
@@ -193,28 +197,37 @@
                                             <div class="ply-reg__card-group">
                                                 <div class="ply-reg__card">
                                                     <label for="" class="ply-reg__label">신장</label>
-                                                    <input type="text" class="ply-reg__input" placeholder="cm">
+                                                    <input type="text" class="ply-reg__input" placeholder="cm"
+                                                        value="bodyHeight">
                                                 </div>
                                                 <div class="ply-reg__card">
                                                     <label for="" class="ply-reg__label">체중</label>
-                                                    <input type="text" class="ply-reg__input" placeholder="kg">
+                                                    <input type="text" class="ply-reg__input" placeholder="kg"
+                                                        value="bodyWeight">
                                                 </div>
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">체육인번호</label>
-                                                <input type="text" class="ply-reg__input" placeholder="본인이력찾기가 필요합니다.">
+                                                <input type="text" class="ply-reg__input" placeholder="본인이력찾기가 필요합니다."
+                                                    value="${appVO.juminNo.substring(0,6)}-${appVO.juminNo.substring(6,13)}">
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label small">학년(초,중,고 상관없이 현재 학년을
                                                     선택)</label>
-                                                <select name="" id="" class="selectbox">
+                                                <select name="" id="" class="selectbox" path="grade">
                                                     <option value="">선택</option>
-                                                    <option value="">1학년</option>
-                                                    <option value="">2학년</option>
-                                                    <option value="">3학년</option>
-                                                    <option value="">4학년</option>
-                                                    <option value="">5학년</option>
-                                                    <option value="">6학년</option>
+                                                    <option value="1" <c:if test="${WebAppVO.grade=='1'}">selected
+                                                        </c:if>>1학년</option>
+                                                    <option value="2" <c:if test="${WebAppVO.grade=='2'}">selected
+                                                        </c:if>>2학년</option>
+                                                    <option value="3" <c:if test="${WebAppVO.grade=='3'}">selected
+                                                        </c:if>>3학년</option>
+                                                    <option value="4" <c:if test="${WebAppVO.grade=='4'}">selected
+                                                        </c:if>>4학년</option>
+                                                    <option value="5" <c:if test="${WebAppVO.grade=='5'}">selected
+                                                        </c:if>>5학년</option>
+                                                    <option value="6" <c:if test="${WebAppVO.grade=='6'}">selected
+                                                        </c:if>>6학년</option>
                                                 </select>
                                             </div>
                                         </li>
@@ -229,17 +242,18 @@
 
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label" aria-required="true">이메일</label>
-                                                <input type="text" class="ply-reg__input"
-                                                    placeholder="sample@email.com">
+                                                <input type="text" class="ply-reg__input" placeholder="sample@email.com"
+                                                    path="email">
                                             </div>
 
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">휴대폰</label>
-                                                <input type="text" class="ply-reg__input" placeholder="">
+                                                <input type="text" class="ply-reg__input" placeholder=""
+                                                    path="mobileNo">
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">연락 가능한 일반전화</label>
-                                                <input type="text" class="ply-reg__input" placeholder="">
+                                                <input type="text" class="ply-reg__input" placeholder="" path="phoneNo">
                                             </div>
                                         </li>
                                         <li class="ply-reg__item2">
