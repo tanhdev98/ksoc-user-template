@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -326,7 +328,7 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     <ul class="goto__list">
                         <li class="goto__item">
                             <a href="#" class="goto__link">로그인</a>
@@ -381,47 +383,30 @@
                 <div class="title">
                     <h2>선수촌 견학안내</h2>
                 </div>
-
                 <div class="tour-reg">
-                    <table class="tour-reg__table">
-                        <tbody>
-                            <tr>
-                                <th><i>*</i>신청인 연락처</th>
-                                <td>
-                                    <div class="tour-reg__flex">
-                                        <div class="tour-reg__tell">
-                                            <div class="tour-reg__box">
-                                                <input type="text" class="tour-reg__input">
-                                            </div>
-                                            <div class="tour-reg__box">
-                                                <input type="text" class="tour-reg__input">
-                                            </div>
-                                            <div class="tour-reg__box">
-                                                <input type="text" class="tour-reg__input">
-                                            </div>
-                                        </div>
-                                        <button type="button" class="tour-reg__btn">인증번호 받기</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><i>*</i>인증번호확인</th>
-                                <td>
-                                    <div class="tour-reg__flex">
-                                        <div class="tour-reg__box">
-                                            <input type="text" class="tour-reg__input">
-                                        </div>
-                                        <button type="button" class="tour-reg__btn">확인</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tour-reg__form">
+                        <div class="tour-reg__row">
+                            <div class="tour-reg__flex">
+                                <div class="tour-reg__tell">
+                                    <input type="text" class="tour-reg__input">
+                                    <input type="text" class="tour-reg__input">
+                                    <input type="text" class="tour-reg__input">
+                                </div>
+                                <button type="button" class="tour__btn tour-reg__btn gray">인증번호 받기</button>
+                            </div>
+                        </div>
 
-                </div>
+                        <div class="tour-reg__row">
+                            <div class="tour-reg__flex">
+                                <input type="text" class="tour-reg__input full" placeholder="인증번호확인">
+                                <button type="button" class="tour__btn tour-reg__btn gray">확인</button>
+                            </div>
+                        </div>
 
-                <div class="tour__bm tour__bm--mt50">
-                    <button type="button" class="tour__btn tour__btn--blue">조회하기</button>
+                        <div class="tour__bm tour__bm--mt10">
+                            <button type="button" class="tour__btn tour__btn--blue">조회하기</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tour__info">
@@ -521,4 +506,5 @@
         <!-- // footer -->
     </div>
 </body>
+
 </html>
