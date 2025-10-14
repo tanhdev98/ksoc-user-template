@@ -7,15 +7,25 @@
 }
 
 .tour__tit {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     font-weight: 600;
-    font-size: 1.6rem;
-    color: #111;
+    font-size: 1.7rem;
+    color: #000000;
 }
 
-.tour__tit::before {
+.tour__tab {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tour__content {
+    border: 1px solid #DDDDDD;
+    border-radius: 3rem;
+    padding: 5rem 7rem;
+    flex: 2;
+}
+
+/* .tour__tit::before {
     content: '';
     display: block;
     width: 1.4rem;
@@ -24,26 +34,26 @@
     background: #fff;
     border: 4px solid #0C54B8;
     box-sizing: border-box;
-}
+} */
 
 .tour__step {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4.7rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2.8rem;
 }
 
 .tour__step li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 3px solid #ddd;
+    border: 1px solid #DDDDDD;
     border-radius: 3rem;
-    padding: 1.4rem 2.7rem;
+    padding: 2rem 2rem 1rem 2rem;
     position: relative;
 }
 
-.tour__step li::after {
+/* .tour__step li::after {
     content: '';
     width: 2.4rem;
     height: 2.4rem;
@@ -52,7 +62,7 @@
     top: 50%;
     left: calc(100% + 12px);
     transform: translateY(-50%);
-}
+} */
 
 .tour__step li:last-child::after {
     display: none;
@@ -69,28 +79,52 @@
 }
 
 .tour__step li span {
-    flex: 1;
-    display: block;
+    /* flex: 1; */
+    /* display: block; */
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.7rem;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
-    border-top: 1px dashed #999;
+}
+
+.tour__step li strong {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    line-height: 0.7;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 2.4rem;
+    border: 4px solid #0C54B8;
+    border-radius: 100%;
 }
 
 .tour__list {
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+.tour__list:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .tour__list li {
     display: flex;
-    gap: 0.6rem;
-    padding: 0.5rem 0;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000000;
 }
 
 .tour__list li::before {
     content: '•';
-    color: #666;
+    color: #000000;
 }
 
 .tour__list li em {
@@ -106,7 +140,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 2rem;
 }
 
 .tour__bm--end {
@@ -147,34 +181,51 @@
 .tour__btn--white {
     background: #fff;
     border: 1px solid #0C54B8;
-    color: #0C54B8;;
+    color: #0C54B8;
+    ;
 }
 
 .tour__info {
-    padding: 3rem;
-    padding-left: 20.4rem;
     position: relative;
+
     background: #F9F9F9;
-    border-radius: 2rem;
-    margin-top: 15rem;
+    border-radius: 3rem;
+    margin-top: 10rem;
+    z-index: 99;
+    overflow: hidden;
 }
 
-.tour__info > img {
-    width: 109px;
+.tour__btn--w200 {
+    width: 20rem;
+}
+
+.tour__info>img {
+    width: 10.9rem;
     position: absolute;
     bottom: 0;
-    left: 7rem;
+    top: 5rem;
+    left: 12rem;
+    z-index: 0;
 }
 
 .tour__info-list dl {
     display: flex;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    color: #000000;
 }
 
 .tour__info-list dl dt {
     font-weight: 600;
-    padding: 0 1rem;
+    color: #000000;
+    min-width: 16rem;
+    
+}
+
+.tour__info-list {
+   height: 15rem;
+   padding: 4rem 34rem;
 }
 
 .tour__top {
@@ -803,7 +854,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     margin-top: 0;
 }
 
@@ -1011,7 +1062,7 @@
     width: 4.5rem;
     height: 4.5rem;
     border-radius: 50%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border: 0;
     position: absolute;
     top: 50%;
@@ -1301,7 +1352,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .hpy__cntn {
@@ -1373,7 +1424,7 @@
     max-width: 21.5rem;
 }
 
-.hpy-reg__flex + .hpy-reg__flex {
+.hpy-reg__flex+.hpy-reg__flex {
     margin-top: 0.5rem;
 }
 
@@ -1587,7 +1638,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .hpy-reg__file-delete::after {
@@ -1599,7 +1650,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .hpy-reg__file-list ul {
