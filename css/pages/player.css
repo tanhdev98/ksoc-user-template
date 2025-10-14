@@ -1808,6 +1808,10 @@
     position: relative;
 }
 
+.ply-bsc__block>h4.mb10 {
+    margin-bottom: 1rem;
+}
+
 .ply-bsc__text {
     padding: 3rem;
     font-size: 1.5rem;
@@ -3304,7 +3308,7 @@
     position: absolute;
     top: -1rem;
     bottom: 0;
-    right: 0;
+    right: 1rem;
     margin: auto;
 }
 
@@ -4085,6 +4089,10 @@
 
 .ply-reg__list--pd20 {
     padding-left: 2rem;
+}
+
+.ply-reg__list--px20 {
+    padding: 0 20px;
 }
 
 .mmb__block--pd40 {
