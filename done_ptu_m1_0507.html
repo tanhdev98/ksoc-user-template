@@ -103,7 +103,7 @@
                             <div class="ply-bsc__item">
                                 <div class="ply-bsc__block">
                                     <h4 class="mb10">기본정보 확인</h4>
-                                    <table class="ply-bsc__table">
+                                    <table class="ply-bsc__table ply-bsc__table--black">
                                         <tbody>
                                             <tr>
                                                 <th>이름</th>
@@ -143,7 +143,7 @@
                                                 <td>
                                                     2022년 이전에 승인 완료된 선수정보가 없습니다.<br>만약 이전에 등록완료 되었는데 정보가 표시되지 않으면 본인이력을
                                                     찾으시길 바랍니다.
-                                                    <div class="ply-bsc__btbx">
+                                                    <div class="ply-bsc__btbx mt7">
                                                         <button type="button" class="ply-bsc__ttn">본인이력찾기</button>
                                                     </div>
                                                 </td>
@@ -164,7 +164,7 @@
                                             </div>
                                             <figcaption>파일찾기</figcaption>
                                         </figure>
-                                        <div class="ply-reg__rt">
+                                        <div class="ply-reg__rt ply-reg__rt--black">
                                             <strong>사진등록</strong>
                                             <p>사진을 등록하시기 전에 사진 파일을 준비해주세요.<br>업로드한 사진은 유효성 검사를 통해 등록 가능여부를
                                                 확인합니다.<br>(파일용량 100KB 미만이며 jpg, jpeg, png 형식의 이미지파일)</p>
@@ -174,15 +174,13 @@
                                     <ul class="ply-reg__list ply-reg__list--px20">
                                         <li class="ply-reg__item">
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">이름 (영문)</label>
-                                                <div class="ply-reg__input-group">
-                                                    <input type="text" class="ply-reg__input" placeholder="성">
-                                                    <input type="text" class="ply-reg__input" placeholder="이름">
-                                                </div>
+                                                <label for="" class="ply-reg__label">이름 (한글)</label>
+                                                <input type="text" class="ply-reg__input" value="박정현" disabled>
                                             </div>
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">이름 (한문)</label>
-                                                <input type="text" class="ply-reg__input">
+                                                <label for="" class="ply-reg__label">생년월일 / 성별</label>
+                                                <input type="text" class="ply-reg__input" value="19850112 / 남자"
+                                                    disabled>
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">출생지</label>
@@ -190,6 +188,14 @@
                                             </div>
                                         </li>
                                         <li class="ply-reg__item">
+                                            <div class="ply-reg__card">
+                                                <label for="" class="ply-reg__label">이름 (한문)</label>
+                                                <input type="text" class="ply-reg__input" placeholder="">
+                                            </div>
+                                            <div class="ply-reg__card">
+                                                <label for="" class="ply-reg__label">휴대폰</label>
+                                                <input type="text" class="ply-reg__input" value="850112-1AF1403">
+                                            </div>
                                             <div class="ply-reg__card-group">
                                                 <div class="ply-reg__card">
                                                     <label for="" class="ply-reg__label">신장</label>
@@ -200,10 +206,16 @@
                                                     <input type="text" class="ply-reg__input" placeholder="kg">
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li class="ply-reg__item">
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">체육인번호</label>
-                                                <input type="text" class="ply-reg__input" placeholder="본인이력찾기가 필요합니다.">
+                                                <label for="" class="ply-reg__label">이름 (영문)</label>
+                                                <div class="ply-reg__input-group">
+                                                    <input type="text" class="ply-reg__input" placeholder="성">
+                                                    <input type="text" class="ply-reg__input" placeholder="이름">
+                                                </div>
                                             </div>
+
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label small">학년(초,중,고 상관없이 현재 학년을
                                                     선택)</label>
@@ -217,8 +229,8 @@
                                                     <option value="">6학년</option>
                                                 </select>
                                             </div>
-                                        </li>
-                                        <li class="ply-reg__item ply-reg__item-col-4">
+
+
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">시력</label>
                                                 <div class="ply-reg__input-group">
@@ -226,15 +238,15 @@
                                                     <input type="text" class="ply-reg__input" placeholder="우안">
                                                 </div>
                                             </div>
-
+                                        </li>
+                                        <li class="ply-reg__item">
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label" aria-required="true">이메일</label>
                                                 <input type="text" class="ply-reg__input"
                                                     placeholder="sample@email.com">
                                             </div>
-
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">휴대폰</label>
+                                                <label for="" class="ply-reg__label" aria-required="true">휴대폰</label>
                                                 <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
                                             <div class="ply-reg__card">
@@ -242,32 +254,34 @@
                                                 <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
                                         </li>
+                                        <li class="ply-reg__item">
+                                            <div class="ply-reg__agree">
+                                                <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                    id="agreeYn">
+                                                <label for="agreeYn">승인진행안내 수신 동의</label>
+                                            </div>
+                                        </li>
                                         <li class="ply-reg__item2">
                                             <div class="ply-reg__adr">
                                                 <label class="ply-reg__label" aria-required="true">작성자
                                                     자택주소</label>
                                                 <div class="ply-reg__flex ply-reg__flex--gap10">
-                                                    <input type="text" class="ply-reg__input ply-reg__input--max145"
+                                                    <input type="text" class="ply-reg__input ply-reg__input--max200"
                                                         placeholder="우편번호">
                                                     <button type="button" class="ply-reg__btn">우편번호 검색</button>
                                                 </div>
-                                                <div class="ply-reg__adr-flex">
-                                                    <div class="ply-reg__adr-group">
-                                                        <input type="text" class="ply-reg__input" placeholder="상세주소 1">
-                                                        <input type="text" class="ply-reg__input" placeholder="상세주소 2">
-                                                    </div>
-                                                    <div class="ply-reg__adr-group">
-                                                        <label class="ply-reg__label">비고</label>
-                                                        <textarea class="ply-reg__textarea" placeholder=""></textarea>
-                                                    </div>
-                                                </div>
+                                                <input type="text" class="ply-reg__input" placeholder="상세주소 1">
+                                                <input type="text" class="ply-reg__input" placeholder="상세주소 2">
                                             </div>
                                         </li>
-                                        <li class="ply-reg__item ply-reg__item-mb0">
-                                            <div class="ply-reg__agree">
-                                                <input type="checkbox" class="ply-reg__radio" name="agreeYn"
-                                                    id="agreeYn">
-                                                <label for="agreeYn">승인진행안내 수신 동의</label>
+                                        <li class="ply-reg__item">
+                                            <div class="ply-reg__adr">
+                                                <label class="ply-reg__label">비고 1</label>
+                                                <input type="text" class="ply-reg__input" placeholder="">
+                                            </div>
+                                            <div class="ply-reg__adr">
+                                                <label class="ply-reg__label">비고 2</label>
+                                                <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
                                         </li>
                                     </ul>
