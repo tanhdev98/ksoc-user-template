@@ -999,6 +999,9 @@
     margin-bottom: 3rem;
 }
 
+.ply-pop--max490 {
+    max-width: 49rem;
+}
 
 .ply-pop--max1220 {
     width: calc(100% - 4rem);
@@ -1019,10 +1022,18 @@
     padding-bottom: 9rem;
 }
 
+.ply-pop__header,
 .ply-pop__tit {
     font-weight: 600;
     font-size: 2.1rem;
-    color: #000000;
+    color: #111;
+}
+
+.ply-pop__header {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .ply-pop__tit2 {
@@ -1405,6 +1416,10 @@
 
 .ply-pop__desc.on {
     margin-bottom: 3rem;
+}
+
+.ply-pop__desc--mb40 {
+    margin-bottom: 4rem;
 }
 
 .ply-pop__top {
