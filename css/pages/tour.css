@@ -1084,11 +1084,16 @@
 }
 
 .hpy__intro {
-    padding: 10rem 7rem 10rem;
     background: #0C54B81A;
     border-radius: 5rem;
     position: relative;
     margin-bottom: 2rem;
+    padding: 0 7rem;
+    height: 28rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hpy__box {
@@ -1117,6 +1122,9 @@
     margin-top: 0;
 }
 
+.hpy__tit--pl2 {
+    padding: 0 0 2rem;
+}
 
 .hpy__desc {
     font-size: 1.7rem;
