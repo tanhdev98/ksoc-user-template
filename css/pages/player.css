@@ -1641,7 +1641,6 @@
 
 .ply-srh__table td.text-left {
     text-align: left;
-    padding: 0 1.5rem;
 }
 
 .ply-srh__table td.wd430 {
@@ -2482,7 +2481,6 @@
 }
 
 .ply-reg__input {
-    box-sizing: border-box;
     width: 100%;
     height: 4rem;
     border: 1px solid #ddd;
@@ -2492,6 +2490,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
+    flex: 1;
 }
 
 .ply-reg__input--max200 {
@@ -2581,6 +2580,10 @@
 
 .ply-reg__flex--gap3 {
     gap: 3px;
+}
+
+.ply-reg__flex--gap5 {
+    gap: 5px;
 }
 
 .ply-reg__input--hanmun {
@@ -2730,29 +2733,29 @@
     border-bottom: 1px solid #333333;
 }
 
-.ply-srh__table_num tbody tr:first-child td {
-    border: 1px solid #333333;
-}
-
 .ply-srh__table--ellipsis {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+.ply-srh__table_num tbody tr:first-child td {
+    border: 1px solid #333333;
+}
+
 .ply-srh__table--ellipsis td {
     font-weight: 400;
     font-size: 1.2rem;
-    color: #000000;
+    color: #000;
 }
 
 .ply-srh__table--ellipsis tbody tr:first-child td {
-    border: 1px solid #333333;
+    border: 1px solid #333;
 }
 
 .ply-srh__table--ellipsis th {
     font-weight: 600;
     font-size: 1.3rem;
-    color: #000000;
+    color: #000;
     border-bottom: 0;
 }
 
@@ -2787,6 +2790,11 @@
 .ply-reg__card .custom-option:hover {
     background: #0C54B8;
     color: #fff;
+}
+
+.ply-reg__card>dl {
+    font-size: 1.3rem;
+    color: #333;
 }
 
 .ply-reg__btwn {
@@ -3009,7 +3017,8 @@
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 1.5rem;
+    color: #333;
+    font-size: 1.3rem;
 }
 
 .ply-reg__card .date-input.on {
@@ -3250,6 +3259,12 @@
 
 .edc__flex {
     display: flex;
+}
+
+.edc__flex.empty {
+    margin-top: 1rem;
+    justify-content: center;
+    font-weight: 500;
 }
 
 .edc__flex dl {
