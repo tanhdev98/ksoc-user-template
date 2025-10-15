@@ -368,12 +368,13 @@
 }
 
 .ply__tit_desc {
-    max-width: 61.2rem;
+    width: 100%;
     text-align: center;
     font-weight: 400;
     font-size: 1.5rem;
     margin: 0 auto;
     color: #666666;
+    line-height: 2rem;
 }
 
 .nmbr_num {
@@ -1055,15 +1056,18 @@
 
 .ply-pop__scroll {
     width: 67rem;
-    height: 60vh;
-    max-height: 54.5rem;
-    padding: 3rem 4rem;
+    padding: 3rem 0;
     border-radius: 3.5rem;
-    overflow-y: auto;
     border: 1px solid #DDDDDD;
     font-weight: 400;
     font-size: 1.5rem;
     color: #333;
+}
+.ply-pop__scroll_inner {
+    height: 60vh;
+    max-height: 54.5rem;
+    overflow-y: auto;
+    padding: 0 4rem;
 }
 
 .ply-pop__scroll h4 {
@@ -2257,8 +2261,8 @@
 }
 
 .pstn__tell figure img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     object-fit: contain;
 }
 
@@ -2505,7 +2509,6 @@
     font-weight: 600;
     font-size: 1.3rem;
     color: #333;
-    flex: 1;
 }
 
 .ply-reg__input--max200 {
@@ -2979,6 +2982,11 @@
     font-size: 1.3rem;
     color: #fff;
     border: 0;
+}
+
+.ply-reg__btn--min50 {
+    min-width: 50px;
+    padding: 1.2rem 1.3rem;
 }
 
 .ply-reg__btn--min130 {

@@ -19,22 +19,11 @@
 }
 
 .tour__content {
-    flex: 0 0 65rem;
+    flex: 0 0 64rem;
     border: 1px solid #DDDDDD;
     border-radius: 3rem;
     padding: 5rem 7rem;
 }
-
-/* .tour__tit::before {
-    content: '';
-    display: block;
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 50%;
-    background: #fff;
-    border: 4px solid #0C54B8;
-    box-sizing: border-box;
-} */
 
 .tour__guide {
     flex: 1;
@@ -50,23 +39,12 @@
 .tour__step li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     border: 1px solid #DDDDDD;
     border-radius: 3rem;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 3rem 3.5rem;
     position: relative;
 }
-
-/* .tour__step li::after {
-    content: '';
-    width: 2.4rem;
-    height: 2.4rem;
-    background: url('../../images/put_m1_0730/image01.png') no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 12px);
-    transform: translateY(-50%);
-} */
 
 .tour__step li:last-child::after {
     display: none;
@@ -83,14 +61,14 @@
 }
 
 .tour__step li span {
-    /* flex: 1; */
-    /* display: block; */
     font-weight: 600;
     color: #000000;
     font-size: 1.7rem;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0 0;
     text-align: center;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 .tour__step li strong {
@@ -119,11 +97,12 @@
 }
 
 .tour__list li {
-    display: flex;
-    gap: 1rem;
     font-weight: 400;
     font-size: 1.3rem;
     color: #000000;
+    position: relative;
+    margin-left: 1.5rem;
+    
 }
 
 .tour__list li em {
@@ -133,6 +112,9 @@
 .tour__list li::before {
     content: '•';
     color: #000000;
+    position: absolute;
+    left: -1rem;
+    right: 0;
 }
 
 .tour__list li em {
@@ -141,6 +123,10 @@
 
 .tour__list li b {
     font-weight: 600;
+    color: #0C54B8;
+}
+.tour__list li span {
+    font-weight: 400;
     color: #0C54B8;
 }
 
@@ -182,6 +168,10 @@
     border: 0;
     background: #0C54B8;
     color: #fff;
+}
+
+.tour__btn--blue.weight {
+    font-weight: 500;
 }
 
 .tour__btn--gray {
@@ -1869,9 +1859,11 @@
     font-size: 1.7rem;
     font-weight: 600;
     white-space: nowrap;
+    width: 13.4rem;
 }
 
 .tour-reg__input.full {
     width: 34rem;
     padding: 1.5rem 2rem;
+    flex: 1;
 }
