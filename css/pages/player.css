@@ -2084,7 +2084,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 5rem 0;
+    padding: 4rem 5rem 0;
     position: relative;
 }
 
@@ -2146,6 +2146,8 @@
     color: #fff;
     background: #0C54B8;
     border: 0;
+    font-weight: 400;
+    min-width: 10rem;
 }
 
 .ply__btn--mdf {
@@ -2321,8 +2323,9 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 1.5rem 2rem 2.5rem;
+    padding: 2.5rem 2rem 2.5rem;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     margin-bottom: 2rem;
 }
 
@@ -2463,6 +2466,7 @@
     white-space: nowrap;
 }
 
+
 .ply-reg__label.on {
     padding: 0;
 }
@@ -2556,6 +2560,10 @@
     width: 20rem;
 }
 
+.ply-reg__input--w210 {
+    width: 21rem;
+}
+
 .ply-reg__input--w215 {
     width: 21.5rem;
 }
@@ -2588,7 +2596,12 @@
 
 .ply-reg__input::placeholder {
     font-weight: 400;
-    color: #666;
+    color: #CCCCCC;
+}
+
+.ply-reg__input446::placeholder {
+    font-weight: 400;
+    color: #111111;
 }
 
 .ply-reg__input--right {
@@ -2614,8 +2627,9 @@
 }
 
 .ply-reg__flex--gap3 {
-    gap: 3px;
+    gap: 6px;
 }
+
 
 .ply-reg__flex--gap5 {
     gap: 5px;
@@ -2891,6 +2905,10 @@
     padding: 0;
 }
 
+.ply-reg__label--pb0 {
+    padding-bottom: 0 !important;
+}
+
 .ply-reg__item2 .ply-reg__label--pb10 {
     padding-bottom: 10rem;
 }
@@ -2945,7 +2963,7 @@
 .ply-reg__adr {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .ply-reg__adr--gap0 {
@@ -3005,9 +3023,25 @@
     border: 0;
 }
 
+
 .ply-reg__btn--min50 {
     min-width: 50px;
     padding: 1.2rem 1.3rem;
+}
+
+.ply-reg__btn--min160 {
+    min-width: 16rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: .5rem;
+    padding: 0;
+}
+
+.ply-reg__btn--min160 img {
+    width: auto;
+    height: 1.1rem;
+    object-fit: contain;
 }
 
 .ply-reg__btn--min130 {
@@ -3319,9 +3353,9 @@
 }
 
 .edc__flex dl dt {
-    min-width: 9.2rem;
     padding: 1rem 0 1rem 3rem;
     font-weight: 600;
+    color: #333333;
 }
 
 .edc__flex dl:first-child dt {
@@ -3330,6 +3364,7 @@
 
 .edc__flex dl dd {
     padding: 1rem 3rem;
+    color: #666666;
 }
 
 .edc__flex dl+dl::before {
@@ -4891,4 +4926,201 @@
 
 .ply-smr__list li a img {
     filter: brightness(0) invert(1);
+}
+
+.ply-bsc__maintitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333333;
+    padding: 0 2rem 3rem;
+}
+
+.ply-bsc__maintitle--p2 {
+    padding: 0 2rem 1rem;
+}
+
+.ply-bsc__box {
+    border-top: 1px solid #ddd;
+    padding: 2rem 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #333333;
+}
+
+.ply-bsc__box figure {
+    max-width: 35rem;
+}
+
+.ply-bsc__box .ply-bsc__maintitle {
+    padding: 0;
+}
+
+.ply-bsc__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: .5rem;
+}
+
+.ply-bsc__description ul {
+    padding: 2rem 0;
+}
+
+.ply-bsc__description li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.ply-bsc__description li>div {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #fff;
+    width: 4.5rem;
+    height: 1.5rem;
+    border-radius: 1.25rem;
+    background: #666666;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.ply-bsc__description li::before {
+    content: '•';
+    position: absolute;
+    left: -1.5rem;
+    right: 0;
+}
+
+.ply-reg__icon-img {
+    position: absolute;
+}
+
+.ply-reg__icon-img img {
+    width: 5rem;
+    height: 7rem;
+}
+
+.ply-reg__wrapper-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ply-reg__wrapper-label label {
+    max-width: 12rem;
+    width: 100%;
+}
+
+.ply-reg__list {
+    padding: 0 2rem;
+}
+
+.ply-reg__item--m0 {
+    margin-bottom: 0;
+}
+
+.ply-reg__list--step03 {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+.ply-bsc__des2 {
+    padding: 3rem 0;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 3rem;
+}
+
+.ply-bsc__des2 .ply-bsc__maintitle {
+    padding: 0 2rem 2rem;
+}
+
+.ply-bsc__des2 .ply-bsc__subtitle {
+    padding-top: 0;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.ply-bsc__des2 .ply-bsc__subtitle b {
+    font-weight: 600;
+}
+
+.ply-bsc__number {
+    border-radius: .5rem;
+    border: 1px solid #DDDDDD;
+    width: 19rem;
+    margin: 0 2rem 3rem;
+}
+
+.ply-bsc__number p {
+    text-align: center;
+    background: #F5F5F5;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ply-bsc__number>div {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.ply-bsc__note {
+    border-top: 1px solid #DDDDDD;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 3rem 2rem 0;
+}
+
+.ply-bsc__note img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.ply-bsc__note p {
+    color: #666666;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.ply__btn--img {
+    min-width: 5rem;
+    height: 5rem;
+    border: 1px solid #0C54B8;
+    padding: 0;
+}
+
+.ply__btn--img img {
+    width: 1.9rem;
+    height: 1.8rem;
+}
+
+.ply-reg__input--date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+.ply-reg__input--date {
+    background-image: url("../../images/ptu_m1_0507/image24.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5rem;
+    cursor: pointer;
 }
