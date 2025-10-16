@@ -1613,7 +1613,7 @@
     font-size: 1.3rem;
     padding: 1.2rem;
     min-width: auto;
-    text-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .ply-src__btn.btn--primary:hover {
