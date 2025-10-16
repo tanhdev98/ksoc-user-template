@@ -1210,14 +1210,26 @@
     overflow: hidden;
 }
 
+.hpy__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem 2rem;
+}
+
 .hpy__search {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    gap: 5px;
+}
+
+.hpy__select--min130 {
+    min-width: 13rem;
+}
+
+.hpy__select--min130 select {
+    width: 100%;
 }
 
 .hpy__select .custom-select-trigger {
@@ -1247,10 +1259,10 @@
 .hpy__input {
     width: 100%;
     max-width: 42rem;
-    height: 4.5rem;
+    height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.7rem;
     font-weight: 400;
     font-size: 1.5rem;
     color: #333;
@@ -1258,17 +1270,18 @@
 
 .hpy__input::placeholder {
     font-weight: 400;
-    color: #999;
+    color: #ccc;
+    font-size: 1.3rem;
 }
 
 .hpy__search-btn {
     display: inline-block;
-    min-width: 8rem;
-    height: 4.5rem;
+    min-width: 5rem;
+    height: 4rem;
     border-radius: 0.5rem;
     border: 0;
-    background: #333;
-    font-weight: 600;
+    background: #666;
+    font-weight: 400;
     font-size: 1.5rem;
     color: #fff;
 }
@@ -1280,15 +1293,17 @@
 }
 
 .hpy__total {
-    font-size: 1.4rem;
-    color: #666;
+    font-size: 1.8rem;
+    color: #111111;
     padding: 1rem 0;
     margin-top: 1rem;
+    font-weight: 400;
 }
 
-.hpy__total b {
-    font-weight: 600;
-    color: #0C54B8;
+.hpy__card--table {
+    border-radius: 5rem;
+    border: 1px solid #ddd;
+    padding: 5rem;
 }
 
 .hpy__table {
@@ -1296,39 +1311,62 @@
     border-top: 1px solid #333;
 }
 
+.hpy__table tbody tr:hover {
+    background: #0C54B81A;
+}
+
+.hpy__table tbody tr:hover td {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.hpy__table tbody tr:hover td a {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
 .hpy__table th {
-    padding: 1.45rem;
     font-weight: 600;
     text-align: center;
     vertical-align: middle;
     background: #F5F5F5;
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
+    font-size: 1.7rem;
+    height: 5rem;
 }
 
 .hpy__table th:nth-child(1) {
-    width: 12rem;
+    width: 10rem;
+}
+
+.hpy__table th:nth-child(2) {
+    width: 40rem;
 }
 
 .hpy__table th:nth-child(3) {
-    width: 17.5rem;
+    width: 18rem;
 }
 
 .hpy__table th:nth-child(4) {
-    width: 11rem;
+    width: 10rem;
 }
 
 .hpy__table th:nth-child(5) {
-    width: 20rem;
+    width: 18rem;
 }
 
 .hpy__table td {
-    padding: 1.5rem 1rem;
+    padding: 1.3rem 2.4rem;
+    height: 6rem;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
     word-break: keep-all;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+    line-height: 130%;
 }
 
 .hpy__table td.text-left {
@@ -1337,28 +1375,15 @@
 
 .hpy__tbl-link {
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.38;
+    font-size: 1.3rem;
+    line-height: 130%;
     color: #333;
     transition: all 0.3s;
 }
 
 .hpy__tbl-link:hover {
     color: #0C54B8;
-}
-
-.hpy__tag {
-    min-width: 8rem;
-    height: 3rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background: #999;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #fff;
+    font-weight: 600;
 }
 
 .hpy__ing td {
@@ -1370,20 +1395,29 @@
     text-decoration: underline;
 }
 
-.hpy__ing .hpy__tag {
+.hpy__ing {
+    width: 6rem;
+    height: 3rem;
+}
+
+.hpy__tag--1 {
     background: #0C54B8;
+    color: #fff;
+    border-radius: 0.6rem;
+    padding: 0.7rem 1.4rem;
 }
 
 .hpy__bm {
     position: relative;
-    margin-top: 4.3rem;
+    margin-top: 4rem;
 }
 
 .hpy__lf {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 3px;
+    padding: 0 5rem;
 }
 
 .hpy__bm .paging-ui {
