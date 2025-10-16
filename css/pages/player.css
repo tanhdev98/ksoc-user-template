@@ -4384,7 +4384,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 5rem 5rem 2rem;
+    padding: 3rem 5rem 2rem;
 }
 
 .annc__search-center {
@@ -4447,6 +4447,9 @@
     min-width: 16.5rem;
 }
 
+.annc__select .selectbox {
+    min-width: 13rem;
+}
 
 .annc__input {
     width: 100%;
@@ -4457,6 +4460,11 @@
     font-weight: 400;
     font-size: 1.3rem;
     color: #333;
+}
+
+.annc__input::placeholder {
+    font-weight: 400;
+    color: #CCCCCC;
 }
 
 .annc__rt .annc__search-btn:hover {
@@ -4661,8 +4669,7 @@
 }
 
 .qz {
-    width: 70rem;
-    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .qz__list>li+li {
@@ -4692,7 +4699,7 @@
     border-radius: 2rem;
 }
 
-.qz__item.active .qz__item_list {
+.qz__item .qz__item_list.active {
     border: 1px solid #333;
 }
 
@@ -4702,10 +4709,23 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    font-size: 2rem;
     color: #333;
-    padding: 3rem 5rem 2rem;
+    padding: 0 7rem;
     border-radius: 2rem;
+    font-size: 2.1rem;
+    height: 7rem;
+}
+
+.qz__item_list.active .qz__tit {
+    font-weight: 600;
+}
+
+.qz__item_list.active .qz__dot {
+    background: #111111;
+}
+
+.qz__item_list.active img {
+    transform: rotate(0);
 }
 
 .qz__num {
@@ -4750,15 +4770,47 @@
     display: block;
     font-weight: 400;
     color: #333333;
-    font-size: 1.4rem;
     border-top: 1px solid #ddd;
-    padding: 2.3rem 2.7rem;
+    padding: 2.1rem 5rem .1rem;
+}
+
+.qz__anser {
+    font-weight: 400;
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.qz__anser li {
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 2.5rem;
+    color: #333333;
+}
+
+.qz__anser li::before {
+    content: '•';
+    color: #333333;
+    position: absolute;
+    left: -1rem;
+    right: 0;
 }
 
 .qz__file {
-    margin-top: 3rem;
-    border-top: 1px dashed #333;
-    padding-top: 4rem;
+    border-top: 1px solid #ddd;
+    padding: 2.2rem 5rem 3.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.qz__file img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .qz__down {
