@@ -2492,6 +2492,7 @@
 
 .date-inputbox {
     position: relative;
+    width: max-content;
 }
 
 .date-input {

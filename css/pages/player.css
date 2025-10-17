@@ -2517,10 +2517,9 @@
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background: #fff;
-    padding: 0 1.5rem;
-    font-weight: 600;
+    padding: 0 1rem;
     font-size: 1.3rem;
-    color: #333;
+    color: #111;
 }
 
 .ply-reg__input--max100 {
@@ -2551,6 +2550,7 @@
     max-width: 20rem;
 }
 
+.ply-reg__card .date-input.ply-reg__input--w200,
 .ply-reg__input--w200 {
     width: 20rem;
 }
@@ -5145,17 +5145,4 @@
 .ply__btn--img img {
     width: 1.9rem;
     height: 1.8rem;
-}
-
-.ply-reg__input--date::-webkit-calendar-picker-indicator {
-    opacity: 0;
-}
-
-
-.ply-reg__input--date {
-    background-image: url("../../images/ptu_m1_0507/image24.png");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 1.5rem;
-    cursor: pointer;
 }
