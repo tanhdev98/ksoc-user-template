@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -326,7 +328,7 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     <ul class="goto__list">
                         <li class="goto__item">
                             <a href="#" class="goto__link">로그인</a>
@@ -381,93 +383,98 @@
                 <div class="title">
                     <h2>강습회신청</h2>
                 </div>
-
-                <div class="hpy-reg">
-                    <h3 class="hpy-reg__tit">
-                        <span>참가자 명단작성</span>
+                <div class="hpy0707__wrapper">
+                    <h3 class="hpy-reg__tit hpy-reg__tit--mb3">
+                        <p>대량등록</p>
                     </h3>
-                    <table class="hpy-reg__table">
-                        <tbody>
-                            <tr>
-                                <th>대량등록</th>
-                                <td>
-                                    <div class="lsn__excel">
-                                        <button type="button" class="lsn__excel-btn">
-                                            <img src="images/ptu_m1_0704/image03.png" alt="">
-                                            <span>샘플 엑셀파일 다운로드</span>
-                                        </button>
-                                        <p>
-                                            파일 다운로드 후 <b>반드시 샘플 형식</b>에 맞게 작성하셔야 합니다.<br>
-                                            다운로드 받으신 엑셀파일내의 샘플 형식을 반드시 지켜주세요.<br>
-                                            작성하신 엑셀파일을 “엑셀파일 업로드” 버튼을 클릭하여 업로드해주세요.
-                                        </p>
-                                        <button type="button" class="hpy-reg__btn">엑셀 파일 업로드</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <h3 class="hpy-reg__tit">
-                        <span>신청 현황</span>
+                    <div class="hpy0709__box">
+                        <div class="hpy0709__text">
+                            파일 다운로드 후 <span>반드시 샘플 형식</span>에 맞게 작성하셔야 합니다. <br>
+                            다운로드 받으신 엑셀파일내의 샘플 형식을 반드시 지켜주세요. <br>
+                            작성하신 엑셀파일을 “엑셀파일 업로드” 버튼을 클릭하여 업로드해주세요.
+                        </div>
+                        <div class="lsn__excel">
+                            <button type="button" class="lsn__excel-btn">
+                                <img src="images/ptu_m1_0704/image03.png" alt="">
+                                샘플 엑셀파일 다운로드
+                            </button>
+                            <button type="button" class="hpy-reg__btn lsn__excel-btn2"><img
+                                    src="images/ptu_m1_0707/image02.png" alt="">
+                                엑셀 파일 업로드</button>
+                        </div>
+                    </div>
+                    <h3 class="hpy-reg__tit hpy-reg__tit--mb3">
+                        <p>신청 현황</p>
                     </h3>
-                    <table class="lsn__table">
-                        <thead>
-                            <tr>
-                                <th>성명</th>
-                                <th>생년월일</th>
-                                <th>학교구분</th>
-                                <th>학교</th>
-                                <th>키/몸무게/발크기</th>
-                                <th>기타</th>
-                                <th>상태</th>
-                                <th>수정/삭제</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>20240101(남자)</td>
-                                <td>초등학교</td>
-                                <td>테스트 초등학교</td>
-                                <td>100/20/150</td>
-                                <td>테스트</td>
-                                <td>대기</td>
-                                <td>
-                                    <div class="lsn__delete">
-                                        <button type="button">
-                                            <img src="images/ptu_m1_0704/image04.png" alt="">
-                                        </button>
-                                        <button type="button">
-                                            <img src="images/ptu_m1_0704/image05.png" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>20240101(남자)</td>
-                                <td>초등학교</td>
-                                <td>테스트 초등학교</td>
-                                <td>100/20/150</td>
-                                <td>테스트</td>
-                                <td>대기</td>
-                                <td>
-                                    <div class="lsn__delete">
-                                        <button type="button">
-                                            <img src="images/ptu_m1_0704/image04.png" alt="">
-                                        </button>
-                                        <button type="button">
-                                            <img src="images/ptu_m1_0704/image05.png" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="hpy0709__table">
+                        <table class="lsn__table">
+                            <colgroup>
+                                <col style="width: 10rem;">
+                                <col style="width: 12rem;">
+                                <col style="width: 12rem;">
+                                <col style="width: auto;">
+                                <col style="width: 12rem;">
+                                <col style="width: 9rem;">
+                                <col style="width: 9rem;">
+                                <col style="width: 8rem;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>성명</th>
+                                    <th>생년월일</th>
+                                    <th>학교구분</th>
+                                    <th>학교</th>
+                                    <th class="lsn__table--f15">키/몸무게/ <br> 발크기</th>
+                                    <th>기타</th>
+                                    <th>상태</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td>20240101(남자)</td>
+                                    <td>초등학교</td>
+                                    <td>테스트 초등학교</td>
+                                    <td>100/20/150</td>
+                                    <td>테스트</td>
+                                    <td>대기</td>
+                                    <td>
+                                        <div class="lsn__delete">
+                                            <button type="button">
+                                                <img src="images/ptu_m1_0707/image04.png" alt="">
+                                            </button>
+                                            <button type="button">
+                                                <img src="images/ptu_m1_0707/image05.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td>20240101(남자)</td>
+                                    <td>초등학교</td>
+                                    <td>테스트 초등학교</td>
+                                    <td>100/20/150</td>
+                                    <td>테스트</td>
+                                    <td>대기</td>
+                                    <td>
+                                        <div class="lsn__delete">
+                                            <button type="button">
+                                                <img src="images/ptu_m1_0707/image04.png" alt="">
+                                            </button>
+                                            <button type="button">
+                                                <img src="images/ptu_m1_0707/image05.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <div class="tour__bm">
+                <div class="tour__bm tour__bm--end  tour__bm--end-p4">
                     <button type="button" class="tour__btn tour__btn--white">명단 추가</button>
                     <button type="button" class="tour__btn tour__btn--blue">명단 확정</button>
                 </div>
@@ -569,4 +576,5 @@
         <!-- // footer -->
     </div>
 </body>
+
 </html>
