@@ -1819,13 +1819,17 @@
     width: 100%;
 }
 
+.ply-bsc__maintitle,
 .ply-bsc__block>h4 {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     font-weight: 600;
-    padding: 0 2rem;
-    color: #111111;
-    padding-bottom: 3rem;
+    padding: 0 2rem 3rem;
+    color: #333;
     position: relative;
+}
+
+.ply-bsc__maintitle--line {
+    border-bottom: 1px solid #ddd;
 }
 
 .ply-bsc__block>h4.mb10 {
@@ -1841,16 +1845,6 @@
 
 .ply-bsc__text.ply-bsc__text-bt1 {
     border-top: 1px solid #ddd;
-}
-
-.ply-bsc__block>h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid #ddd;
 }
 
 .ply-bsc__block>h3 {
@@ -2013,6 +2007,7 @@
 
 .ply-bsc__table {
     width: 100%;
+    margin-top: 1rem;
 }
 
 .ply-bsc__table th {
@@ -2325,8 +2320,8 @@
     gap: 2rem;
     padding: 2.5rem 2rem 2.5rem;
     border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
     margin-bottom: 2rem;
+    border-top: 1px solid #ddd;
 }
 
 .ply-reg__up figure {
@@ -3204,10 +3199,6 @@
     padding: 2rem 0 3rem;
     border-bottom: 1px solid #ddd;
     position: relative;
-}
-
-.ply-bsc__block h4+.edc-group {
-    margin-top: -1rem;
 }
 
 .transfer-line {
@@ -4173,14 +4164,6 @@
     padding-top: 2rem;
 }
 
-.ply-reg__list--pd20 {
-    padding-left: 2rem;
-}
-
-.ply-reg__list--px20 {
-    padding: 0 20px;
-}
-
 .mmb__block--pd40 {
     padding-bottom: 4rem;
 }
@@ -4980,13 +4963,6 @@
     filter: brightness(0) invert(1);
 }
 
-.ply-bsc__maintitle {
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #333333;
-    padding: 0 2rem 3rem;
-}
-
 .ply-bsc__maintitle--p2 {
     padding: 0 2rem 1rem;
 }
@@ -5073,12 +5049,19 @@
     padding: 0 2rem;
 }
 
+.ply-reg__list--pl20 {
+    padding-left: 2rem;
+}
+
+.ply-reg__list--pt10 {
+    padding-top: 1rem;
+}
+
 .ply-reg__item--m0 {
     margin-bottom: 0;
 }
 
 .ply-reg__list--step03 {
-    border-top: 1px solid #ddd;
     padding-top: 1rem;
 }
 
