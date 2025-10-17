@@ -135,7 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: .5rem;
 }
 
 .tour__bm--end {
@@ -150,8 +150,12 @@
     margin-top: 1rem;
 }
 
+.tour__btn:hover {
+    opacity: 0.7;
+}
+
 .tour__btn {
-    min-width: 12rem;
+    min-width: 13rem;
     height: 5rem;
     display: inline-flex;
     align-items: center;
@@ -876,6 +880,7 @@
 .rvw__sbj {
     display: -webkit-box;
     word-wrap: break-word;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -899,6 +904,26 @@
     margin-bottom: 5rem;
 }
 
+.dtl__wrapper {
+    border-radius: 5rem;
+    border: 1px solid #DDDDDD;
+    padding: 5rem 7rem;
+}
+
+.dtl__wrapper .dtl__tit {
+    border-top: none;
+    border-bottom: none;
+    padding: 0 0 1rem;
+}
+
+.dtl__wrapper .dtl__tit h3 {
+    padding: 0 0 2rem;
+}
+
+.dtl__wrapper .dtl__tit ul {
+    padding: 0;
+}
+
 .dtl__tit {
     padding: 2rem 0 3rem;
     border-top: 1px solid #333;
@@ -907,7 +932,7 @@
 
 .dtl__tit h3 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding: 1rem 2rem;
 }
 
@@ -916,13 +941,70 @@
     align-items: center;
     gap: 2rem;
     padding: 0 2rem;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.4rem;
     color: #666;
 }
 
 .dtl__block {
     padding-top: 2rem;
+}
+
+.dtl__box {
+    display: flex;
+    gap: 6rem;
+    align-items: flex-end;
+}
+
+.dtl__box .dtl__table {
+    flex: 1;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.dtl__box .dtl__table th {
+    width: 11.1rem;
+    height: 4rem;
+    padding: 1.2rem 1.7rem;
+}
+
+.dtl__box .dtl__table td {
+    font-size: 1.3rem;
+    padding: 0 1.7rem;
+    height: 4rem;
+}
+
+.dtl__box .dtl__note {
+    width: 44rem;
+    min-width: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.dtl__box .dtl__note li {
+    position: relative;
+    margin-left: 1.5rem;
+    color: #111111;
+}
+
+.dtl__box .dtl__note li::before {
+    content: '•';
+    color: #111111;
+    position: absolute;
+    left: -1rem;
+    right: 0;
+}
+
+.dtl__wrapper .dtl__work {
+    padding: 5rem 0 0;
+    gap: 1.8rem;
+    border-bottom: none;
+}
+
+.dtl__wrapper .dtl__work p {
+    padding: 0;
+    font-size: 1.3rem;
 }
 
 .dtl__table {
@@ -1224,6 +1306,14 @@
     gap: 5px;
 }
 
+.hpy__select--min215 {
+    min-width: 21.5rem;
+}
+
+.hpy__select--min215 select {
+    width: 100%;
+}
+
 .hpy__select--min130 {
     min-width: 13rem;
 }
@@ -1490,7 +1580,7 @@
 .hpy-reg__flex {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 1rem;
 }
 
 .hpy-reg__flex--max215 {
@@ -1535,14 +1625,14 @@
 
 .hpy-reg__input {
     width: 100%;
-    height: 3.5rem;
+    height: 4rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background: #fff;
     padding: 0.7rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #111111;
 }
 
 .hpy-reg__input::placeholder {
@@ -1550,8 +1640,25 @@
     color: #999;
 }
 
+.hpy-reg__flex--1 {
+    margin-top: 1rem;
+}
+
+.hpy-reg__input--mt1 {
+    margin-top: 1rem;
+}
+
+.hpy-reg__input--h100 {
+    height: 10rem;
+    margin: 0 2rem;
+}
+
 .hpy-reg__input--max300 {
     max-width: 30rem;
+}
+
+.hpy-reg__input--max320 {
+    max-width: 32rem;
 }
 
 .hpy-reg__input--max215 {
@@ -1567,18 +1674,22 @@
 }
 
 .hpy-reg__btn {
-    min-width: 11.8rem;
-    height: 3.5rem;
+    min-width: 12rem;
+    height: 4rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
     background: #666;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
     color: #fff;
     border: 0;
     cursor: pointer;
+}
+
+.hpy-reg__btn:hover {
+    opacity: 0.7;
 }
 
 .hpy-reg__btn--min70 {
@@ -1934,15 +2045,6 @@
     margin-right: 4px;
 }
 
-/* .tour-reg__btn {
-    padding: 0.7rem 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-} */
-
 .tour-reg__btn.gray {
     background: #555;
     color: #fff;
@@ -1957,4 +2059,148 @@
     width: 34rem;
     padding: 1.5rem 2rem;
     flex: 1;
+}
+
+.hpy0707__wrapper {
+    padding: 5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 5rem;
+}
+
+.hpy0707__wrapper .hpy-reg__tit {
+    margin-bottom: 2rem;
+    padding: 0 2rem 3rem;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.hpy0707__wrapper .hpy-reg__tit--mb3 {
+    margin-bottom: 3rem;
+}
+
+.hpy0707__wrapper .hpy-reg__tit p {
+    font-size: 2.1rem;
+    color: #111;
+    font-weight: 600;
+    margin: 0;
+}
+
+.hpy0707__wrapper .hpy-reg__warn {
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: 500;
+}
+
+.hpy0707__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.hpy0707__box--mb3 {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.hpy0707__box--start {
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.hpy0707__item {
+    width: calc((100% - 2rem) /2)
+}
+
+.hpy0707__item--w100 {
+    width: 100%;
+}
+
+.hpy0707__item--mt1 {
+    margin-top: 1rem;
+}
+
+.hpy0707__item p {
+    color: #666666;
+    font-size: 1.1rem;
+    font-weight: 4rem;
+    margin: 1rem 1rem 0;
+}
+
+.hpy0707__group {
+    display: flex;
+    gap: 2rem;
+}
+
+.hpy0707__wrapper .hpy-reg__tit--bb {
+    border-bottom: none;
+    padding: 3rem 2rem 0;
+}
+
+.hpy0707__wrapper .ply-reg__agree {
+    padding: 2rem;
+}
+
+.hpy0707__note {
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    color: #666666;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.hpy0707__button {
+    padding: 0 2rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.hpy0707__button button {
+
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.hpy0707__button--mt2 {
+    margin-top: 2rem;
+    border-bottom: none;
+    padding: 0 2rem 0;
+}
+
+.hpy-reg__btn--max270 {
+    min-width: 27rem;
+}
+
+.hpy-reg__btn--max130 {
+    min-width: 13rem;
+}
+
+.hpy-reg__btn--max160 {
+    min-width: 16rem;
+}
+
+.hpy0707__button span {
+    font-size: 1.3rem;
+    color: #666666;
+    font-weight: 400;
+}
+
+.hpy0707__button img {
+    height: 1.374rem;
+    width: 1.397rem;
+}
+
+.tour__bm--end-p4 {
+    padding: 4rem 5rem 0;
+}
+
+.tour__bm--end-pr5 {
+    padding: 0 5rem;
 }
