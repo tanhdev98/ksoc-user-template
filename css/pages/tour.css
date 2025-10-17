@@ -192,6 +192,10 @@
     ;
 }
 
+.tour__btn--max180 {
+    min-width: 18rem;
+}
+
 .tour__info {
     position: relative;
 
@@ -1455,6 +1459,10 @@
     width: 18rem;
 }
 
+.hpy__table td:nth-child(5) {
+    padding: 1.3rem 0rem;
+}
+
 .hpy__table td {
     padding: 1.3rem 2.4rem;
     height: 6rem;
@@ -1921,6 +1929,10 @@
 
 .hpy0709__table .lsn__table {
     margin-bottom: 1rem;
+}
+
+.hpy0709__table .lsn__table--mb0 {
+    margin-bottom: 0;
 }
 
 .lsn__table th {
