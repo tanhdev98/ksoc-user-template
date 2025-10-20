@@ -1862,6 +1862,12 @@
     border-bottom: 1px solid #ddd;
 }
 
+.ply_bsc--desc {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .ply-bsc__card {
     background: #F5F5F5;
     border-radius: 2rem;
@@ -1909,6 +1915,10 @@
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     color: #000;
+}
+
+.edc__flex.my10 {
+    margin: 1rem 0;
 }
 
 .ply-bsc__card .edc__flex:last-child {
@@ -3843,16 +3853,14 @@
 }
 
 .pym__dl {
-    min-height: 12.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2.2rem;
-    border: 1px solid #ddd;
     font-weight: 400;
-    font-size: 1.7rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
 }
 
 .pym__dl dd {
